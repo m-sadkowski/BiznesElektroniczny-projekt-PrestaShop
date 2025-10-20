@@ -1,8 +1,8 @@
-# Klon sklepu KOSZULKI.com - Projekt Biznes Elektroniczny 2025
+# Klon sklepu bikepart.pl - Projekt Biznes Elektroniczny 2025
 
 ## Opis projektu
 
-Projekt zrealizowany w ramach przedmiotu **"Biznes elektroniczny"** na **Politechnice Gdańskiej**. Jego celem było stworzenie w pełni funkcjonalnego klona sklepu internetowego KOSZULKI.com przy użyciu platformy e-commerce **PrestaShop**.
+Projekt zrealizowany w ramach przedmiotu **"Biznes elektroniczny"** na **Politechnice Gdańskiej**. Jego celem było stworzenie w pełni funkcjonalnego klona sklepu internetowego bikepart.pl przy użyciu platformy e-commerce **PrestaShop**.
 
 Główne założenia projektu obejmowały:
 
