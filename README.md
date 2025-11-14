@@ -16,6 +16,7 @@ Główne założenia projektu obejmowały:
 ##  Wykorzystane technologie
 
 * **Platforma e-commerce:** PrestaShop
+* **System do zarządzania kompozycją kontenerów:** Docker
 
 ---
 
@@ -32,6 +33,48 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     ```bash
     git clone https://github.com/m-sadkowski/BiznesEletroniczny-projekt-PrestaShop.git
     cd BiznesEletroniczny-projekt-PrestaShop
+    ```
+
+2.  **Uruchomienie środowiska sklepu za pomocą Docker**
+
+    Wymagane: Instalacja Docker https://docker.com
+
+  * Wejdź do folderu **Prestashop** i uruchom instalację kontenerów
+
+    ```bash
+    cd Prestashop
+    docker-compose up -d # -d powoduje działanie w tle
+    ```
+  
+  * Po uruchomieniu kontenerów wejdź na **localhost:8080** i przejdź przez proces instalacyjny Prestashop
+
+  * Po instalacji Prestashop usunąć folder install
+
+    ```bash
+    docker-compose exec prestashop rm -rf /var/www/html/install
+    ```
+
+  * Sprawdź nazwę folderu admina - będzie to admin+coś, np. admin7971fvqjg
+
+    ```bash
+    docker-compose exec prestashop ls /var/www/html
+    ```
+
+  * Wejdź w Design -> Theme & Logo
+
+  * Wybierz motyw **BE**
+
+  * Docker - przydatne komendy
+
+    ```bash
+    # Zatrzymanie kontenerów
+    docker-compose stop
+    # Ponowne uruchomienie zatrzymanych kontenerów
+    docker-compose start
+    # Zatrzymanie i usunięcie kontenerów
+    docker-compose down
+    # Zatrzymanie, usunięcie kontenerów ORAZ wolumenów (usuwa dane sklepu - foldery w kontenerze)
+    docker-compose down -v
     ```
 
 ---
