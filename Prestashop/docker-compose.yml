@@ -30,8 +30,8 @@ services:
       PS_DOMAIN: "localhost:8080"
     volumes:
       - ps_data:/var/www/html
-      - ./src/themes/betheme:/var/www/html/themes/betheme
-      - ./src/modules/bemodule:/var/www/html/modules/bemodule
+      - ./Source/themes/betheme:/var/www/html/themes/betheme
+      - ./Source/modules/bemodule:/var/www/html/modules/bemodule
 
 volumes:
   db_data:
