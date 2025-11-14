@@ -47,6 +47,11 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     ```
   
   * Po uruchomieniu kontenerów wejdź na **localhost:8080** i przejdź przez proces instalacyjny Prestashop
+    - w ustawieniach bazy danych wpisać:
+      * adres: db
+      * uzytkownik: prestashop_user
+      * hasło: user123
+    - kliknąć "Sprawdź połączenie z bazą"
 
   * Po instalacji Prestashop usunąć folder install
 
