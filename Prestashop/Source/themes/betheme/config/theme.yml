@@ -1,6 +1,6 @@
-name: classic
-display_name: Classic
-version: 1.0.0
+name: betheme
+display_name: BE
+version: 1.0.1
 author:
   name: "PrestaShop Team"
   email: "pub@prestashop.com"
@@ -32,15 +32,15 @@ assets:
 
   # The following lines are showing how to load assets in your page
   # Uncomment and change value to start loading css or js files
-#  css:
-#    all:
-#      - id: custom-lib-style
-#        path: assets/css/custom-lib.css
-#    product:
-#      - id: product-style
-#        path: assets/css/product.css
-#        media: all
-#        priority: 200
+ css:
+   bemain:
+     - id: be-main
+       path: assets/css/bemain.css
+  #  product:
+  #    - id: product-style
+  #      path: assets/css/product.css
+  #      media: all
+  #      priority: 200
 #  js:
 #    cart:
 #      - id: cat-extra-lib
