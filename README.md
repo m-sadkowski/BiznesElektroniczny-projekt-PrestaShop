@@ -1,8 +1,8 @@
-# Klon sklepu KOSZULKI.com - Projekt Biznes Elektroniczny 2025
+# Klon sklepu bikepart.pl - Projekt Biznes Elektroniczny 2025
 
 ## Opis projektu
 
-Projekt zrealizowany w ramach przedmiotu **"Biznes elektroniczny"** na **Politechnice Gdańskiej**. Jego celem było stworzenie w pełni funkcjonalnego klona sklepu internetowego KOSZULKI.com przy użyciu platformy e-commerce **PrestaShop**.
+Projekt zrealizowany w ramach przedmiotu **"Biznes elektroniczny"** na **Politechnice Gdańskiej**. Jego celem było stworzenie w pełni funkcjonalnego klona sklepu internetowego bikepart.pl przy użyciu platformy e-commerce **PrestaShop**.
 
 Główne założenia projektu obejmowały:
 
@@ -31,27 +31,31 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
 1.  **Sklonuj repozytorium:**
 
     ```bash
-    git clone https://github.com/m-sadkowski/BiznesEletroniczny-projekt-PrestaShop.git
-    cd BiznesEletroniczny-projekt-PrestaShop
+    git clone https://github.com/m-sadkowski/BiznesElektroniczny-projekt-PrestaShop.git
+    cd BiznesElektroniczny-projekt-PrestaShop
     ```
 
 2.  **Uruchomienie środowiska sklepu za pomocą Docker**
 
     Wymagane: Instalacja Docker https://docker.com
 
-  * Wejdź do folderu **Prestashop** i uruchom instalację kontenerów
+  * Wejdź do folderu **Config** i uruchom instalację kontenerów
 
     ```bash
-    cd Prestashop
+    cd Config
     docker-compose up -d # -d powoduje działanie w tle
     ```
   
-  * Po uruchomieniu kontenerów wejdź na **localhost:8080** i przejdź przez proces instalacyjny Prestashop
-    - w ustawieniach bazy danych wpisać:
+  * Po uruchomieniu kontenerów wejdź na **localhost:8080** i przejdź przez proces instalacyjny Prestashop w następujący sposób:
+    - Wybierz język instalacji: **Polski**
+    - Zaakceptuj licencję oraz wprowadź dane sklepu i administratora
+    - **UWAGA!** Nie należy tworzyć domyślnych produktów ani nie włączać SSL
+    - W ustawieniach bazy danych wpisz:
       * adres: db
       * uzytkownik: prestashop_user
       * hasło: user123
-    - kliknąć "Sprawdź połączenie z bazą"
+    - Kliknij "Przetestuj połączenie z bazą danych"
+    - Zakończ instalację
 
   * Po instalacji Prestashop usunąć folder install
 
@@ -65,11 +69,13 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     docker-compose exec prestashop ls /var/www/html
     ```
 
+  * Przejdź do panelu administracyjnego: **localhost:8080/admin**
+
   * Wejdź w Design -> Theme & Logo
 
   * Wybierz motyw **BE**
 
-  * Docker - przydatne komendy
+  Docker - przydatne komendy
 
     ```bash
     # Zatrzymanie kontenerów
@@ -91,4 +97,4 @@ Projekt został zrealizowany w ramach pracy zespołowej, zgodnie z założeniami
   * **Michał Sadkowski**
   * **Michał Matysiak**
   * **Dawid Wesołowski**
-  * **Ostap Lodovyy**
+  * **Ostap Lozovyy**

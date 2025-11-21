@@ -1,0 +1,48 @@
+services:
+  # Baza danych
+  db:
+    image: mysql:5.7
+    container_name: prestashop_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: prestashop
+      MYSQL_USER: prestashop_user
+      MYSQL_PASSWORD: user123
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - ps_network
+
+  # Prestashop
+  prestashop:
+    image: prestashop/prestashop:1.7.8
+    container_name: prestashop_web
+    restart: always
+    ports:
+      - "8080:80"
+      - "443:443"
+    environment:
+      DB_SERVER: db
+      DB_USER: prestashop_user
+      DB_PASSWD: user_password_123
+      DB_NAME: prestashop
+      PS_INSTALL_AUTO: 0
+    volumes:
+      - ps_data:/var/www/html
+      # Mapowanie na folder Source
+      - ../Source/themes/betheme:/var/www/html/themes/betheme
+      - ../Source/modules/bemodule:/var/www/html/modules/bemodule
+      # Mapowanie certyfikatów SSL
+      - ./certs:/etc/ssl/private
+    depends_on:
+      - db
+    networks:
+      - ps_network
+
+volumes:
+  db_data:
+  ps_data:
+
+networks:
+  ps_network:
