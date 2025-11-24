@@ -14,7 +14,7 @@ ROOT_DIR = os.path.join(os.path.dirname(__file__), '..', 'ScraperResults')
 IMAGES_DIR = os.path.join(ROOT_DIR, "images")
 CATEGORIES_DIR = os.path.join(ROOT_DIR, "categories")
 
-# LIMIT PRODUKTÓW
+# DOCELOWA ILOŚĆ SCRAPOWANYCH PRODUKTÓW
 TARGET_PRODUCT_COUNT = 696969 
 
 HEADERS = {
@@ -213,6 +213,9 @@ def run():
             
         if not os.path.exists(cat['folder_path']):
             os.makedirs(cat['folder_path'])
+            gitkeep_path = os.path.join(cat['folder_path'], '.gitkeep')
+            with open(gitkeep_path, 'w', encoding='utf-8') as f:
+                pass
             
         print(f"Kategoria: {cat['name']}")
         

@@ -28,6 +28,7 @@ services:
       DB_PASSWD: user_password_123
       DB_NAME: prestashop
       PS_INSTALL_AUTO: 0
+      PS_DEV_MODE: 1
     volumes:
       - ps_data:/var/www/html
       # Mapowanie na folder Source

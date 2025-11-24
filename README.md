@@ -17,6 +17,7 @@ Główne założenia projektu obejmowały:
 
 * **Platforma e-commerce:** PrestaShop
 * **System do zarządzania kompozycją kontenerów:** Docker
+* **Język użyty do scrapingu produktów:** Python
 
 ---
 
