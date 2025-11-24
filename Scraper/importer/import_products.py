@@ -1,5 +1,4 @@
 import requests
-import time
 import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -10,7 +9,7 @@ import json
 
 # --- KONFIGURACJA ---
 PS_SHOP_URL = "http://localhost:8080/"
-PS_WS_AUTH_KEY = "XI7SFB4UVFKY1D2FU4Z5Q3691S6B3ZNX"    # UZUPEŁNIĆ WŁASNYM KODEM API
+PS_WS_AUTH_KEY = "KLUCZ_API"    # UZUPEŁNIĆ WŁASNYM KLUCZEM API
 LANGUAGE_ID = "1"
 DEFAULT_CATEGORY_ID = "2"
 
@@ -84,7 +83,7 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     # Aktywny
     active_node = product_node.find('active')
     if active_node is not None:
-        active_node.text = str(product_data.get('active', 1))
+        active_node.text = '1'
 
     # Reference (Indeks)
     reference_node = product_node.find('reference')
