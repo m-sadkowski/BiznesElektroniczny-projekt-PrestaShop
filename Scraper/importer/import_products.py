@@ -10,7 +10,7 @@ import json
 
 # --- KONFIGURACJA ---
 PS_SHOP_URL = "http://localhost:8080/"
-PS_WS_AUTH_KEY = "KLUCZ_API"    # UZUPEŁNIĆ WŁASNYM KODEM API
+PS_WS_AUTH_KEY = "XI7SFB4UVFKY1D2FU4Z5Q3691S6B3ZNX"    # UZUPEŁNIĆ WŁASNYM KODEM API
 LANGUAGE_ID = "1"
 DEFAULT_CATEGORY_ID = "2"
 
@@ -149,17 +149,20 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
             id_el = ET.SubElement(category_el, 'id')
             id_el.text = str(cat_id)
 
+    # Minimalna ilość
     minimal_quantity_node = product_node.find('minimal_quantity')
     if minimal_quantity_node is not None:
         minimal_quantity_node.text = '1'
 
+    # Możliwość zamówienia
     available_for_order_node = product_node.find('available_for_order')
     if available_for_order_node is not None:
         available_for_order_node.text = '1'
 
-    quantity_node = product_node.find('quantity')
-    if quantity_node is not None:
-        quantity_node.text = '1'
+    # Pokazanie ceny
+    show_price_node = product_node.find('show_price')
+    if show_price_node is not None:
+        show_price_node.text = '1'
 
     # Przygotowanie XML do wysłania
     xml_data = ET.tostring(root, encoding='utf-8', xml_declaration=True).decode('utf-8')

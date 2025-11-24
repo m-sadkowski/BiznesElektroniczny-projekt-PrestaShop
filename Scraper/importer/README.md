@@ -2,7 +2,7 @@
 
 Ten folder zawiera skrypty do importu danych do PrestaShop:
 
-* `import_categories.py` – tworzenie kategorii
+* `import_categories.py` – tworzenie kategorii i podkategorii
 * `import_products.py` – import produktów
 
 ---

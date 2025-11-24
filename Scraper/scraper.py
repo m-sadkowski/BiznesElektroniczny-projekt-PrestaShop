@@ -14,7 +14,7 @@ ROOT_DIR = os.path.join(os.path.dirname(__file__), '..', 'ScraperResults')
 IMAGES_DIR = os.path.join(ROOT_DIR, "images")
 CATEGORIES_DIR = os.path.join(ROOT_DIR, "categories")
 
-# LIMIT PRODUKTÓW
+# DOCELOWA ILOŚĆ SCRAPOWANYCH PRODUKTÓW
 TARGET_PRODUCT_COUNT = 696969 
 
 HEADERS = {
