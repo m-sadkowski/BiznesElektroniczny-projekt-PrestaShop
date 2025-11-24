@@ -163,6 +163,11 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     if show_price_node is not None:
         show_price_node.text = '1'
 
+    # Stan produktu
+    state_node = product_node.find('state')
+    if state_node is not None:
+        state_node.text = '1'
+
     # Przygotowanie XML do wysłania
     xml_data = ET.tostring(root, encoding='utf-8', xml_declaration=True).decode('utf-8')
     
