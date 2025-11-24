@@ -1,0 +1,44 @@
+[
+    {
+        "name": "HONDA OEM PŁYN HAMULCOWY MOTOCYKLOWY DOT4 500ML 08203-999-38HE",
+        "category": "PŁYN HAMULCOWY",
+        "reference": "08203-999-38HE PP",
+        "price": 66.3,
+        "description": "Przedmiotem sprzedaży jest:\noryginalny płyn hamulcowy Honda\nPOJEMNOŚĆ 500 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.",
+        "attributes": {},
+        "images": [
+            "08203-999-38HE PP_0_8068.jpg",
+            "08203-999-38HE PP_1_4588.jpg"
+        ],
+        "quantity": 7,
+        "active": 1
+    },
+    {
+        "name": "MANNOL PŁYN HAMULCOWY MOTOCYKLOWY DOT4 DOT3 1000ML",
+        "category": "PŁYN HAMULCOWY",
+        "reference": "MN3002-1",
+        "price": 23.0,
+        "description": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 1000 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "attributes": {},
+        "images": [
+            "MN3002-1_0_9389.jpg",
+            "MN3002-1_1_2383.jpg"
+        ],
+        "quantity": 6,
+        "active": 1
+    },
+    {
+        "name": "MANNOL PŁYN HAMULCOWY MOTOCYKLOWY DOT4 DOT3 450ML",
+        "category": "PŁYN HAMULCOWY",
+        "reference": "MN3002-05",
+        "price": 15.0,
+        "description": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 450 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "attributes": {},
+        "images": [
+            "MN3002-05_0_7401.jpg",
+            "MN3002-05_1_7028.jpg"
+        ],
+        "quantity": 0,
+        "active": 1
+    }
+]
