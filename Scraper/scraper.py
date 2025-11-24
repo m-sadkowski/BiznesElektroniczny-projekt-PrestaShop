@@ -213,6 +213,9 @@ def run():
             
         if not os.path.exists(cat['folder_path']):
             os.makedirs(cat['folder_path'])
+            gitkeep_path = os.path.join(cat['folder_path'], '.gitkeep')
+            with open(gitkeep_path, 'w', encoding='utf-8') as f:
+                pass
             
         print(f"Kategoria: {cat['name']}")
         
