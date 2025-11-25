@@ -3,6 +3,9 @@
 ## Opis
 
 Folder **Scraper** zawiera narzędzie napisane w Pythonie, którego zadaniem jest pobieranie danych o produktach ze sklepu bikepart.pl i zapisywanie wyników w folderze `ScraperResults`.
+
+W folderze zawarty jest również folder `importer` zawierający skrypty importujące zescrapowane produkty do Prestashop poprzez REST API.
+
 **UWAGA!** ScraperResults zawiera już zescrapowane dane!
 
 W skrypcie `scraper.py` można edytować docelową ilość scrapowanych produktów poprzez zmianę wartości zmiennej *TARGET_PRODUCT_COUNT*.

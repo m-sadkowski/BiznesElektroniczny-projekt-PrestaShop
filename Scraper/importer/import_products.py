@@ -1,5 +1,4 @@
 import requests
-import time
 import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -7,10 +6,13 @@ import json
 import re
 from typing import Dict, Any, List
 import json
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- KONFIGURACJA ---
-PS_SHOP_URL = "http://localhost:8080/"
-PS_WS_AUTH_KEY = "XI7SFB4UVFKY1D2FU4Z5Q3691S6B3ZNX"    # UZUPEŁNIĆ WŁASNYM KODEM API
+PS_SHOP_URL = "https://localhost/"
+PS_WS_AUTH_KEY = "TWOJ_KLUCZ"   # UZUPEŁNIĆ WŁASNYM KLUCZEM API
 LANGUAGE_ID = "1"
 DEFAULT_CATEGORY_ID = "2"
 
@@ -20,6 +22,8 @@ IMAGES_DIR = os.path.join(ROOT_DIR, "images")
 
 CATEGORY_MAP_PATH = os.path.join(os.path.dirname(__file__), "category_id_map.json")
 CATEGORY_MAP: Dict[str, str] = {}
+
+REFERENCE_ID_MAP: Dict[str, str] = {}
 
 def load_category_map():
     """Ładuje mapowanie nazw kategorii na ID z pliku JSON."""
@@ -43,7 +47,7 @@ def get_blank_xml_schema(resource: str) -> str | None:
     """Pobiera pusty schemat XML dla danego zasobu."""
     url = f"{PS_SHOP_URL}api/{resource}?schema=blank&ws_key={PS_WS_AUTH_KEY}"
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=10, verify=False)
         response.raise_for_status()
         return response.text
     except requests.exceptions.RequestException as e:
@@ -54,6 +58,115 @@ def get_blank_xml_schema(resource: str) -> str | None:
 def find_category_id(category_name: str) -> str | None:
     """Zwraca ID kategorii na podstawie nazwy, używając mapy."""
     return CATEGORY_MAP.get(category_name, DEFAULT_CATEGORY_ID)
+
+def find_product_by_reference(reference):
+    """Wyszukuje ID produktu w Prestashop po numerze referencyjnym."""
+    if reference in REFERENCE_ID_MAP:
+        return REFERENCE_ID_MAP[reference]
+    
+    # Wyszukiwanie w Prestashop
+    search_url = f"{PS_SHOP_URL}api/products?filter[reference]=[{reference}]&ws_key={PS_WS_AUTH_KEY}"
+    try:
+        response = requests.get(search_url, timeout=10, verify=False)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+        product_node = root.find('products/product')
+        
+        if product_node is not None:
+            product_id = product_node.get('id')
+            if product_id:
+                REFERENCE_ID_MAP[reference] = product_id
+                return product_id  
+    except requests.exceptions.RequestException as e:
+        print(f"Błąd wyszukiwania produktu po referencji {reference}: {e}")
+
+    return None
+
+def fetch_current_categories(product_id: str) -> List[str]:
+    """Pobiera listę ID kategorii, do których należy produkt."""
+    categories_url = f"{PS_SHOP_URL}api/products/{product_id}?ws_key={PS_WS_AUTH_KEY}"
+    try:
+        response = requests.get(categories_url, timeout=10, verify=False)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+        categories_node = root.find('product/associations/categories')
+        
+        current_ids = []
+        if categories_node is not None:
+            for cat_el in categories_node.findall('category'):
+                id_el = cat_el.find('id')
+                if id_el is not None:
+                    current_ids.append(id_el.text)
+        return current_ids
+    except Exception as e:
+        print(f"Błąd pobierania obecnych kategorii dla ID {product_id}: {e}")
+        return []
+    
+def update_product_categories(product_id: str, current_ids: List[str], new_category_name: str) -> bool:
+    """Dodaje nową kategorię do istniejącego produktu (nie usuwając starych)."""
+    
+    # 1. Znajdź ID nowej kategorii
+    new_cat_id = find_category_id(new_category_name)
+    if not new_cat_id:
+        print(f"   [SKIP] Nie znaleziono ID dla kategorii: {new_category_name}")
+        return False
+
+    # 2. Sprawdź czy produkt już w niej jest (żeby nie dublować zapytań)
+    if str(new_cat_id) in current_ids:
+        print(f"   [OK] Produkt {product_id} już znajduje się w kategorii ID {new_cat_id}")
+        return True
+
+    print(f"   [UPDATE] Dodawanie kategorii ID {new_cat_id} do produktu {product_id}...")
+
+    # 3. Pobierz PEŁNY XML produktu (jest wymagany do edycji)
+    url = f"{PS_SHOP_URL}api/products/{product_id}?ws_key={PS_WS_AUTH_KEY}"
+    try:
+        response = requests.get(url, verify=False)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+    except Exception as e:
+        print(f"   BŁĄD pobierania produktu XML: {e}")
+        return False
+
+    # 4. Znajdź węzeł asocjacji kategorii
+    product_node = root.find('product')
+    
+    # PrestaShop API często zwraca pola read-only, które powodują błędy przy zapisie (PUT).
+    # Usuwamy je dla bezpieczeństwa:
+    for forbidden in ['manufacturer_name', 'quantity', 'quantity_all_versions']:
+        node = product_node.find(forbidden)
+        if node is not None:
+            product_node.remove(node)
+
+    associations_node = product_node.find('associations')
+    if associations_node is None:
+        associations_node = ET.SubElement(product_node, 'associations')
+    
+    categories_node = associations_node.find('categories')
+    if categories_node is None:
+        categories_node = ET.SubElement(associations_node, 'categories')
+
+    # 5. Dodaj nową kategorię do XML
+    new_cat_elem = ET.SubElement(categories_node, 'category')
+    new_id_elem = ET.SubElement(new_cat_elem, 'id')
+    new_id_elem.text = str(new_cat_id)
+
+    # 6. Wyślij zaktualizowany XML (PUT)
+    xml_data = ET.tostring(root, encoding='utf-8').decode('utf-8')
+    # Usuwamy ewentualne namespace'y, które mogą przeszkadzać
+    xml_data = xml_data.replace('ns0:', '').replace(':ns0', '')
+
+    headers = {'Content-Type': 'text/xml; charset=utf-8'}
+    try:
+        put_response = requests.put(url, data=xml_data.encode('utf-8'), headers=headers, verify=False)
+        put_response.raise_for_status()
+        return True
+    except requests.exceptions.HTTPError as err:
+        print(f"   BŁĄD ZAPISU (HTTP {err.response.status_code}): {err.response.text}")
+        return False
+    except Exception as e:
+        print(f"   BŁĄD: {e}")
+        return False
 
 def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     """Tworzy XML dla nowego produktu na podstawie danych z JSON."""
@@ -84,7 +197,7 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     # Aktywny
     active_node = product_node.find('active')
     if active_node is not None:
-        active_node.text = str(product_data.get('active', 1))
+        active_node.text = '1'
 
     # Reference (Indeks)
     reference_node = product_node.find('reference')
@@ -107,15 +220,28 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     if id_shop_default_node is not None:
         id_shop_default_node.text = '1'
 
-    # Opis produktu
-    desc_node = product_node.find('description')
-    if desc_node is not None:
-        lang_node = desc_node.find(f"language[@id='{LANGUAGE_ID}']")
+    # Opis produktu (krótki i pełny)
+    desc_short_node = product_node.find('description_short')
+    if desc_short_node is not None:
+        lang_node = desc_short_node.find(f"language[@id='{LANGUAGE_ID}']")
         if lang_node is not None:
-            desc_text = product_data.get('description', '')
-            # Budujemy pełny opis w HTML
-            full_html_description = desc_text.replace("\n", "<br>")
-            lang_node.text = full_html_description 
+            short_html = product_data.get('description_short', '').replace("\n", "<br>")
+            lang_node.text = short_html
+
+    desc_full_node = product_node.find('description')
+    if desc_full_node is not None:
+        lang_node = desc_full_node.find(f"language[@id='{LANGUAGE_ID}']")
+        if lang_node is not None:
+            full_html = product_data.get('description_full', '').replace("\n", "<br>")
+            lang_node.text = full_html
+
+    # Czas realizacji zamówienia
+    available_message_cdata = product_data.get('order_processing_time', '')
+    delivery_in_stock_node = product_node.find('delivery_in_stock')
+    if delivery_in_stock_node is not None:
+        lang_node = delivery_in_stock_node.find(f"language[@id='{LANGUAGE_ID}']")
+        if lang_node is not None:
+            lang_node.text = available_message_cdata
         
     # Link rewrite
     link_rewrite_text = re.sub(r'[^\w\s-]', '', product_data.get('name', '').lower())
@@ -159,10 +285,20 @@ def create_product_xml(product_data: Dict[str, Any]) -> str | None:
     if available_for_order_node is not None:
         available_for_order_node.text = '1'
 
+    # Dodatkowe informacje o czasie realizacji zamówienia
+    additional_delivery_times_node = product_node.find('additional_delivery_times')
+    if additional_delivery_times_node is not None:
+        additional_delivery_times_node.text = '2'
+
     # Pokazanie ceny
     show_price_node = product_node.find('show_price')
     if show_price_node is not None:
         show_price_node.text = '1'
+
+    # Stan produktu
+    state_node = product_node.find('state')
+    if state_node is not None:
+        state_node.text = '1'
 
     # Przygotowanie XML do wysłania
     xml_data = ET.tostring(root, encoding='utf-8', xml_declaration=True).decode('utf-8')
@@ -177,7 +313,7 @@ def update_product_stock(product_id: str, quantity: int) -> bool:
     # Pobieramy ID stock_availables
     stock_url = f"{PS_SHOP_URL}api/stock_availables/?filter[id_product]={product_id}&ws_key={PS_WS_AUTH_KEY}"
     try:
-        response = requests.get(stock_url, timeout=10)
+        response = requests.get(stock_url, timeout=10, verify=False)
         response.raise_for_status()
         stock_root = ET.fromstring(response.content)
     except Exception as e:
@@ -194,7 +330,7 @@ def update_product_stock(product_id: str, quantity: int) -> bool:
     # Pobieramy stock_availables do aktualizacji
     stock_url = f"{PS_SHOP_URL}api/stock_availables/{stock_id}?ws_key={PS_WS_AUTH_KEY}"
     try:
-        response = requests.get(stock_url, timeout=10)
+        response = requests.get(stock_url, timeout=10, verify=False)
         response.raise_for_status()
         stock_root = ET.fromstring(response.content)
     except Exception as e:
@@ -219,7 +355,7 @@ def update_product_stock(product_id: str, quantity: int) -> bool:
     headers = {'Content-Type': 'text/xml; charset=utf-8'}
     
     try:
-        response = requests.put(stock_url, data=xml_data.encode('utf-8'), headers=headers, timeout=20)
+        response = requests.put(stock_url, data=xml_data.encode('utf-8'), headers=headers, timeout=20, verify=False)
         response.raise_for_status()
         return True
     except requests.exceptions.RequestException as e:
@@ -244,7 +380,7 @@ def upload_product_images(product_id: str, image_files: List[str]) -> bool:
         try:
             with open(filepath, 'rb') as image_file:
                 files = {'image': (image_filename, image_file)}
-                response = requests.post(image_url, files=files, timeout=30)
+                response = requests.post(image_url, files=files, timeout=30, verify=False)
                 response.raise_for_status()
                 print(f"Dodano zdjęcie: {image_filename}")
 
@@ -256,7 +392,24 @@ def upload_product_images(product_id: str, image_files: List[str]) -> bool:
 def process_product_import(product_data: Dict[str, Any]):
     """Główna logika importu pojedynczego produktu."""
     
+    reference = product_data.get('reference')
     product_name = product_data.get('name', 'N/A')
+
+    existing_product_id = find_product_by_reference(reference)
+    if existing_product_id:
+        print(f"Duplikat (Ref: {reference}). Aktualizuję kategorię produktu ID: {existing_product_id}")
+        
+        # Pobieramy obecne kategorie
+        current_categories = fetch_current_categories(existing_product_id)
+        
+        # Aktualizujemy (dodajemy) nową kategorię
+        success = update_product_categories(existing_product_id, current_categories, product_data.get('category'))
+        
+        if success:
+            print(f"Kategoria '{product_data.get('category')}' pomyślnie dodana.")
+        else:
+            print(f"Błąd dodawania kategorii.")
+        return
     
     # Tworzymy XML produktu
     product_xml = create_product_xml(product_data)
@@ -269,12 +422,13 @@ def process_product_import(product_data: Dict[str, Any]):
     headers = {'Content-Type': 'text/xml; charset=utf-8'}
     
     try:
-        response = requests.post(post_url, data=product_xml.encode('utf-8'), headers=headers, timeout=20)
+        response = requests.post(post_url, data=product_xml.encode('utf-8'), headers=headers, timeout=20, verify=False)
         response.raise_for_status()
         
         # Parsowanie odpowiedzi w celu uzyskania ID nowo utworzonego produktu
         response_root = ET.fromstring(response.content)
         new_product_id = response_root.find('product/id').text
+        REFERENCE_ID_MAP[reference] = new_product_id
         print(f"Utworzono produkt '{product_name}' z ID: {new_product_id}")
         
     except requests.exceptions.HTTPError as err:
