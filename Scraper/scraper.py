@@ -174,9 +174,6 @@ def scrape_product(url, category_name):
         # 7. Ilość
         quantity = random.randint(0, 10)
 
-        # 8. Dostępność
-        is_active = 0 if random.random() < 0.15 else 1
-
         return {
             "name": name,
             "category": category_name,
@@ -185,8 +182,7 @@ def scrape_product(url, category_name):
             "description": description,
             "attributes": attributes,
             "images": local_images,
-            "quantity": quantity,
-            "active": is_active
+            "quantity": quantity
         }
 
     except Exception as e:
