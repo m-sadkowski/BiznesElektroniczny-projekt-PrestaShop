@@ -11585,6 +11585,9 @@ body.--push-menu-opened {
   background-color: #f2dede !important;
   color: #a94442 !important;
 }
+.search-widget {
+  width: 100%;
+}
 .search-widget form {
   position: relative;
 }
@@ -15568,7 +15571,7 @@ button.swiper-pagination-bullet {
   left: 0;
   right: auto;
 }
-.lang-rtl .search-widget .form-search-control {
+.lang-rtl .form-search-control {
   padding-right: 1rem;
   padding-left: 2rem;
 }
@@ -21581,10 +21584,6 @@ body {
   background: #1bd33f;
   color: #fff;
 }
-.desktop-header-style-1 .search-widget,
-.desktop-header-style-2 .search-widget {
-  max-width: 50%;
-}
 #iqitmegamenu-horizontal {
   background: #000;
   border-top: none 3px #521919;
@@ -25784,5 +25783,9 @@ body.page-module-iqitsearch-searchiqit
 }
 
 .cbp-hrmenu-tab a {
+  color: #fff!important;
+}
+
+.psgdpr_consent_message span {
   color: #fff!important;
 }
