@@ -4,41 +4,44 @@
         "category": "PŁYN HAMULCOWY",
         "reference": "08203-999-38HE PP",
         "price": 66.3,
-        "description": "Przedmiotem sprzedaży jest:\noryginalny płyn hamulcowy Honda\nPOJEMNOŚĆ 500 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.",
+        "description_short": "Przedmiotem sprzedaży jest:\noryginalny płyn hamulcowy Honda\nPOJEMNOŚĆ 500 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.",
+        "description_full": "Polecamy płyny hamulcowe marki OE HONDA. Zaleca się weryfikację stanu płynu hamulcowego co 1000km. Często bagatelizowana jest również konieczność wymiany płynu hamulcowego, zaleca się to robić co dwa lata.",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia do 2 do 3 dni",
         "images": [
-            "08203-999-38HE PP_0_8068.jpg",
-            "08203-999-38HE PP_1_4588.jpg"
+            "08203-999-38HE PP_1.jpg",
+            "08203-999-38HE PP_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "MANNOL PŁYN HAMULCOWY MOTOCYKLOWY DOT4 DOT3 1000ML",
         "category": "PŁYN HAMULCOWY",
         "reference": "MN3002-1",
         "price": 23.0,
-        "description": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 1000 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "description_short": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 1000 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "MN3002-1_0_9389.jpg",
-            "MN3002-1_1_2383.jpg"
+            "MN3002-1_1.jpg",
+            "MN3002-1_2.jpg"
         ],
-        "quantity": 6,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "MANNOL PŁYN HAMULCOWY MOTOCYKLOWY DOT4 DOT3 450ML",
         "category": "PŁYN HAMULCOWY",
         "reference": "MN3002-05",
         "price": 15.0,
-        "description": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 450 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "description_short": "Przedmiotem sprzedaży jest:\nMANNOL 3002\nPŁYN HAMULCOWY DOT-4\nPOJEMNOŚĆ 450 ml\nPłyn przeznaczony do większości motocykli, skuterów, quadów\nWysoka temperatura wrzenia (240 st) oraz niższa wrażliwość na wilgoć niż DOT 5 sprawia że z powodzeniem można stosować go również w tradycyjnych motocyklach szosowych jak i w układach sprzęgła hydraulicznego.\nSpełnia także normy DOT3",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "MN3002-05_0_7401.jpg",
-            "MN3002-05_1_7028.jpg"
+            "MN3002-05_1.jpg",
+            "MN3002-05_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 5
     }
 ]

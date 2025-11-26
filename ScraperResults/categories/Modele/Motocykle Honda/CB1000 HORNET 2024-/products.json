@@ -4,13 +4,14 @@
         "category": "CB1000 HORNET 2024-",
         "reference": "94109-12000 PP",
         "price": 8.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna podkładka korka spustowego oleju 12MM\ncena za sztukę\npasuje do wielu modeli Honda",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna podkładka korka spustowego oleju 12MM\ncena za sztukę\npasuje do wielu modeli Honda",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni. (W MAGAZYNIE)",
         "images": [
-            "94109-12000 PP_0_6935.jpg",
-            "94109-12000 PP_1_2534.jpg"
+            "94109-12000 PP_1.jpg",
+            "94109-12000 PP_2.jpg"
         ],
-        "quantity": 10,
-        "active": 1
+        "quantity": 6
     }
 ]

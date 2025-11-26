@@ -1,0 +1,92 @@
+[
+    {
+        "name": "MANNOL OLEJ PRZEKŁADNIOWY 80W90 API GL4/GL5 1L",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "MN8106-1",
+        "price": 32.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMANNOL HYPOID GETRIEBEOEL\n80W90 API GL4\n- OLEJ PRZEKŁADNIOWY MINERALNY 1L (80W-90)\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN8106-1_1.jpg",
+            "MN8106-1_2.jpg"
+        ],
+        "quantity": 3
+    },
+    {
+        "name": "MOTUL GEARBOX 80W90 DO DYFRA OLEJ PRZEKŁADNIOWY",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "MMSG101269",
+        "price": 22.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMotul Gear Oil 80W90 SCOOTER  150ML\nMineralny olej do wszystkich typów przekładni mechanicznych,",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MMSG101269_1.jpg",
+            "MMSG101269_2.jpg"
+        ],
+        "quantity": 10
+    },
+    {
+        "name": "MOTUL OLEJ PRZEKŁADNIOWY GEARBOX 80W90 DO DYFRA",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "714.02.99",
+        "price": 50.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMotul Gear Oil 80W90 HD\nMineralny olej do wszystkich typów przekładni mechanicznych, synchronizowane i niezsynchronizowane skrzynie biegów, przekładnie główne, przekładnie rozdzielcze, dyferencjały hipoidalne bez układów z ograniczonych tarciem (Limimted Slip) pracujące przy dużych obciążeniach.\nSpecyfikacje:\nAPI GL-4/GL-5\nDopuszczenia OEM:\nMIL-L-2105D\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "714.02.99_1.jpg",
+            "714.02.99_2.jpg"
+        ],
+        "quantity": 1
+    },
+    {
+        "name": "OLEJ MOTUL GEARBOX 80W90 DO DYFRA",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "MU100099",
+        "price": 64.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMOTUL GEARBOX 80W90 1L OLEJ PRZEKŁADNIOWY MINERALNY\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MU100099_1.jpg",
+            "MU100099_2.jpg"
+        ],
+        "quantity": 1
+    },
+    {
+        "name": "OLEJ MOTUL TRANSOIL 10W30 1L MINERALNY DO SKRZYNI",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "MOTUL05",
+        "price": 40.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, olej mineralny przeznaczony do skrzyń biegów.  Przeznaczenie do motorowery , skutery, quady , zalecane gdy producenci wymagają SAE 10W- 30\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MOTUL05_1.jpg",
+            "MOTUL05_2.jpg"
+        ],
+        "quantity": 7
+    },
+    {
+        "name": "OLEJ MOTUL TRANSOIL EXPERT 10W40 1L DO SKRZYNI",
+        "category": "OLEJ PRZEKŁADNIOWY",
+        "reference": "MU100963",
+        "price": 45.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, olej półsyntetyczny  przeznaczony do skrzyń biegów.  Przeznaczenie do motorowery , skutery, quady ,\nzalecane gdy producenci wymagają SAE 10W- 40\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MU100963_1.jpg",
+            "MU100963_2.jpg"
+        ],
+        "quantity": 0
+    }
+]
