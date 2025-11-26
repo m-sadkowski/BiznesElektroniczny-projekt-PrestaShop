@@ -24,7 +24,7 @@ Skrypt wykonuje zrzut bazy danych (dump) do pliku `export/prestashop_dump.sql`.
 ./export.sh
 ```
 
-### 2. Przywracnanie ustawień (`restore.sh`)
+### 2. Przywracanie ustawień (`restore.sh`)
 Skrypt służy do przywracania ustawień sklepu z pliku `export/prestashop_dump.sql`.
 
 **Uruchomienie:**

@@ -27,7 +27,7 @@ else
     exit 1
 fi
 
-# 5. Czyszczenie cache PrestaShop
+# Czyszczenie cache PrestaShop
 docker compose exec -T $PS_SERVICE rm -rf /var/www/html/var/cache/prod /var/www/html/var/cache/dev &>/dev/null
 
 echo "PRZYWRACANIE ZAKOŃCZONE POMYŚLNIE."
