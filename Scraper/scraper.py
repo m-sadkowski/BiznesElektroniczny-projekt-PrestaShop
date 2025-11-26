@@ -21,6 +21,10 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
+# Aby uniknąć powtarzania zdjęć tych samych produktów (o tym samym reference)
+PROCESSED_REFERENCES = set()
+IMAGE_MAP = {}
+
 def setup_directories():
     if not os.path.exists(IMAGES_DIR):
         os.makedirs(IMAGES_DIR)
@@ -42,13 +46,13 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
-def download_image(img_url, product_ref):
+def download_image(img_url, product_ref, index):
     """Pobiera zdjęcie i zapisuje je lokalnie"""
     if not img_url or not img_url.startswith('http'):
         return ""
     
     try:
-        filename = f"{product_ref}_{random.randint(1000,9999)}.jpg"
+        filename = f"{product_ref}_{index}.jpg"
         filename = re.sub(r'[\\/*?:"<>|]', "", filename)
         filepath = os.path.join(IMAGES_DIR, filename)
         
@@ -80,32 +84,43 @@ def parse_sitemap_structure(soup):
         print("Nie znaleziono drzewa kategorii w mapie strony.")
         return []
 
-    def traverse_list(ul_element, current_path):
+    def traverse_list(ul_element, current_path, is_excluded=False):
         for li in ul_element.find_all('li', recursive=False):
             a_tag = li.find('a', recursive=False)
             if not a_tag: continue
             
             name = clean_text(a_tag.text)
             href = a_tag.get('href')
+
+            is_current_excluded = is_excluded or 'HondaImport' in name
             
             if "2-glowna" in href:
                 nested_ul = li.find('ul', recursive=False)
                 if nested_ul:
-                    traverse_list(nested_ul, current_path)
+                    traverse_list(nested_ul, current_path, is_current_excluded)
                 continue
 
             safe_name = re.sub(r'[\\/*?:"<>|]', "", name).strip()
             new_path = os.path.join(current_path, safe_name)
-            
-            categories_to_scan.append({
-                'name': name,
-                'url': href,
-                'folder_path': new_path
-            })
-            
+
+            if not os.path.exists(new_path):
+                os.makedirs(new_path)
+                gitkeep_path = os.path.join(new_path, '.gitkeep')
+                with open(gitkeep_path, 'w', encoding='utf-8') as f:
+                    pass
+
             nested_ul = li.find('ul', recursive=False)
             if nested_ul:
                 traverse_list(nested_ul, new_path)
+            
+            if not nested_ul:
+                if not is_current_excluded:
+                    categories_to_scan.append({
+                        'name': name,
+                        'url': href,
+                        'folder_path': new_path
+                    })
+            
 
     traverse_list(target_ul, CATEGORIES_DIR)
     return categories_to_scan
@@ -122,47 +137,63 @@ def scrape_product(url, category_name):
         # 2. Referencja
         ref_tag = soup.select_one('.product-reference span')
         reference = clean_text(ref_tag.text) if ref_tag else f"GEN-{random.randint(10000,99999)}"
+
+        # OBSŁUGA PRODUKTÓW PRZYPISANYCH DO WIELU KATEGORII
+        is_duplicate = reference in PROCESSED_REFERENCES
+        if is_duplicate:
+            local_images = IMAGE_MAP.get(reference, [])
+        else:
+            local_images = []
         
         # 3. Cena
         price_tag = soup.select_one('.current-price-value')
         price = float(price_tag['content']) if price_tag else 0.0
         
-        # 4. Opis
-        desc_div = soup.select_one('.product-description')
-        description = ""
-        if desc_div:
-            for br in desc_div.find_all("br"):
-                br.replace_with("\n")
-            for p in desc_div.find_all("p"):
-                p.insert_after("\n")
-            
-            raw_text = desc_div.get_text()
-            
-            lines = [line.strip() for line in raw_text.split('\n')]
-            description = "\n".join([l for l in lines if l])
+        # 4. Opis krótki i długi
+        desc_short_div = soup.select_one('div[id^="product-description-short-"]')
+        description_short = ""
+        if desc_short_div:
+            description_short = desc_short_div.get_text('\n', strip=True)
+            description_short = '\n'.join([line.strip() for line in description_short.split('\n') if line.strip()])
+
+        desc_full_div = soup.select_one('.tab-pane#description .product-description .rte-content')
+        description_full = ""
+        if desc_full_div:
+            for tag in desc_full_div.find_all(['b', 'strong']):
+                tag.replace_with(tag.get_text())
+                
+            description_full = desc_full_div.get_text('\n', strip=True)
+            description_full = '\n'.join([line.strip() for line in description_full.split('\n') if line.strip()])
 
         # 5. Zdjęcia
-        images = []
-        cover_img = soup.select_one('.product-cover img')
-        if cover_img:
-            src = cover_img.get('data-image-large-src') or cover_img.get('src')
-            images.append(src)
-            
-        thumbs = soup.select('.product-images li img')
-        for thumb in thumbs:
-            src = thumb.get('data-image-large-src') or thumb.get('data-src')
-            if src and src not in images:
-                images.append(src)
+        if not is_duplicate or not IMAGE_MAP.get(reference):
+            images_urls = []
+            cover_img = soup.select_one('.product-cover img')
+            if cover_img:
+
+                src = cover_img.get('data-image-large-src') or cover_img.get('src')
+                images_urls.append(src)
                 
-        final_images_urls = images[:2]
-        while len(final_images_urls) < 2 and len(final_images_urls) > 0:
-            final_images_urls.append(final_images_urls[0]) 
+            thumbs = soup.select('.product-images li img')
+            for thumb in thumbs:
+                src = thumb.get('data-image-large-src') or thumb.get('data-src')
+                if src and src not in images_urls:
+                    images_urls.append(src)
             
-        local_images = []
-        for i, img_url in enumerate(final_images_urls):
-            filename = download_image(img_url, f"{reference}_{i}")
-            if filename:
-                local_images.append(filename)
+            final_images_urls = images_urls[:2]
+            
+            while len(final_images_urls) < 2 and len(final_images_urls) > 0:
+                final_images_urls.append(final_images_urls[0]) 
+            
+            local_images = []
+            for i, img_url in enumerate(final_images_urls):
+                filename = download_image(img_url, reference, i + 1)
+                if filename:
+                    local_images.append(filename)
+            
+            IMAGE_MAP[reference] = local_images
+        else:
+            local_images = IMAGE_MAP[reference]
 
         # 6. Atrybuty
         attributes = {}
@@ -174,13 +205,19 @@ def scrape_product(url, category_name):
         # 7. Ilość
         quantity = random.randint(0, 10)
 
+        # 8. Czas realizacji zamówienia
+        availability_tag = soup.select_one('#product-availability')
+        availability_message = clean_text(availability_tag.text) if availability_tag else "Dostępny"
+
         return {
             "name": name,
             "category": category_name,
             "reference": reference,
             "price": price,
-            "description": description,
+            "description_short": description_short,
+            "description_full": description_full,
             "attributes": attributes,
+            "order_processing_time": availability_message,
             "images": local_images,
             "quantity": quantity
         }
@@ -199,20 +236,12 @@ def run():
     categories_structure = parse_sitemap_structure(soup)
     print(f"Znaleziono {len(categories_structure)} podkategorii.")
     
-    random.shuffle(categories_structure)
-    
     products_counter = 0
     
     for cat in categories_structure:
         if products_counter >= TARGET_PRODUCT_COUNT:
             break
-            
-        if not os.path.exists(cat['folder_path']):
-            os.makedirs(cat['folder_path'])
-            gitkeep_path = os.path.join(cat['folder_path'], '.gitkeep')
-            with open(gitkeep_path, 'w', encoding='utf-8') as f:
-                pass
-            
+
         print(f"Kategoria: {cat['name']}")
         
         category_products = []
@@ -237,9 +266,11 @@ def run():
                 
                 if product_data:
                     category_products.append(product_data)
-                    products_counter += 1
-                    status = "AKTYWNY" if product_data['active'] == 1 else "NIEAKTYWNY"
-                    print(f"✅ [{products_counter}] {product_data['name'][:30]}... (Stan: {product_data['quantity']}, {status})")
+                    if product_data['reference'] not in PROCESSED_REFERENCES:
+                        products_counter += 1
+                        PROCESSED_REFERENCES.add(product_data['reference'])
+
+                    print(f"✅ [{products_counter}] {product_data['name'][:30]}... (Stan: {product_data['quantity']})")
                 
                 # time.sleep(0.1)
 

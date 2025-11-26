@@ -4,10 +4,13 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import re
 import json
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- KONFIGURACJA ---
-PS_SHOP_URL = "http://localhost:8080/"
-PS_WS_AUTH_KEY = "KLUCZ_API"    # UZUPEŁNIĆ WŁASNYM KLUCZEM API
+PS_SHOP_URL = "https://localhost/"
+PS_WS_AUTH_KEY = "TWOJ_KLUCZ"   # UZUPEŁNIĆ WŁASNYM KLUCZEM API
 LANGUAGE_ID = "1"
 DEFAULT_ID_PARENT = "2"
 
@@ -21,7 +24,7 @@ def get_blank_xml_schema(resource):
     """Pobiera pusty schemat XML dla danego zasobu."""
     url = f"{PS_SHOP_URL}api/{resource}?schema=blank&ws_key={PS_WS_AUTH_KEY}"
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=10, verify=False)
         response.raise_for_status()
         return response.text
     except requests.exceptions.RequestException as e:
@@ -114,7 +117,7 @@ def create_prestashop_category(parent_id, category_name):
     headers = {'Content-Type': 'text/xml; charset=utf-8'}
     
     try:
-        response = requests.post(post_url, data=xml_data.encode('utf-8'), headers=headers, timeout=20)
+        response = requests.post(post_url, data=xml_data.encode('utf-8'), headers=headers, timeout=20, verify=False)
         response.raise_for_status()
         
         # Parsowanie odpowiedzi w celu uzyskania ID nowej kategorii

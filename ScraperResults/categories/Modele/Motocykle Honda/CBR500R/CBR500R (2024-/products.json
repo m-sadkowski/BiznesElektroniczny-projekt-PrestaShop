@@ -4,181 +4,194 @@
         "category": "CBR500R (2024-",
         "reference": "80102-MJW-J00 HH",
         "price": 100.2,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna tylne mocowanie tablicy , stelaż\nHONDA\nCB 500F 2016-2024\nCBR 500R 2016-2024\nCB 750 HORNET 2023-2025",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna tylne mocowanie tablicy , stelaż\nHONDA\nCB 500F 2016-2024\nCBR 500R 2016-2024\nCB 750 HORNET 2023-2025",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni.",
         "images": [
-            "80102-MJW-J00 HH_0_6831.jpg",
-            "80102-MJW-J00 HH_1_2753.jpg"
+            "80102-MJW-J00 HH_1.jpg",
+            "80102-MJW-J00 HH_2.jpg"
         ],
-        "quantity": 2,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "HONDA CB500F HORNET CBR500 FELGA PRZEDNIA 44650-MKP-DP1",
         "category": "CBR500R (2024-",
         "reference": "44650-MKP-DP1 UU",
         "price": 1999.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna przednia felga kolor czarny\nw komplecie z łożyskami i wentylem.\nCB 500F HORNET\nCBR 500R\npasuje do rocznika 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna przednia felga kolor czarny\nw komplecie z łożyskami i wentylem.\nCB 500F HORNET\nCBR 500R\npasuje do rocznika 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni.",
         "images": [
-            "44650-MKP-DP1 UU_0_6458.jpg",
-            "44650-MKP-DP1 UU_1_3410.jpg"
+            "44650-MKP-DP1 UU_1.jpg",
+            "44650-MKP-DP1 UU_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 7
     },
     {
         "name": "HONDA CBR500 ORYGINALNA KIEROWNICA LEWA PRAWA 2024 53150-MLR-D00",
         "category": "CBR500R (2024-",
         "reference": "53150-MLR-D00 HH",
         "price": 322.19,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna połówka kierownicy\ndo wyboru prawa lub lewa strona.\ncena za sztukę .\nHONDA CBR 500RR\npasuje do rocznika 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna połówka kierownicy\ndo wyboru prawa lub lewa strona.\ncena za sztukę .\nHONDA CBR 500RR\npasuje do rocznika 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "53150-MLR-D00 HH_0_3244.jpg",
-            "53150-MLR-D00 HH_1_6993.jpg"
+            "53150-MLR-D00 HH_1.jpg",
+            "53150-MLR-D00 HH_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 9
     },
     {
         "name": "HONDA CBR500 OSŁONA BOCZNA BOK CZASZA PRAWA LEWA 2024 64380MLRD20ZA",
         "category": "CBR500R (2024-",
         "reference": "64380-MLR-D20ZA UU",
         "price": 659.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna koło reflektora\nlewa lub prawa do wyboru, cena  za sztukę.\nPo zakupie prosimy o określenie strony montażu.\nHONDA CBR 500 RR 2024\nSprzedajemy tylko i wyłącznie oryginalne produkty !\n64380-MLR-D20ZA L\n64280-MLR-D20ZA P",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna koło reflektora\nlewa lub prawa do wyboru, cena  za sztukę.\nPo zakupie prosimy o określenie strony montażu.\nHONDA CBR 500 RR 2024\nSprzedajemy tylko i wyłącznie oryginalne produkty !\n64380-MLR-D20ZA L\n64280-MLR-D20ZA P",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni.",
         "images": [
-            "64380-MLR-D20ZA UU_0_2503.jpg",
-            "64380-MLR-D20ZA UU_1_5219.jpg"
+            "64380-MLR-D20ZA UU_1.jpg",
+            "64380-MLR-D20ZA UU_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 1
     },
     {
         "name": "HONDA CBR500 OSŁONA BOCZNA BOK LEWA 64400MLRD20ZA",
         "category": "CBR500R (2024-",
         "reference": "64400-MLR-D20ZA UU",
         "price": 899.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna\nlewa cena  za sztukę.\nHONDA\nCBR 500RR 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna\nlewa cena  za sztukę.\nHONDA\nCBR 500RR 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 12 dni",
         "images": [
-            "64400-MLR-D20ZA UU_0_3808.jpg",
-            "64400-MLR-D20ZA UU_1_8119.jpg"
+            "64400-MLR-D20ZA UU_1.jpg",
+            "64400-MLR-D20ZA UU_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "HONDA CBR500 OSŁONA BOCZNA BOK LEWA PRAWA WYPEŁNIENIE 64351MLRD00ZB",
         "category": "CBR500R (2024-",
         "reference": "64351-MLR-D00ZB UU",
         "price": 749.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka boczna, wypełnienie boku\nlewa lub prawa strona, cena za sztukę\ngotowa do montażu\nHONDA CBR 500RR 2024\n64351-MLR-D00ZB L\n64251-MLR-D00ZB P",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka boczna, wypełnienie boku\nlewa lub prawa strona, cena za sztukę\ngotowa do montażu\nHONDA CBR 500RR 2024\n64351-MLR-D00ZB L\n64251-MLR-D00ZB P",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "64351-MLR-D00ZB UU_0_9287.jpg",
-            "64351-MLR-D00ZB UU_1_2285.jpg"
+            "64351-MLR-D00ZB UU_1.jpg",
+            "64351-MLR-D00ZB UU_2.jpg"
         ],
-        "quantity": 8,
-        "active": 0
+        "quantity": 0
     },
     {
         "name": "HONDA CBR500 OSŁONA BOCZNA BOK PRAWA 64300MLRD20ZA",
         "category": "CBR500R (2024-",
         "reference": "64300-MLR-D20ZA UU",
         "price": 1349.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna\nPRAWA strona ZDJĘCIE POGLĄDOWE\nlewa na innej aukcji\ncena  za sztukę.\nHONDA\nCBR 500RR 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia boczna\nPRAWA strona ZDJĘCIE POGLĄDOWE\nlewa na innej aukcji\ncena  za sztukę.\nHONDA\nCBR 500RR 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 12 dni",
         "images": [
-            "64300-MLR-D20ZA UU_0_7234.jpg",
-            "64300-MLR-D20ZA UU_1_5203.jpg"
+            "64300-MLR-D20ZA UU_1.jpg",
+            "64300-MLR-D20ZA UU_2.jpg"
         ],
-        "quantity": 10,
-        "active": 1
+        "quantity": 1
     },
     {
         "name": "HONDA CBR500 OSŁONA PRZEDNIA CZACHA 64230MLRD20ZA",
         "category": "CBR500R (2024-",
         "reference": "64230-MLR-D20ZA PP",
         "price": 910.08,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia nad reflektor\ngotowa do montażu.\nHONDA CBR 500RR 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia nad reflektor\ngotowa do montażu.\nHONDA CBR 500RR 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "64230-MLR-D20ZA PP_0_2346.jpg",
-            "64230-MLR-D20ZA PP_1_8222.jpg"
+            "64230-MLR-D20ZA PP_1.jpg",
+            "64230-MLR-D20ZA PP_2.jpg"
         ],
-        "quantity": 2,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "HONDA CBR500 OSŁONA PRZEDNIA CZACHA CZASZA PRAWA LEWA 64380MLRD00ZA",
         "category": "CBR500R (2024-",
         "reference": "64380-MLR-D00ZA UU",
         "price": 559.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia koło reflektora\nlewa lub prawa do wyboru, cena  za sztukę.\nPo zakupie prosimy o określenie strony montażu.\nHONDA CBR 500 RR 2024\n64380-MLR-D00ZA L\n64280-MLR-D00ZA P",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna owiewka przednia koło reflektora\nlewa lub prawa do wyboru, cena  za sztukę.\nPo zakupie prosimy o określenie strony montażu.\nHONDA CBR 500 RR 2024\n64380-MLR-D00ZA L\n64280-MLR-D00ZA P",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "64380-MLR-D00ZA UU_0_4144.jpg",
-            "64380-MLR-D00ZA UU_1_5502.jpg"
+            "64380-MLR-D00ZA UU_1.jpg",
+            "64380-MLR-D00ZA UU_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 1
     },
     {
         "name": "HONDA CBR500R STELAŻ WSPORNIK POD CZASZE LAMPĘ 64501MLRD00",
         "category": "CBR500R (2024-",
         "reference": "64501-MLR-D00 UU",
         "price": 549.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wspornik pod czachę i reflektor\nHONDA CBR 500R\npasuje do rocznika 2024-",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wspornik pod czachę i reflektor\nHONDA CBR 500R\npasuje do rocznika 2024-",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni.",
         "images": [
-            "64501-MLR-D00 UU_0_7962.jpg",
-            "64501-MLR-D00 UU_1_7832.jpg"
+            "64501-MLR-D00 UU_1.jpg",
+            "64501-MLR-D00 UU_2.jpg"
         ],
-        "quantity": 5,
-        "active": 0
+        "quantity": 0
     },
     {
         "name": "HONDA CBR500R WYPEŁNIENIE POD SZYBĘ PODSZYBIE OSŁONA 64271MLRD00",
         "category": "CBR500R (2024-",
         "reference": "64271-MLR-D00 PP",
         "price": 269.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona pod przednią szybę.\nwypełnienie czarne nielakierowane\nHONDA CBR 500R\npasuje do rocznika: 2024",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona pod przednią szybę.\nwypełnienie czarne nielakierowane\nHONDA CBR 500R\npasuje do rocznika: 2024",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni.",
         "images": [
-            "64271-MLR-D00 PP_0_2382.jpg",
-            "64271-MLR-D00 PP_1_6115.jpg"
+            "64271-MLR-D00 PP_1.jpg",
+            "64271-MLR-D00 PP_2.jpg"
         ],
-        "quantity": 4,
-        "active": 0
+        "quantity": 5
     },
     {
         "name": "KIERUNKOWSKAZ MIGACZ HONDA CBR500 CBR650 33400MLRD01",
         "category": "CBR500R (2024-",
         "reference": "33400-MLR-D01 HH",
         "price": 342.21,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny kierunek przedni\nprawy lub lewy , cena za sztukę\nCENA ZA SZTUKE\nHONDA\nCBR 500R 2024\nCBR 650R 2024\n33400-MLR-D01 P\n33450-MLR-D01 L",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny kierunek przedni\nprawy lub lewy , cena za sztukę\nCENA ZA SZTUKE\nHONDA\nCBR 500R 2024\nCBR 650R 2024\n33400-MLR-D01 P\n33450-MLR-D01 L",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "33400-MLR-D01 HH_0_1317.jpg",
-            "33400-MLR-D01 HH_1_5089.jpg"
+            "33400-MLR-D01 HH_1.jpg",
+            "33400-MLR-D01 HH_2.jpg"
         ],
-        "quantity": 5,
-        "active": 0
+        "quantity": 6
     },
     {
         "name": "KLOCKI HAMULCOWE PRZÓD HONDA CB750 HORNET CBR500R CB500F 06455-MKP-DN1",
         "category": "CBR500R (2024-",
         "reference": "06455-MKP-DN1 PPP",
         "price": 290.0,
-        "description": "Przedmiotem sprzedaży są:\nFabrycznie nowe, oryginalne klocki hamulcowe przednie.\nCena za komplet na jeden zacisk.\nPASUJĄ DO HONDY:\nCB 750 hornet\ncbr 500 2022-2025\nCB 500f 2022-2025",
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowe, oryginalne klocki hamulcowe przednie.\nCena za komplet na jeden zacisk.\nPASUJĄ DO HONDY:\nCB 750 hornet\ncbr 500 2022-2025\nCB 500f 2022-2025",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "06455-MKP-DN1 PPP_0_3647.jpg",
-            "06455-MKP-DN1 PPP_1_6625.jpg"
+            "06455-MKP-DN1 PPP_1.jpg",
+            "06455-MKP-DN1 PPP_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 9
     }
 ]

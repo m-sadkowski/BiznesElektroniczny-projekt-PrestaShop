@@ -4,839 +4,899 @@
         "category": "GL1500 VALKYRIE",
         "reference": "40201-MZ0-A00 UU",
         "price": 529.0,
-        "description": "Przedmiotem sprzedaży jest:\nfabrycznie nowy,\noryginalny wałek napędowy\npasują do\nHONDA GL 1500 VALKYRIE 1998-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nfabrycznie nowy,\noryginalny wałek napędowy\npasują do\nHONDA GL 1500 VALKYRIE\n1998-2003",
+        "description_full": "Sprzedajemy tylko i wyłącznie oryginalne produkty",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 15 dni",
         "images": [
-            "40201-MZ0-A00 UU_0_8924.jpg",
-            "40201-MZ0-A00 UU_1_1035.jpg"
+            "40201-MZ0-A00 UU_1.jpg",
+            "40201-MZ0-A00 UU_2.jpg"
         ],
-        "quantity": 5,
-        "active": 0
+        "quantity": 8
     },
     {
         "name": "BLOKADA KIEROWNICY HONDA 53600404611",
         "category": "GL1500 VALKYRIE",
         "reference": "53600-404-611 HH",
         "price": 244.54,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\nHONDA\npasuje do wielu modeli hondy:\nXR250 XR400 XR600 XR650\nGL 1500 VALKYRIE\nVF 750 MAGNA\nCA125 REBEL\nVTX 1300\nVTX 1800\nVT 1300C\nVT125\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA W CELU PRAWIDŁOWEGO DOBORU",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\nHONDA\npasuje do wielu modeli hondy:\nXR250 XR400 XR600 XR650\nGL 1500 VALKYRIE\nVF 750 MAGNA\nCA125 REBEL\nVTX 1300\nVTX 1800\nVT 1300C\nVT125\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA W CELU PRAWIDŁOWEGO DOBORU",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "53600-404-611 HH_0_7154.jpg",
-            "53600-404-611 HH_1_1818.jpg"
+            "53600-404-611 HH_1.jpg",
+            "53600-404-611 HH_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "BLOKADA KIEROWNICY HONDA VT1100 REBEL 125 CB250 53600086007",
         "category": "GL1500 VALKYRIE",
         "reference": "53600-086-007 HH",
         "price": 169.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\npasuje do hondy:\nCB250 NIGHAWK/TWO FIFTY\nCA 125 REBEL\nCMX 250 REBEL\nGL 1500 VALKYRIE\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA\nW CELU PRAWIDŁOWEGO DOBORU.",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\npasuje do hondy:\nCB250 NIGHAWK/TWO FIFTY\nCA 125 REBEL\nCMX 250 REBEL\nGL 1500 VALKYRI\nE\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA\nW CELU PRAWIDŁOWEGO DOBORU.",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni.",
         "images": [
-            "53600-086-007 HH_0_5619.jpg",
-            "53600-086-007 HH_1_1265.jpg"
+            "53600-086-007 HH_1.jpg",
+            "53600-086-007 HH_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "BLOKADA KIEROWNICY HONDA VTX1800 VT750 1100 GL1500 53600GCN003",
         "category": "GL1500 VALKYRIE",
         "reference": "53600-GCN-003 PP",
         "price": 186.84,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\nHONDA\npasuje do hondy:\nVTX 1800\nVT1100 SHADOW\nVT 750 SHADOW\nGL 1500 VALKYRIE\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA\nW CELU PRAWIDŁOWEGO DOBORU",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna blokada kierownicy\nw komplecie z dwoma kluczykami\nHONDA\npasuje do hondy:\nVTX 1800\nVT1100 SHADOW\nVT 750 SHADOW\nGL 1500 VALKYRIE\nPO ZAKUPIE PROSIMY O PODANIE ROCZNIKA MOTOCYKLA\nW CELU PRAWIDŁOWEGO DOBORU",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "53600-GCN-003 PP_0_1499.jpg",
-            "53600-GCN-003 PP_1_4099.jpg"
+            "53600-GCN-003 PP_1.jpg",
+            "53600-GCN-003 PP_2.jpg"
         ],
-        "quantity": 10,
-        "active": 0
+        "quantity": 7
     },
     {
         "name": "CB1100 VF750 GL ŚRUBA DO AMORTYZATORA 8X12 CHROM",
         "category": "GL1500 VALKYRIE",
         "reference": "90125-KR3-000 PP",
         "price": 22.9,
-        "description": "przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna śruba CHROM 8X12\nmocuje siedzenie,amortyzatory oraz inne elementy w motocyklu w zależności od modelu.\ncena za sztukę\npasuje do honda:\nVF 750 MAGNA\nCB 1100 2010-\nREBEL 250\nGL 1500 VALKYRIA\nvt 750 SHADOW\nVT 125 SHADOW",
+        "description_short": "przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna śruba CHROM 8X12\nmocuje siedzenie,amortyzatory oraz inne elementy w motocyklu w zależności od modelu.\ncena za sztukę\npasuje do honda:\nVF 750 MAGNA\nCB 1100 2010-\nREBEL 250\nGL 1500 VALKYRIA\nvt 750 SHADOW\nVT 125 SHADOW",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 5 dni",
         "images": [
-            "90125-KR3-000 PP_0_8472.jpg",
-            "90125-KR3-000 PP_1_6303.jpg"
+            "90125-KR3-000 PP_1.jpg",
+            "90125-KR3-000 PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 1
     },
     {
         "name": "FILTR OLEJU HONDA CBR CBF XL NT NC ST 15410MCJ505",
         "category": "GL1500 VALKYRIE",
         "reference": "15410-MCJ-505 PP",
         "price": 63.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny filtr oleju honda\npasuje do większości modeli z zewnętrznym filtrem oleju.",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny filtr oleju honda\npasuje do\nwiększości modeli z zewnętrznym filtrem oleju.",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "15410-MCJ-505 PP_0_3799.jpg",
-            "15410-MCJ-505 PP_1_3259.jpg"
+            "15410-MCJ-505 PP_1.jpg",
+            "15410-MCJ-505 PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "FILTR OLEJU Z KLUCZEM HONDA CBR CBF XL VT VFR NC",
         "category": "GL1500 VALKYRIE",
         "reference": "15010-MCE-H51 PP",
         "price": 67.5,
-        "description": "",
+        "description_short": "",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "15010-MCE-H51 PP_0_9842.jpg",
-            "15010-MCE-H51 PP_1_5828.jpg"
+            "15010-MCE-H51 PP_1.jpg",
+            "15010-MCE-H51 PP_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 8
     },
     {
         "name": "FILTR POWIETRZA ORYGINALNY HONDA GL1500 VALKYRIE",
         "category": "GL1500 VALKYRIE",
         "reference": "17210-MZ0-000 UU",
         "price": 195.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wkład filtra powietrza\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wkład filtra powietrza\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 1 do 2 dni",
         "images": [
-            "17210-MZ0-000 UU_0_3475.jpg",
-            "17210-MZ0-000 UU_1_2035.jpg"
+            "17210-MZ0-000 UU_1.jpg",
+            "17210-MZ0-000 UU_2.jpg"
         ],
-        "quantity": 3,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "GUMY ZABIERAKA HONDA GL1500 VT1100 VT750 06410MBH000",
         "category": "GL1500 VALKYRIE",
         "reference": "06410-MBH-000 UU",
         "price": 350.0,
-        "description": "Przedmiotem sprzedaży są:\nfabrycznie nowe, oryginalne gumy zabieraka\n(amortyzacja tylnego koła komplet)\npasują do\nGL1500 VALKYRIE\nVT1100 SHADOW\nVT750 SHADOW",
+        "description_short": "Przedmiotem sprzedaży są:\nfabrycznie nowe, oryginalne gumy zabieraka\n(amortyzacja tylnego koła komplet)\npasują do\nGL1500 VALKYRIE\nVT1100 SHADOW\nVT750 SHADOW",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "06410-MBH-000 UU_0_5530.jpg",
-            "06410-MBH-000 UU_1_4247.jpg"
+            "06410-MBH-000 UU_1.jpg",
+            "06410-MBH-000 UU_2.jpg"
         ],
-        "quantity": 6,
-        "active": 1
+        "quantity": 8
     },
     {
         "name": "HONDA CB900 GL1500 OSŁONA GUMOWA ŻARÓWKI REFLEKTOR 33112MZ0671",
         "category": "GL1500 VALKYRIE",
         "reference": "33112-MZ0-671 HH",
         "price": 48.18,
-        "description": "Przedmiotem sprzedaży jest:\nfabrycznie nowa, oryginalna osłona żarówki przedniego reflektora\n(gumowa osłonka z tyłu reflektora)\npasuje do Honda :\nCB1100 2010-2018\nCB1300 2003-2010\nCB900 HORNET 2002-2007\nGL1500 VALKYRIE 1997-2003\nVT1100 SHADOW 1998-2002",
+        "description_short": "Przedmiotem sprzedaży jest:\nfabrycznie nowa, oryginalna osłona żarówki przedniego reflektora\n(gumowa osłonka z tyłu reflektora)\npasuje do Honda :\nCB1100 2010-2018\nCB1300 2003-2010\nCB900 HORNET 2002-2007\nGL1500 VALKYRIE 1997-2003\nVT1100 SHADOW 1998-2002",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 12 dni",
         "images": [
-            "33112-MZ0-671 HH_0_6168.jpg",
-            "33112-MZ0-671 HH_1_7175.jpg"
+            "33112-MZ0-671 HH_1.jpg",
+            "33112-MZ0-671 HH_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "HONDA CBR1000F CB500 CBR600F2 GL1500 MEMBRANA KRANIKA 16953MBZB51",
         "category": "GL1500 VALKYRIE",
         "reference": "16953-MBZ-B51 PP",
         "price": 289.3,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna membrana kranika paliwowego wraz z obudową kompletną.",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna membrana kranika paliwowego wraz z obudową kompletną.",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "16953-MBZ-B51 PP_0_1001.jpg",
-            "16953-MBZ-B51 PP_1_2540.jpg"
+            "16953-MBZ-B51 PP_1.jpg",
+            "16953-MBZ-B51 PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "HONDA GL 1200 GL1 500 ST 1100 CBR 1000F TERMOSTAT WKŁAD 19300MG9000",
         "category": "GL1500 VALKYRIE",
         "reference": "19300-MG9-000 UU",
         "price": 379.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny TERMOSTAT\nposiadamy w ofercie również inne części silnikowe do tych modelu\nHONDA GL 1200 GOLDWING\nHONDA GL 1500 VALKYRIE\nHONDA CBR 1100XX 1997 ROK\nST 1100\nCBR 1000F",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny TERMOSTAT\nposiadamy w ofercie również inne części silnikowe do tych modelu\nHONDA GL 1200 GOLDWING\nHONDA GL 1500 VALKYRIE\nHONDA CBR 1100XX 1997 ROK\nST 1100\nCBR 1000F",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "19300-MG9-000 UU_0_6690.jpg",
-            "19300-MG9-000 UU_1_6834.jpg"
+            "19300-MG9-000 UU_1.jpg",
+            "19300-MG9-000 UU_2.jpg"
         ],
-        "quantity": 2,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "HONDA GL1500 GL1200 VALKYRIE NEW NAPINACZ ROZRZĄDU 14510MG9008",
         "category": "GL1500 VALKYRIE",
         "reference": "14510-MG9-008 PP",
         "price": 705.16,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny napinacz paska rozrządu, rolka\nHONDA GL1500 VALKYRIE,GOLDWING\nHONDA GL1200 GOLDWING\npasuje do rocznika 1988-2001",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny napinacz paska rozrządu, rolka\nHONDA GL1500 VALKYRIE,GOLDWING\nHONDA GL1200 GOLDWING\npasuje do rocznika 1988-2001",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 1 do 2 dni",
         "images": [
-            "14510-MG9-008 PP_0_5629.jpg",
-            "14510-MG9-008 PP_1_7003.jpg"
+            "14510-MG9-008 PP_1.jpg",
+            "14510-MG9-008 PP_2.jpg"
         ],
-        "quantity": 2,
-        "active": 1
+        "quantity": 7
     },
     {
         "name": "HONDA GL1500 GOLDWING KRZYŻAK WAŁU ŁĄCZNIK PRZEGUB",
         "category": "GL1500 VALKYRIE",
         "reference": "40200-MZ0-A00 UU",
         "price": 1449.0,
-        "description": "Przedmiotem sprzedaży są:\nfabrycznie nowy oryginalny krzyżak wału napędowego\npasują do\nGL1500 GOLDWING 1990-2000\nGL1500 VALKYRIE 1990-2000",
+        "description_short": "Przedmiotem sprzedaży są:\nfabrycznie nowy oryginalny krzyżak wału napędowego\npasują do\nGL1500 GOLDWING 1990-2000\nGL1500 VALKYRIE 1990-2000",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "40200-MZ0-A00 UU_0_9567.jpg",
-            "40200-MZ0-A00 UU_1_5690.jpg"
+            "40200-MZ0-A00 UU_1.jpg",
+            "40200-MZ0-A00 UU_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "HONDA GL1500 GOLDWING USZCZELKA POKRYWY SPRZĘGŁA 11351MN5651",
         "category": "GL1500 VALKYRIE",
         "reference": "11351-MN5-651 HH",
         "price": 129.2,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna uszczelka pod pokrywę sprzęgła\npasuje do hondy:\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna uszczelka pod pokrywę sprzęgła\npasuje do hondy:\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "11351-MN5-651 HH_0_4704.jpg",
-            "11351-MN5-651 HH_1_3610.jpg"
+            "11351-MN5-651 HH_1.jpg",
+            "11351-MN5-651 HH_2.jpg"
         ],
-        "quantity": 2,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "HONDA GL1500 GOLDWING USZCZELKA POMPY WODNEJ 19226MN5000",
         "category": "GL1500 VALKYRIE",
         "reference": "19226-MN5-000 HH",
         "price": 29.66,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna uszczelka pompy wody\npasuje do hondy:\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna uszczelka pompy wody\npasuje do hondy:\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "19226-MN5-000 HH_0_1203.jpg",
-            "19226-MN5-000 HH_1_6396.jpg"
+            "19226-MN5-000 HH_1.jpg",
+            "19226-MN5-000 HH_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 8
     },
     {
         "name": "HONDA GL1500 NT650 NT700 GUMY ZABIERAKA 06410MZ0A00",
         "category": "GL1500 VALKYRIE",
         "reference": "06410-MZ0-A00 UU",
         "price": 359.0,
-        "description": "Przedmiotem sprzedaży są:\nfabrycznie nowe, oryginalne gumy zabieraka\n(amortyzacja tylnego koła komplet)\npasują do:\nGL 1500 GOLDWING 1996-2000\nGL 1500 VALKYRIE 1997-1998\nNT 650V 1998-2002\nNT 700V 2006-2011",
+        "description_short": "Przedmiotem sprzedaży są:\nfabrycznie nowe, oryginalne gumy zabieraka\n(amortyzacja tylnego koła komplet)\npasują do:\nGL 1500 GOLDWING 1996-2000\nGL 1500 VALKYRIE 1997-1998\nNT 650V 1998-2002\nNT 700V 2006-2011",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "06410-MZ0-A00 UU_0_4074.jpg",
-            "06410-MZ0-A00 UU_1_9776.jpg"
+            "06410-MZ0-A00 UU_1.jpg",
+            "06410-MZ0-A00 UU_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 9
     },
     {
         "name": "HONDA GL1500 OSŁONA RAMKA LAMPY OBRĘCZ REFLEKTORA",
         "category": "GL1500 VALKYRIE",
         "reference": "33101-MZ0-671 UU",
         "price": 699.0,
-        "description": "Przedmiotem sprzedaży jest:\nfabrycznie nowa, oryginalna obudowa przedniego reflektora\n(obręcz chromowana z przodu lampy)\npasuje do :\nHONDA GL 1500 VALKYRIE 199-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nfabrycznie nowa, oryginalna obudowa przedniego reflektora\n(obręcz chromowana z przodu lampy)\npasuje do :\nHONDA GL 1500 VALKYRIE 199-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 12 do 15 dni",
         "images": [
-            "33101-MZ0-671 UU_0_5275.jpg",
-            "33101-MZ0-671 UU_1_9593.jpg"
+            "33101-MZ0-671 UU_1.jpg",
+            "33101-MZ0-671 UU_2.jpg"
         ],
-        "quantity": 9,
-        "active": 0
+        "quantity": 9
     },
     {
         "name": "HONDA GL1500 ST1100 GL1800 TULEJA DYFRA DYFER ATAK 41410MN5000",
         "category": "GL1500 VALKYRIE",
         "reference": "41410-MN5-000 UU",
         "price": 439.0,
-        "description": "Przedmiotem sprzedaży są:\nfabrycznie nowy oryginalne\nZŁĄCZE, WAŁEK ZĘBATY WAŁKA ATAKUJĄCEGO.\nTULEJA WAŁKA ATAKUJĄCEGO\npasują do\nGL1500 GOLDWING 1988-2000\nGL 1800 GOLDWING 200-2017\nGL1500 VALKYRIE 1990-2000\nST1100 PANEUROPEAN 1991-2002",
+        "description_short": "Przedmiotem sprzedaży są:\nfabrycznie nowy oryginalne\nZŁĄCZE, WAŁEK ZĘBATY WAŁKA ATAKUJĄCEGO.\nTULEJA WAŁKA ATAKUJĄCEGO\npasują do\nGL1500 GOLDWING 1988-2000\nGL 1800 GOLDWING 200-2017\nGL1500 VALKYRIE 1990-2000\nST1100 PANEUROPEAN 1991-2002",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "41410-MN5-000 UU_0_9784.jpg",
-            "41410-MN5-000 UU_1_8335.jpg"
+            "41410-MN5-000 UU_1.jpg",
+            "41410-MN5-000 UU_2.jpg"
         ],
-        "quantity": 2,
-        "active": 0
+        "quantity": 2
     },
     {
         "name": "HONDA GL1500 VALKYRIE GOLD WING SPRĘŻYNA NAPINACZA 14516MN5000",
         "category": "GL1500 VALKYRIE",
         "reference": "14516-MN5-000 HH",
         "price": 23.22,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna sprężynka do napinacz paska rozrządu.\nHONDA GL1500 VALKYRIE, GOLDWING\npasuje do rocznika 1988-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna sprężynka do napinacz paska rozrządu.\nHONDA GL1500 VALKYRIE, GOLDWING\npasuje do rocznika 1988-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "14516-MN5-000 HH_0_8696.jpg",
-            "14516-MN5-000 HH_1_7967.jpg"
+            "14516-MN5-000 HH_1.jpg",
+            "14516-MN5-000 HH_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "HONDA GL1500 VALKYRIE PASEK ROZRZĄDU 14401MN5004",
         "category": "GL1500 VALKYRIE",
         "reference": "14401-MN5-004 PP",
         "price": 409.84,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny pasek rozrządu\nHONDA GL1500 VALKYRIE\npasuje do rocznika 1988-2001",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny pasek rozrządu\nHONDA GL1500 VALKYRIE\npasuje do rocznika 1988-2001",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "14401-MN5-004 PP_0_2110.jpg",
-            "14401-MN5-004 PP_1_8482.jpg"
+            "14401-MN5-004 PP_1.jpg",
+            "14401-MN5-004 PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 7
     },
     {
         "name": "HONDA GL1500 VALKYRIE TARCZA HAMULCOWA TYLNA 43251MBY671",
         "category": "GL1500 VALKYRIE",
         "reference": "43251-MBY-671 HH",
         "price": 1068.36,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna tarcza hamulcowa tylna\nHONDA\nGL 1500 VALKYRIE 2000-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna tarcza hamulcowa tylna\nHONDA\nGL 1500 VALKYRIE 2000-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "43251-MBY-671 HH_0_6618.jpg",
-            "43251-MBY-671 HH_1_5245.jpg"
+            "43251-MBY-671 HH_1.jpg",
+            "43251-MBY-671 HH_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "HONDA GL1500 VALKYRIE VTX1800 VT1100 PODNÓŻEK PASAŻERA STOPKA 50712MM8000",
         "category": "GL1500 VALKYRIE",
         "reference": "50712-MM8-000 PP",
         "price": 186.84,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny podnóżek pasażera\nELEMENT CHROMOWANY\nlewy bądź prawy do wyboru, cena za sztukę\nPo zakupie prosimy o określenie strony montażu.\npasuje do honda\nVTX1800C 2002-2004\nVT 1100 Shadow 1988-2001\nGL 1500 VALKYRIE WSZYSTKIE ROCZNIKI\n50712-MM8-000 L\n50711-MM8-000 P",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny podnóżek pasażera\nELEMENT CHROMOWANY\nlewy bądź prawy do wyboru, cena za sztukę\nPo zakupie prosimy o określenie strony montażu.\npasuje do honda\nVTX1800C 2002-2004\nVT 1100 Shadow 1988-2001\nGL 1500 VALKYRIE WSZYSTKIE ROCZNIKI\n50712-MM8-000 L\n50711-MM8-000 P",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "50712-MM8-000 PP_0_7103.jpg",
-            "50712-MM8-000 PP_1_7082.jpg"
+            "50712-MM8-000 PP_1.jpg",
+            "50712-MM8-000 PP_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 0
     },
     {
         "name": "HONDA GL1500 VT1100 VT750 REFLEKTOR LAMPA PRZÓD",
         "category": "GL1500 VALKYRIE",
         "reference": "33120-MAH-611 HH",
         "price": 2181.69,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna lampa przednia.odbłyśnik wraz ze szkłem\nramka i tylna obudowa sa sprzedawane osobno\nHONDA\ngl 1500 valkyrie 1997-2003\nvt 1100 shadow 1995-2002\nvt 750 shadow aero 1997-2001",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna lampa przednia.odbłyśnik wraz ze szkłem\nramka i tylna obudowa sa sprzedawane osobno\nHONDA\ngl 1500 valkyrie 1997-2003\nvt 1100 shadow 1995-2002\nvt 750 shadow aero 1997-2001",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "33120-MAH-611 HH_0_8592.jpg",
-            "33120-MAH-611 HH_1_6420.jpg"
+            "33120-MAH-611 HH_1.jpg",
+            "33120-MAH-611 HH_2.jpg"
         ],
-        "quantity": 0,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "HONDA GL1500 VT1100 ZAŚLEPKA WAHACZA KOREK KAPSEL 90312MB0700",
         "category": "GL1500 VALKYRIE",
         "reference": "90312-MB0-700 HH",
         "price": 84.65,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny kapsel chromowany\nmontowany w wahacz tylny, cena za sztukę\npasuje do:\nHONDA\nGL1500 valkyrie\nVT1100 shadow",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny kapsel chromowany\nmontowany w wahacz tylny, cena za sztukę\npasuje do:\nHONDA\nGL1500 valkyrie\nVT1100 shadow",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "90312-MB0-700 HH_0_4065.jpg",
-            "90312-MB0-700 HH_1_2288.jpg"
+            "90312-MB0-700 HH_1.jpg",
+            "90312-MB0-700 HH_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "HONDA GOLD WING GL1500 ST1100 PIASTA TYLNEGO KOŁA",
         "category": "GL1500 VALKYRIE",
         "reference": "42630-MT8-305 HH",
         "price": 1442.01,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna piasta tylnego koła\nPasuje do:\nHONDA GL1500 GOLDWING / VALKYRIE 1995-2003\nHONDA ST1100 PAN EUROPEAN 1995-2001",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna piasta tylnego koła\nPasuje do:\nHONDA GL1500 GOLDWING / VALKYRIE 1995-2003\nHONDA ST1100 PAN EUROPEAN 1995-2001",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "42630-MT8-305 HH_0_4478.jpg",
-            "42630-MT8-305 HH_1_9958.jpg"
+            "42630-MT8-305 HH_1.jpg",
+            "42630-MT8-305 HH_2.jpg"
         ],
-        "quantity": 5,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "HONDA KOREK DYFRA WLEWU OLEJU 12361035000",
         "category": "GL1500 VALKYRIE",
         "reference": "12361-035-000 PP",
         "price": 26.52,
-        "description": "Przedmiotem sprzedaży są:\nFabrycznie nowy oryginalny korek aluminiowy do dyfra, wlew oleju do dyfra\nczęsto ulega uszkodzeniu przy zakręcaniu.\noring sprzedawany osobno\nPASUJE DO WIEKSZOŚCI QUADÓW HONDY",
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowy oryginalny korek aluminiowy do dyfra, wlew oleju do dyfra\nczęsto ulega uszkodzeniu przy zakręcaniu.\noring sprzedawany osobno\nPASUJE DO WIEKSZOŚCI QUADÓW HONDY",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "12361-035-000 PP_0_9801.jpg",
-            "12361-035-000 PP_1_6728.jpg"
+            "12361-035-000 PP_1.jpg",
+            "12361-035-000 PP_2.jpg"
         ],
-        "quantity": 10,
-        "active": 1
+        "quantity": 9
     },
     {
         "name": "HONDA MANETKA KOŃCÓWKA CHROM 53167MM8000",
         "category": "GL1500 VALKYRIE",
         "reference": "53167-MM8-000 UU",
         "price": 73.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna końcówka chromowana manetki,\nkapsel pasuje do oryginalnych manetek honda.\npasuje do:\nHONDA GL1500 VALKYRIE\nHONDA GL1800 GOLDWING\nHONDA VT1100 SHADOW\nHONDA VT600 SHADOW\nHONDA VF750 MAGNA\nHONDA VT750 SHADOW\nHONDA VT1300 CX\nHONDA VTX 1300\nHONDA VTX 1800",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna końcówka chromowana manetki,\nkapsel pasuje do oryginalnych manetek honda.\npasuje do:\nHONDA GL1500 VALKYRIE\nHONDA GL1800 GOLDWING\nHONDA VT1100 SHADOW\nHONDA VT600 SHADOW\nHONDA VF750 MAGNA\nHONDA VT750 SHADOW\nHONDA VT1300 CX\nHONDA VTX 1300\nHONDA VTX 1800",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "53167-MM8-000 UU_0_8113.jpg",
-            "53167-MM8-000 UU_1_4829.jpg"
+            "53167-MM8-000 UU_1.jpg",
+            "53167-MM8-000 UU_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "HONDA NAKLEJKA HISS NA ZBIORNIK 17528MATD70",
         "category": "GL1500 VALKYRIE",
         "reference": "17528-MAT-D70 HH",
         "price": 48.32,
-        "description": "Przedmiotem sprzedaży są:\nFabrycznie nowa, oryginalna naklejka na zbiornik paliwa\npasuje do praktycznie wszystkich modeli honda\nlewa",
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowa, oryginalna naklejka na zbiornik paliwa\npasuje do praktycznie wszystkich modeli honda\nlewa",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "17528-MAT-D70 HH_0_1217.jpg",
-            "17528-MAT-D70 HH_1_6106.jpg"
+            "17528-MAT-D70 HH_1.jpg",
+            "17528-MAT-D70 HH_2.jpg"
         ],
-        "quantity": 4,
-        "active": 1
+        "quantity": 9
     },
     {
         "name": "HONDA TULEJA AMORTYZATORA GL1500 VT110 VT125 CB250 52486463000",
         "category": "GL1500 VALKYRIE",
         "reference": "52486-463-000 PP",
         "price": 40.98,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna\nmetalowa tuleja amortyzatora, simerblok\npasuje do:\nCB 250 1994-2004\nGL 1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 1987-2005\nVT 125 SHADOW 1999-2006",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna\nmetalowa tuleja amortyzatora, simerblok\npasuje do:\nCB 250 1994-2004\nGL 1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 1987-2005\nVT 125 SHADOW 1999-2006",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "52486-463-000 PP_0_8122.jpg",
-            "52486-463-000 PP_1_8642.jpg"
+            "52486-463-000 PP_1.jpg",
+            "52486-463-000 PP_2.jpg"
         ],
-        "quantity": 3,
-        "active": 0
+        "quantity": 3
     },
     {
         "name": "HONDA TULEJA GUMOWA GUMA AMORTYZATORA 52489MW3305",
         "category": "GL1500 VALKYRIE",
         "reference": "52489-MW3-305 HH",
         "price": 25.62,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna\nguma do mocowania amortyzatora, simerblok\npasuje do:\nVTX1300\nVT750\nVTX1800\nGL1500 VALKYRIE",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna\nguma do mocowania amortyzatora, simerblok\npasuje do:\nVTX1300\nVT750\nVTX1800\nGL1500 VALKYRIE",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "52489-MW3-305 HH_0_3669.jpg",
-            "52489-MW3-305 HH_1_7062.jpg"
+            "52489-MW3-305 HH_1.jpg",
+            "52489-MW3-305 HH_2.jpg"
         ],
-        "quantity": 3,
-        "active": 1
+        "quantity": 0
     },
     {
         "name": "HONDA UCHWYT KLAMKI POMPY HAMULCA 45517MR1671",
         "category": "GL1500 VALKYRIE",
         "reference": "45517-MR1-671 HH",
         "price": 120.23,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny uchwyt, mocowanie pompy hamulcowej oraz uchwytu lusterka.\nPrawa i lewa strona jest taka sama, cena za sztukę\nPASUJE DO:\nGL1500 VALKYRIE\nVT 750 MAGNA\nVF 750\nVT 1100\nVT 1300\nVTX 1300\nVTX1800\nPo zakupie prosimy o wysłanie numeru vin motocykla",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny uchwyt, mocowanie pompy hamulcowej oraz uchwytu lusterka.\nPrawa i lewa strona jest taka sama, cena za sztukę\nPASUJE DO:\nGL1500 VALKYRIE\nVT 750 MAGNA\nVF 750\nVT 1100\nVT 1300\nVTX 1300\nVTX1800\nPo zakupie prosimy o wysłanie numeru vin motocykla",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "45517-MR1-671 HH_0_9225.jpg",
-            "45517-MR1-671 HH_1_2929.jpg"
+            "45517-MR1-671 HH_1.jpg",
+            "45517-MR1-671 HH_2.jpg"
         ],
-        "quantity": 10,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "HONDA USZCZELNIACZ PRZEDNIEGO KOŁA 28X42X8 91257MAY003",
         "category": "GL1500 VALKYRIE",
         "reference": "91257-MAY-003 PPP",
         "price": 52.95,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny uszczelniacz przedniego koła ,\npasuje do wielu modeli Hondy\n28X42X8\nkompatybilne numery oem:\n91257-KA3-712\n91257-MZ0-890\n91257-MAY-003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny uszczelniacz przedniego koła ,\npasuje do wielu modeli Hondy\n28X42X8\nkompatybilne numery oem:\n91257-KA3-712\n91257-MZ0-890\n91257-MAY-003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "91257-MAY-003 PPP_0_1196.jpg",
-            "91257-MAY-003 PPP_1_1043.jpg"
+            "91257-MAY-003 PPP_1.jpg",
+            "91257-MAY-003 PPP_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "HONDA VT1100 SH300 ŁOŻYSKO PRZEDNIEGO KOŁA 6204",
         "category": "GL1500 VALKYRIE",
         "reference": "91052-MBR-003 PPP",
         "price": 86.1,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła przód\nCBR 600F /F4 1999-2007\nGL 1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 2000-2005\nSH 300 2011-2014\n1 SZTUKA\nprodukt oem honda",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła przód\nCBR 600F /F4 1999-2007\nGL 1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 2000-2005\nSH 300 2011-2014\n1 SZTUKA\nprodukt oem honda",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 1 do 2 dni",
         "images": [
-            "91052-MBR-003 PPP_0_2888.jpg",
-            "91052-MBR-003 PPP_1_7770.jpg"
+            "91052-MBR-003 PPP_1.jpg",
+            "91052-MBR-003 PPP_2.jpg"
         ],
-        "quantity": 5,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "HONDA VT600 SHADOW GL1500 VALKYRIE KLUCZ DO ŚWIEC 89216MR1000",
         "category": "GL1500 VALKYRIE",
         "reference": "89216-MR1-000 HH",
         "price": 105.94,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny klucz do świec produkcji Hondy.\nUmożliwia wykręcenie trudno dostępnych świec w modelach:\nVT600 / VLX600 SHADOW wszystkie roczniki\nGL1500 GOLDWING/VALKYRIE 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny klucz do świec produkcji Hondy.\nUmożliwia wykręcenie trudno dostępnych świec w modelach:\nVT600 / VLX600 SHADOW wszystkie roczniki\nGL1500 GOLDWING/VALKYRIE 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "89216-MR1-000 HH_0_8526.jpg",
-            "89216-MR1-000 HH_1_8656.jpg"
+            "89216-MR1-000 HH_1.jpg",
+            "89216-MR1-000 HH_2.jpg"
         ],
-        "quantity": 4,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "HONDA VTX1300 VTX1800 GL1500 OBUDOWA OSŁONA STACYJKI 35110MR1000",
         "category": "GL1500 VALKYRIE",
         "reference": "35110-MR1-000 HH",
         "price": 188.33,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona stacyjki\nObudowa kluczyka chromowana",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona stacyjki\nObudowa kluczyka chromowana",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni.",
         "images": [
-            "35110-MR1-000 HH_0_4072.jpg",
-            "35110-MR1-000 HH_1_2841.jpg"
+            "35110-MR1-000 HH_1.jpg",
+            "35110-MR1-000 HH_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "HONDA ŁOŻYSKO PRZEDNIEGO TYLNEGO KOŁA 6204UU 91052MAE004",
         "category": "GL1500 VALKYRIE",
         "reference": "91052-MAE-004 PPP",
         "price": 143.36,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła przedniego lub tylnego w zależności do którego modelu Hondy, 6204UU\nprodukt oem honda\npasuje do honda:\nCBR 600 , VT 750 , VFR 800 , NSA 700 , VF 750 , NT 650 , XL 1000 , VTR 1000 , GL 1500 , CB 1300 , CB 600 , CBF 500 , VT 1100 , CBF 600 , CBR 900 , ST 1100 , CB 900 , CBF 1000 , NT 700 , ST 1300 , VFR 1200",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła przedniego lub tylnego w zależności do którego modelu Hondy, 6204UU\nprodukt oem honda\npasuje do honda:\nCBR 600 , VT 750 , VFR 800 , NSA 700 , VF 750 , NT 650 , XL 1000 , VTR 1000 , GL 1500 , CB 1300 , CB 600 , CBF 500 , VT 1100 , CBF 600 , CBR 900 , ST 1100 , CB 900 , CBF 1000 , NT 700 , ST 1300 , VFR 1200",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "91052-MAE-004 PPP_0_6057.jpg",
-            "91052-MAE-004 PPP_1_7403.jpg"
+            "91052-MAE-004 PPP_1.jpg",
+            "91052-MAE-004 PPP_2.jpg"
         ],
-        "quantity": 3,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "HONDA ŁOŻYSKO TYLNEGO KOŁA 20X47X20.6 91053MN5003",
         "category": "GL1500 VALKYRIE",
         "reference": "91053-MN5-003 PP",
         "price": 132.59,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła  tylnego\n20X47X20.6\nprodukt oem honda\npasuje do honda:\nVT 750 , VTX 1300 , NT 650 , GL 1500 , VT 1100 , ST 1100 , VTX 1800 , CR 250 , NT 700 , ST 1300",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne łożysko koła  tylnego\n20X47X20.6\nprodukt oem honda\npasuje do honda:\nVT 750 , VTX 1300 , NT 650 , GL 1500 , VT 1100 , ST 1100 , VTX 1800 , CR 250 , NT 700 , ST 1300",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "91053-MN5-003 PP_0_6023.jpg",
-            "91053-MN5-003 PP_1_7580.jpg"
+            "91053-MN5-003 PP_1.jpg",
+            "91053-MN5-003 PP_2.jpg"
         ],
-        "quantity": 5,
-        "active": 1
+        "quantity": 1
     },
     {
         "name": "KLEJ DO MANETEK HONDA 08CRD-HGC-23GHO",
         "category": "GL1500 VALKYRIE",
         "reference": "08CRD-HGC-23GHO PP",
         "price": 92.94,
-        "description": "Przedmiotem sprzedaży są:\nFabrycznie nowy, oryginalny klej do manetek Honda",
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowy, oryginalny klej do manetek Honda",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "08CRD-HGC-23GHO PP_0_3679.jpg",
-            "08CRD-HGC-23GHO PP_1_5584.jpg"
+            "08CRD-HGC-23GHO PP_1.jpg",
+            "08CRD-HGC-23GHO PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "KLOCKI HAMULCOWE TYLNE HONDA GL1500 VALKYRIE 06435MZ0006",
         "category": "GL1500 VALKYRIE",
         "reference": "06435-MZ0-006 PP",
         "price": 289.3,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne klocki hamulcowe tylne.\ncena kup teraz za komplet.\nPASUJĄ DO\nHONDA GL1500 VALKYRIE\n1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne klocki hamulcowe tylne.\ncena kup teraz za komplet.\nPASUJĄ DO\nHONDA GL1500 VALKYRIE\n1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "06435-MZ0-006 PP_0_8999.jpg",
-            "06435-MZ0-006 PP_1_8056.jpg"
+            "06435-MZ0-006 PP_1.jpg",
+            "06435-MZ0-006 PP_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "KLUCZ DO FILTRA OLEJU NASADKA HONDA CBR CBF XL",
         "category": "GL1500 VALKYRIE",
         "reference": "15410-MCJ-505 PP",
         "price": 67.5,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna nasadka filtra olejowego\n65mm 14-kątny\nPasuje do filtrów HF204 HF303 HF156 HF196 stosowanych w motocyklach Benelli, Honda, Kawasaki, Yamaha, Triumph\npasuje do oryginalnego filtra hondy 15410-MCJ-505\npasuje do 99 procent modeli hondy z zewnętrznym filtrem oleju.",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalna nasadka filtra olejowego\n65mm 14-kątny\nPasuje do filtrów HF204 HF303 HF156 HF196 stosowanych w motocyklach Benelli, Honda, Kawasaki, Yamaha, Triumph\npasuje do oryginalnego filtra hondy 15410-MCJ-505\npasuje do 99 procent modeli hondy z zewnętrznym filtrem oleju.",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "15410-MCJ-505 PP_0_1624.jpg",
-            "15410-MCJ-505 PP_1_2734.jpg"
+            "15410-MCJ-505 PP_1.jpg",
+            "15410-MCJ-505 PP_2.jpg"
         ],
-        "quantity": 4,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "KOŁO PASOWE PASKA ROZRZĄDU HONDA GL1500 GOLDWING 14210MN5000",
         "category": "GL1500 VALKYRIE",
         "reference": "14210-MN5-000 HH",
         "price": 500.55,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne koło pasowe paska rozrządu.\nPasuje do\nHONDA\nGL 1500 GOLDWING 1988-2000\nGL 1500 VALKYRIE 1997-2001",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalne koło pasowe paska rozrządu.\nPasuje do\nHONDA\nGL 1500 GOLDWING 1988-2000\nGL 1500 VALKYRIE 1997-2001",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "14210-MN5-000 HH_0_1974.jpg",
-            "14210-MN5-000 HH_1_5599.jpg"
+            "14210-MN5-000 HH_1.jpg",
+            "14210-MN5-000 HH_2.jpg"
         ],
-        "quantity": 6,
-        "active": 1
+        "quantity": 4
     },
     {
         "name": "KRÓCIEC GAŹNIKA IZOLATOR HONDA GL1500 VALKYRIE 16211MZ0000",
         "category": "GL1500 VALKYRIE",
         "reference": "16211-MZ0-000 PP",
         "price": 150.68,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny króciec między gaźnik a cylinder\nCena za sztukę.\nHONDA GL1500 VALKYRIE\npasuje do rocznika 1983-1985",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny króciec między gaźnik a cylinder\nCena za sztukę.\nHONDA GL1500 VALKYRIE\npasuje do rocznika\n1983-1985",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "16211-MZ0-000 PP_0_4836.jpg",
-            "16211-MZ0-000 PP_1_9912.jpg"
+            "16211-MZ0-000 PP_1.jpg",
+            "16211-MZ0-000 PP_2.jpg"
         ],
-        "quantity": 9,
-        "active": 1
+        "quantity": 0
     },
     {
         "name": "MANETKA LEWA GUMA HONDA GL1500 VF750 MAGNA VT1100 53166KCR000",
         "category": "GL1500 VALKYRIE",
         "reference": "53166-KCR-000 UU",
         "price": 269.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna manetka lewa kompletna\npasuje do honda,PO ZAKUPIE PROSIMY O WYSŁANIE NUMERU VIN MOTOCYKLA!\nVF 750 MAGNA 1996-2002\nVT 1100 SHADOW 1995-2005\nGL 1500 VALKYRIE 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna manetka lewa kompletna\npasuje do honda,PO ZAKUPIE PROSIMY O WYSŁANIE NUMERU VIN MOTOCYKLA!\nVF 750 MAGNA 1996-2002\nVT 1100 SHADOW 1995-2005\nGL 1500 VALKYRIE 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "53166-KCR-000 UU_0_8232.jpg",
-            "53166-KCR-000 UU_1_8243.jpg"
+            "53166-KCR-000 UU_1.jpg",
+            "53166-KCR-000 UU_2.jpg"
         ],
-        "quantity": 6,
-        "active": 1
+        "quantity": 8
     },
     {
         "name": "NAKRĘTKA SPRZĘGŁA 22MM HONDA GL1500 GL1800 GOLDWING 90206MZ0000",
         "category": "GL1500 VALKYRIE",
         "reference": "90206-MZ0-000 PP",
         "price": 38.57,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna nakrętka sześciokątna sprzęgła 22 mm\npasuje do honda :\nGL 1500 1997-2000\nGL 1800 2006-2017",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna nakrętka sześciokątna sprzęgła 22 mm\npasuje do honda :\nGL 1500 1997-2000\nGL 1800 2006-2017",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 7 do 12 dni",
         "images": [
-            "90206-MZ0-000 PP_0_2399.jpg",
-            "90206-MZ0-000 PP_1_1396.jpg"
+            "90206-MZ0-000 PP_1.jpg",
+            "90206-MZ0-000 PP_2.jpg"
         ],
-        "quantity": 6,
-        "active": 0
+        "quantity": 10
     },
     {
         "name": "O-RING 32.95X2.62 (ARAI) ORING POMPY WODY HONDA 32.95X2.62 CBR CBF ST GL",
         "category": "GL1500 VALKYRIE",
         "reference": "91302-MB0-013 PP",
         "price": 20.49,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalny uszczelniacz pompy wody,ORING\n91302-MB0-013\nO-RING, 32.95X2.62 (ARAI)",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowe, oryginalny uszczelniacz pompy wody,ORING\n91302-MB0-013\nO-RING, 32.95X2.62 (ARAI)",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 1 do 2 dni",
         "images": [
-            "91302-MB0-013 PP_0_1924.jpg",
-            "91302-MB0-013 PP_1_1375.jpg"
+            "91302-MB0-013 PP_1.jpg",
+            "91302-MB0-013 PP_2.jpg"
         ],
-        "quantity": 5,
-        "active": 0
+        "quantity": 2
     },
     {
         "name": "OSŁONA CHŁODNICY CHROMOWANA HONDA GL1500 PRAWA 19118MZ0000",
         "category": "GL1500 VALKYRIE",
         "reference": "19118-MZ0-000 HH",
         "price": 510.47,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona chłodnicy prawa chromowana fabrycznie\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona chłodnicy prawa chromowana fabrycznie\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "19118-MZ0-000 HH_0_8818.jpg",
-            "19118-MZ0-000 HH_1_1716.jpg"
+            "19118-MZ0-000 HH_1.jpg",
+            "19118-MZ0-000 HH_2.jpg"
         ],
-        "quantity": 8,
-        "active": 0
+        "quantity": 3
     },
     {
         "name": "OSŁONA CHŁODNICY CHROMOWANA HONDA GL1500 PRAWA 19119MZ0000",
         "category": "GL1500 VALKYRIE",
         "reference": "19119-MZ0-000 HH",
         "price": 381.92,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona chłodnicy lewa chromowana fabrycznie\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona chłodnicy lewa chromowana fabrycznie\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "19119-MZ0-000 HH_0_2410.jpg",
-            "19119-MZ0-000 HH_1_9188.jpg"
+            "19119-MZ0-000 HH_1.jpg",
+            "19119-MZ0-000 HH_2.jpg"
         ],
-        "quantity": 8,
-        "active": 0
+        "quantity": 10
     },
     {
         "name": "OSŁONA PASKA ROZRZĄDU HONDA GL1500 VALKYRIE 11540-MZ0-000",
         "category": "GL1500 VALKYRIE",
         "reference": "11540-MZ0-000 HH",
         "price": 615.94,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona paska rozrządu,\nprawa lub lewa do wyboru , cena za sztukę\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna osłona paska rozrządu,\nprawa lub lewa do wyboru , cena za sztukę\nHONDA GL 1500 VALKYRIE\npasuje do rocznika 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "11540-MZ0-000 HH_0_3070.jpg",
-            "11540-MZ0-000 HH_1_2265.jpg"
+            "11540-MZ0-000 HH_1.jpg",
+            "11540-MZ0-000 HH_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 5
     },
     {
         "name": "PRZEKŁADKI SPRZĘGŁA ST1300 GL1500 CTX1300 VTX1300 22321MN5000",
         "category": "GL1500 VALKYRIE",
         "reference": "22321-MN5-000 PP",
         "price": 63.89,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna przekładka sprzęgła,\ntarczka, płytka sprzęgłowa\ncena za 1 sztukę.\nPasuje do Honda:\nCTX 1300 2014-2017\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003\nST 1300 2001-2021\nVT 1300C 2010-2020\nVTX 1300 2003-2007",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna przekładka sprzęgła,\ntarczka, płytka sprzęgłowa\ncena za 1 sztukę.\nPasuje do Honda:\nCTX 1300 2014-2017\nGL 1500 GOLDWING 1989-2000\nGL 1500 VALKYRIE 1997-2003\nST 1300 2001-2021\nVT 1300C 2010-2020\nVTX 1300 2003-2007",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "22321-MN5-000 PP_0_6522.jpg",
-            "22321-MN5-000 PP_1_2098.jpg"
+            "22321-MN5-000 PP_1.jpg",
+            "22321-MN5-000 PP_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 7
     },
     {
         "name": "ROLGAZ MANETKA PRAWA GUMA HONDA GL1500 VT600 VT750 53165MM8000",
         "category": "GL1500 VALKYRIE",
         "reference": "53165-MM8-000 HH",
         "price": 197.21,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna manetka prawa kompletna\nrolgaz plastikowy wraz z gumą\nkońcówka chromowana jest sprzedawana osobno\nPO ZAKUPIE PROSIMY O WYSŁANIE NUMERU VIN MOTOCYKLA!\nVT 750C SHADOW 1997-2014\nVT 600 SHADOW 1994-1999\nGL1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 1995-2005",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna manetka prawa kompletna\nrolgaz plastikowy wraz z gumą\nkońcówka chromowana jest sprzedawana osobno\nPO ZAKUPIE PROSIMY O WYSŁANIE NUMERU VIN MOTOCYKLA!\nVT 750C SHADOW 1997-2014\nVT 600 SHADOW 1994-1999\nGL1500 VALKYRIE 1997-2003\nVT 1100 SHADOW 1995-2005",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "53165-MM8-000 HH_0_8225.jpg",
-            "53165-MM8-000 HH_1_3240.jpg"
+            "53165-MM8-000 HH_1.jpg",
+            "53165-MM8-000 HH_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 7
     },
     {
         "name": "ŚLIMAK PRĘDKOŚCIOMIERZA WKŁAD VT600 VT750 GL1500 44806MR1003",
         "category": "GL1500 VALKYRIE",
         "reference": "44806-MR1-003 HH",
         "price": 163.04,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wkład teflonowy napędu\nprędkościomierza,często ulega wytarciu czego\nskutkiem jest brak wskazań licznika,\nPASUJE DO HONDA:\nVT600 SHADOW 1989-1999\nVT750C SHADOW 1997-2014\nGL1500 VALKYRE 1997-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny wkład teflonowy napędu\nprędkościomierza,często ulega wytarciu czego\nskutkiem jest brak wskazań licznika,\nPASUJE DO HONDA:\nVT600 SHADOW 1989-1999\nVT750C SHADOW 1997-2014\nGL1500 VALKYRE 1997-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "44806-MR1-003 HH_0_9534.jpg",
-            "44806-MR1-003 HH_1_8281.jpg"
+            "44806-MR1-003 HH_1.jpg",
+            "44806-MR1-003 HH_2.jpg"
         ],
-        "quantity": 4,
-        "active": 1
+        "quantity": 9
     },
     {
         "name": "SMAR DO ŁAŃCUCHA HONDA 08CMC-CLU-400HE",
         "category": "GL1500 VALKYRIE",
         "reference": "08CMC-CLU-400HE HH",
         "price": 63.36,
-        "description": "Przedmiotem sprzedaży są:\nFabrycznie nowy, oryginalny smar do łańcuchów\n400 ml",
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowy, oryginalny smar do łańcuchów\n400 ml",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia do 2 do 3 dni",
         "images": [
-            "08CMC-CLU-400HE HH_0_7621.jpg",
-            "08CMC-CLU-400HE HH_1_5880.jpg"
+            "08CMC-CLU-400HE HH_1.jpg",
+            "08CMC-CLU-400HE HH_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "spinka kołek mocujący CB,CBR,CBF,CB,VTR,VT,VFR",
         "category": "GL1500 VALKYRIE",
         "reference": "90683-GR1-003 HH",
         "price": 23.78,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalny kołek do owiewek\n90683-GR1-003\ncena za sztukę\npasuje do wielu modeli Honda :\nCB,CBR,VT,XL,NT,NC,VTR,VFR,CBF,CB,",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalny kołek do owiewek\n90683-GR1-003\ncena za sztukę\npasuje do wielu modeli Honda :\nCB,CBR,VT,XL,NT,NC,VTR,VFR,CBF,CB,",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 1 do 2 dni",
         "images": [
-            "90683-GR1-003 HH_0_3729.jpg",
-            "90683-GR1-003 HH_1_7451.jpg"
+            "90683-GR1-003 HH_1.jpg",
+            "90683-GR1-003 HH_2.jpg"
         ],
-        "quantity": 4,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "ŚRUBA OSI WAHACZA LEWA GL1500 VT750 VTX1300 1800 90121MAMA60",
         "category": "GL1500 VALKYRIE",
         "reference": "90121-MAM-A60 UU",
         "price": 89.0,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna śruba osi wahacza strona lewa\npasuje do wielu modeli Honda:\nVTX1300\nVTX1800\nGL1500 VALKYRIE\nVT750 SHADOW\nPo zakupie proszę o wysłanie numeru ramy (vin)",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna śruba osi wahacza strona lewa\npasuje do wielu modeli Honda:\nVTX1300\nVTX1800\nGL1500 VALKYRIE\nVT750 SHADOW\nPo zakupie proszę o wysłanie numeru ramy (vin)",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 7 do 12 dni",
         "images": [
-            "90121-MAM-A60 UU_0_2778.jpg",
-            "90121-MAM-A60 UU_1_6509.jpg"
+            "90121-MAM-A60 UU_1.jpg",
+            "90121-MAM-A60 UU_2.jpg"
         ],
-        "quantity": 1,
-        "active": 1
+        "quantity": 3
     },
     {
         "name": "USZCZELKA GAŹNIKA HONDA GL 1500 XL VT 125",
         "category": "GL1500 VALKYRIE",
         "reference": "16163-KEA-000 PP",
         "price": 84.38,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa oryginalna uszczelka gaźnika\ncena za sztuke\nHONDA\nVT 125 SHADOW\nXL 125 VARADERO\nGL 1500 VALKYRIE",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa oryginalna uszczelka gaźnika\ncena za sztuke\nHONDA\nVT 125 SHADOW\nXL 125 VARADERO\nGL 1500 VALKYRIE",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 5 dni",
         "images": [
-            "16163-KEA-000 PP_0_2443.jpg",
-            "16163-KEA-000 PP_1_9303.jpg"
+            "16163-KEA-000 PP_1.jpg",
+            "16163-KEA-000 PP_2.jpg"
         ],
-        "quantity": 6,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "USZCZELKA POD GŁOWICE HONDA GL1500 12251MN5004",
         "category": "GL1500 VALKYRIE",
         "reference": "12251-MN5-004 UU",
         "price": 220.85,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod głowice.\nHONDA\npasuje do\nGL1500 GOLDWING/VALKYRIE 1988-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod głowice.\nHONDA\npasuje do\nGL1500 GOLDWING/VALKYRIE 1988-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 8 do 19 dni",
         "images": [
-            "12251-MN5-004 UU_0_1126.jpg",
-            "12251-MN5-004 UU_1_4086.jpg"
+            "12251-MN5-004 UU_1.jpg",
+            "12251-MN5-004 UU_2.jpg"
         ],
-        "quantity": 10,
-        "active": 1
+        "quantity": 6
     },
     {
         "name": "USZCZELKA POKRYWY GŁOWICY ZAWORÓW HONDA GL1500 VALKYRIE 12314-MAF-000",
         "category": "GL1500 VALKYRIE",
         "reference": "12314-MAF-000 PP",
         "price": 107.28,
-        "description": "Fabrycznie nowa, oryginalna uszczelka pod pokrywę głowicy\nPRAWA I LEWA TAKA SAMA\npasuje do\nGL1500 GOLDWING/VALKYRIE 19894-2003",
+        "description_short": "Fabrycznie nowa, oryginalna uszczelka pod pokrywę głowicy\nPRAWA I LEWA TAKA SAMA\npasuje do\nGL1500 GOLDWING/VALKYRIE 19894-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 5 dni",
         "images": [
-            "12314-MAF-000 PP_0_8316.jpg",
-            "12314-MAF-000 PP_1_7251.jpg"
+            "12314-MAF-000 PP_1.jpg",
+            "12314-MAF-000 PP_2.jpg"
         ],
-        "quantity": 8,
-        "active": 1
+        "quantity": 10
     },
     {
         "name": "USZCZELNIACZE LAG HONDA CBR900 SC33 GL1500 51490MW0003",
         "category": "GL1500 VALKYRIE",
         "reference": "51490-MW0-003 HH",
         "price": 150.64,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny komplet uszczelniaczy lag przednich\nCena dotyczy kompletu (2szt) na jeden amortyzator.\noryginalny produkt hondy\nPasuje do HONDA:\nGL 1500 valkyrie 1997-2003\nCBR 900RR SC28 SC33 1992-1999",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny komplet uszczelniaczy lag przednich\nCena dotyczy kompletu (2szt) na jeden amortyzator.\noryginalny produkt hondy\nPasuje do HONDA:\nGL 1500 valkyrie 1997-2003\nCBR 900RR SC28 SC33 1992-1999",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 6 do 12 dni",
         "images": [
-            "51490-MW0-003 HH_0_3736.jpg",
-            "51490-MW0-003 HH_1_2630.jpg"
+            "51490-MW0-003 HH_1.jpg",
+            "51490-MW0-003 HH_2.jpg"
         ],
-        "quantity": 1,
-        "active": 0
+        "quantity": 5
     },
     {
         "name": "ZAWÓR SSĄCY DOLOTOWY HONDA GL1500 GOLDWIN 14711MZ3000",
         "category": "GL1500 VALKYRIE",
         "reference": "14711-MZ3-000 PP",
         "price": 186.84,
-        "description": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny zawór dolotowy (ssący)\nPasuje do HONDY:\nGL1500 GOLD WING\nGL1500 VALKYRIE\nROCZNIKI 1988-2003",
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny zawór dolotowy (ssący)\nPasuje do HONDY:\nGL1500 GOLD WING\nGL1500 VALKYRIE\nROCZNIKI 1988-2003",
+        "description_full": "",
         "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
         "images": [
-            "14711-MZ3-000 PP_0_8603.jpg",
-            "14711-MZ3-000 PP_1_7438.jpg"
+            "14711-MZ3-000 PP_1.jpg",
+            "14711-MZ3-000 PP_2.jpg"
         ],
-        "quantity": 7,
-        "active": 1
+        "quantity": 5
     }
 ]

@@ -11,12 +11,16 @@ services:
       MYSQL_PASSWORD: user123
     volumes:
       - db_data:/var/lib/mysql
+      - ./export:/docker-entrypoint-initdb.d
     networks:
       - ps_network
 
   # Prestashop
   prestashop:
-    image: prestashop/prestashop:1.7.8
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: prestashop-custom:1.7.8
     container_name: prestashop_web
     restart: always
     ports:
@@ -34,8 +38,7 @@ services:
       # Mapowanie na folder Source
       - ../Source/themes/betheme:/var/www/html/themes/betheme
       - ../Source/modules/bemodule:/var/www/html/modules/bemodule
-      # Mapowanie certyfikatów SSL
-      - ./certs:/etc/ssl/private
+      - ../Source/img/p:/var/www/html/img/p
     depends_on:
       - db
     networks:
