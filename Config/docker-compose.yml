@@ -38,6 +38,7 @@ services:
       # Mapowanie na folder Source
       - ../Source/themes/betheme:/var/www/html/themes/betheme
       - ../Source/modules/bemodule:/var/www/html/modules/bemodule
+      - ../Source/img/p:/var/www/html/img/p
     depends_on:
       - db
     networks:

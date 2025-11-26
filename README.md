@@ -73,13 +73,22 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
 
   * Przejdź do panelu administracyjnego: **localhost/{your_admin}**
 
-  * Wejdź w Design -> Theme & Logo
+  * Aby wczytać konfigurację dostępną w `Config/export` należy uruchomić skrypt `restore.sh`. Upewnij się, że znajdujesz się w folderze `Config`.
 
-  * Wybierz motyw **BE**
+- **Linux / MacOS:** 
+```bash 
+  ./restore.sh
+```
+- **Windows:** 
+```bash 
+  bash restore.sh
+```
+
+---
 
   Docker - przydatne komendy
 
-    ```bash
+```bash
     # Zatrzymanie kontenerów
     docker-compose stop
     # Ponowne uruchomienie zatrzymanych kontenerów
@@ -88,7 +97,7 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     docker-compose down
     # Zatrzymanie, usunięcie kontenerów ORAZ wolumenów (usuwa dane sklepu - foldery w kontenerze)
     docker-compose down -v
-    ```
+```
 
 ---
 
