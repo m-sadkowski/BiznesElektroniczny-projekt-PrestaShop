@@ -1,39 +1,59 @@
-{**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
- * @author    PrestaShop SA and Contributors <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- *}
-<div id="_desktop_cart">
+<div id="_desktop_cart_styled">
   <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
-    <div class="header">
-      {if $cart.products_count > 0}
-        <a rel="nofollow" aria-label="{l s='Shopping cart link containing %nbProducts% product(s)' sprintf=['%nbProducts%' => $cart.products_count] d='Shop.Theme.Checkout'}" href="{$cart_url}">
-      {/if}
-        <i class="material-icons shopping-cart" aria-hidden="true">shopping_cart</i>
-        <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
+    
+    {* NAGŁÓWEK (CZARNY PASEK) *}
+    <a href="{$cart_url}" rel="nofollow">
+      <div class="header">
+        <i class="fa fa-shopping-bag"></i>
+        <span>Koszyk</span>
         <span class="cart-products-count">({$cart.products_count})</span>
-      {if $cart.products_count > 0}
-        </a>
-      {/if}
+        {* Cena jest opcjonalna, zalezy czy chcesz ja widziec na czarnym pasku *}
+        <span class="value">{$cart.totals.total.value}</span>
+      </div>
+    </a>
+
+    {* ROZWIJANA LISTA *}
+    <div class="cart-dropdown">
+        
+        {* Lista produktów *}
+        <ul>
+          {foreach from=$cart.products item=product}
+            <li class="cart-product-line">
+              <span class="product-quantity">{$product.quantity}x</span>
+              <span class="product-name">{$product.name}</span>
+              <span class="product-price">{$product.price}</span>
+              <a  class="remove-from-cart"
+                  rel="nofollow"
+                  href="{$product.remove_from_cart_url}"
+                  data-link-action="delete-from-cart"
+                  title="{l s='remove from cart' d='Shop.Theme.Actions'}"
+              >
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+              </a>
+            </li>
+          {/foreach}
+        </ul>
+
+        <div class="cart-subtotals">
+            <div class="products">
+                <span class="label">Suma produktów:</span>
+                <span class="value">{$cart.subtotals.products.value}</span>
+            </div>
+            <div class="shipping">
+                <span class="label">Wysyłka:</span>
+                <span class="value">{$cart.subtotals.shipping.value}</span>
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <span class="label">Łącznie (brutto):</span>
+            <span class="value">{$cart.totals.total.value}</span>
+        </div>
+
+        <div class="cart-buttons">
+             <a href="{$cart_url}?action=show" class="btn btn-primary">Do kasy</a>
+        </div>
     </div>
+
   </div>
 </div>
