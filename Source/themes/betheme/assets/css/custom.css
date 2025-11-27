@@ -11604,7 +11604,7 @@ body.--push-menu-opened {
   cursor: pointer;
   border: none;
   padding: 0 2em;
-  color: #000!important;
+  color: #000 !important;
 }
 #header-search-btn .dropdown-search {
   padding: 1.5rem;
@@ -25793,4 +25793,34 @@ body.page-module-iqitsearch-searchiqit
 
 .info-wrapper span {
   color: #fff !important;
+}
+
+.subcategories-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.subcategories-list li {
+  background-color: white;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-button-add {
+  visibility: hidden;
+}
+
+.product-thumbnail img {
+  width: 100%;
+}
+
+.material-icons {
+  visibility: hidden;
+}
+
+.ps-shoppingcart {
+  overflow: hidden;
 }
