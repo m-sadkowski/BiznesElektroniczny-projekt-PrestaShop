@@ -28,7 +28,6 @@
 
   <section id="main">
     <div class="cart-grid row">
-
       <!-- Left Block: cart product informations & shpping -->
       <div class="cart-grid-body col-xs-12 col-lg-8">
 

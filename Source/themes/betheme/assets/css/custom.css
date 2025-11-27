@@ -12863,8 +12863,8 @@ body#checkout #gift_message {
 .product-miniature-list .input-group-add-cart .bootstrap-touchspin {
   margin-bottom: 10px;
 }
-.lazy-product-image.product-thumbnail-first {
-  opacity: 0.3;
+.lazy-product-image .product-thumbnail-first {
+  opacity: 0.9;
   transition: opacity 0.3s ease;
   background-position: center center;
   background-repeat: no-repeat;
@@ -21957,7 +21957,7 @@ body {
   opacity: 1;
 }
 .product-miniature .thumbnail-container:hover .product-thumbnail-first {
-  opacity: 0;
+  opacity: 1;
 }
 .product-miniature
   .thumbnail-container:hover
