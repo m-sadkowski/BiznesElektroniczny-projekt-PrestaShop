@@ -12,7 +12,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- KONFIGURACJA ---
 PS_SHOP_URL = "https://localhost/"
-PS_WS_AUTH_KEY = "TWOJ_KLUCZ"   # UZUPEŁNIĆ WŁASNYM KLUCZEM API
+PS_WS_AUTH_KEY = "KXB36FUS2ZYV13CX4T7CVFJA5BZUKX5U"   # UZUPEŁNIĆ WŁASNYM KLUCZEM API
 LANGUAGE_ID = "1"
 DEFAULT_CATEGORY_ID = "2"
 
