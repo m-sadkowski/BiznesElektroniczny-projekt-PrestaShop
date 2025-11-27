@@ -38,10 +38,367 @@
  */
  /* --- 1. KONTENER GŁÓWNY (CZARNY PASEK) --- */
 /* --- CZARNY KONTENER KOSZYKA --- */
+/* --- OGÓLNY LAYOUT CHECKOUTU --- */
+body#checkout section.checkout-step {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Ukrycie zbędnych elementów */
+body#checkout #header .header-nav { display: none; } /* Opcjonalnie: ukryj górny pasek w checkoucie */
+
+/* --- TYTUŁY KROKÓW --- */
+body#checkout .step-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- LEWA KOLUMNA (FORMULARZE) --- */
+body#checkout .checkout-process {
+    width: 100%;
+}
+
+/* --- PRAWA KOLUMNA (PODSUMOWANIE) --- */
+body#checkout .cart-summary {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+}
+
+body#checkout .cart-summary-line .label {
+    font-weight: normal;
+    color: #666;
+}
+
+body#checkout .cart-summary-line .value {
+    color: #ee152a; /* Twój kolor akcentu */
+    font-weight: bold;
+}
+
+/* --- METODY DOSTAWY (RADIO BUTTONS) --- */
+body#checkout .delivery-option {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+body#checkout .delivery-option label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- METODY PŁATNOŚCI --- */
+body#checkout .payment-option {
+    margin-bottom: 10px;
+}
+
+body#checkout .payment-option label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- PRZYCISKI "DALEJ" / "POTWIERDZAM" --- */
+body#checkout .continue, body#checkout .btn-primary {
+    background-color: #ff9900 !important;
+    border-color: #ff9900 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 4px;
+    float: right;
+}
+body#checkout .continue:hover {
+    background-color: #e68a00 !important;
+}
 #_desktop_cart_styled .blockcart {
     position: relative;
     display: inline-block;
     cursor: pointer;
+}
+
+/* --- CHECKOUT PAGE LAYOUT --- */
+body#checkout {
+    background-color: #f6f6f6; /* Light grey background */
+    color: #333;
+}
+
+body#checkout #content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- LEFT COLUMN (STEPS) --- */
+
+/* Step Box Styling - white card with shadow */
+body#checkout .checkout-step {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Step Title Styling */
+body#checkout .step-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Completed Step Title */
+body#checkout .checkout-step.-complete .step-title {
+    color: #2fb5d2; /* Blue checkmark color */
+}
+
+/* Current Step Title */
+body#checkout .checkout-step.-current .step-title {
+    color: #333;
+}
+
+/* --- FORMS & INPUTS --- */
+body#checkout .form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    height: 42px;
+    padding: 8px 12px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+body#checkout .form-control:focus {
+    border-color: #ff9900; /* Orange focus */
+    outline: 0;
+}
+
+/* --- SHIPPING & PAYMENT OPTIONS --- */
+
+/* Delivery Option Row */
+body#checkout .delivery-option {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+body#checkout .delivery-option label {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Payment Option Row */
+body#checkout .payment-option {
+    margin-bottom: 10px;
+}
+
+body#checkout .payment-option label {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* --- RIGHT COLUMN (CART SUMMARY) --- */
+
+/* Summary Box Styling */
+body#checkout .cart-summary-wrapper .card {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+body#checkout .cart-summary-wrapper .card-block {
+    padding: 20px;
+}
+
+/* Product list in summary */
+body#checkout .cart-summary-products .media-list {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+body#checkout .cart-summary-line {
+    clear: both;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+body#checkout .cart-summary-line .label {
+    color: #777;
+    font-weight: normal;
+}
+
+body#checkout .cart-summary-line .value {
+    color: #333;
+    font-weight: bold;
+    float: right;
+}
+
+/* Grand Total */
+body#checkout .cart-summary-totals .cart-summary-line.cart-total {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+body#checkout .cart-summary-totals .cart-summary-line.cart-total .value {
+    font-size: 20px;
+    color: #ee152a; /* Red price like reference */
+    font-weight: 700;
+}
+/* --- UKŁAD ONE PAGE (SYMULACJA) --- */
+/* Stylizacja prawej kolumny (Podsumowanie) */
+.cart-summary-wrapper .cart-summary {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 3px;
+}
+
+/* Ukrycie niepotrzebnych elementów w podsumowaniu */
+.cart-summary-products .show-details {
+    display: none !important; /* Na wypadek gdyby stary kod gdzieś został */
+}
+
+/* Czerwona cena całkowita */
+.cart-summary-totals .cart-total .value {
+    color: #ee152a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* Kontener główny */
+.opc-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* 1. OBSZAR KROKÓW (DANE + DOSTAWA + PŁATNOŚĆ) */
+.opc-steps {
+    flex: 1 1 60%; /* Zajmuje ok 60% szerokości */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* --- POSZCZEGÓLNE KROKI (Dzielimy na pół) --- */
+/* Krok 1 (Dane) i 2 (Adresy) - Lewa strona */
+#checkout-personal-information-step,
+#checkout-addresses-step {
+    flex: 1 1 45%; /* Połowa szerokości bloku kroków */
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Krok 3 (Dostawa) i 4 (Płatność) - Prawa strona (Środek layoutu) */
+#checkout-delivery-step,
+#checkout-payment-step {
+    flex: 1 1 45%; /* Połowa szerokości bloku kroków */
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* 2. OBSZAR KOSZYKA (PRAWA STRONA) */
+.opc-cart-summary {
+    flex: 0 0 300px; /* Sztywna szerokość koszyka */
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: sticky;
+    top: 20px;
+}
+
+/* --- STYLIZACJA DETALI (Jak Bikepart) --- */
+.step-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ukrycie zbędnych elementów standardowych */
+.nav-tabs, .nav-item { display: none; } /* Jeśli są */
+
+/* Pola formularza */
+.form-control {
+    border-radius: 0;
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+}
+
+/* Guziki */
+.btn-primary {
+    background-color: #ff9900 !important;
+    border-color: #ff9900 !important;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- BUTTONS (ORANGE) --- */
+body#checkout .continue, 
+body#checkout .btn-primary, 
+body#checkout #payment-confirmation button {
+    background-color: #ff9900 !important; /* Bright Orange */
+    border-color: #ff9900 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 30px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    float: right;
+}
+
+body#checkout .continue:hover, 
+body#checkout .btn-primary:hover,
+body#checkout #payment-confirmation button:hover {
+    background-color: #e68a00 !important;
+    border-color: #e68a00 !important;
+}
+
+/* Hide standard prestashop checkout header if needed to match clean look */
+body#checkout .checkout-header h1 {
+   /* display: none;  uncomment if you want to hide the big "Checkout" title */
 }
 
 /* Styl czarnego przycisku */
