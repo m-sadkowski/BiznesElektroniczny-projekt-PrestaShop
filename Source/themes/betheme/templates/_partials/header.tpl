@@ -37,7 +37,7 @@
                                             <div class="block-iqitlinksmanager block-iqitlinksmanager-2 block-links-inline d-inline-block">
             <ul>
                                                             <li>
-                            <a href="https://localhost/mapa-strony" title="Zagubiłeś się? Znajdź to, czego szukasz!">
+                            <a href="https://localhost/sitemap" title="Zagubiłeś się? Znajdź to, czego szukasz!">
                                 Mapa strony
                             </a>
                         </li>
@@ -144,31 +144,10 @@
                 </div>
                         <div class="col col-auto col-header-right text-right">
                                     
-                                            <div id="ps-shoppingcart-wrapper">
-    <div id="ps-shoppingcart" class="header-cart-default ps-shoppingcart dropdown">
-         <div id="blockcart" class="blockcart cart-preview" data-refresh-url="https://localhost/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
-            <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
-            <span class="info-wrapper">
-            <span class="title">Koszyk</span>
-            <span class="cart-toggle-details">
-            <span class="text-faded cart-separator"> / </span>
-                            Pusty
-                        </span>
-            </span>
-        </a>
-        <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
-    <div id="blockcart-content" class="blockcart-content">
-        <div class="cart-title">
-            <span class="modal-title">Twój koszyk</span>
-            <button type="button" id="js-cart-close" class="close">
-                <span>×</span>
-            </button>
-            <hr>
-        </div>
-                    <span class="no-items">W Twoim koszyku nie ma więcej produktów</span>
-            </div>
-</div> </div>
+          <div id="_desktop_cart_styled" style="margin-bottom: 5px;">
+        {widget name='ps_shoppingcart'}
+    </div>
+</div> 
 
 
 
@@ -179,7 +158,7 @@
                                         
                 
                 <div id="user_info">
-            <a href="https://localhost/moje-konto" title="Zaloguj się do swojego konta klienta" rel="nofollow"><i class="fa fa-user" aria-hidden="true"></i>
+            <a href="https://localhost/login" title="Zaloguj się do swojego konta klienta" rel="nofollow"><i class="fa fa-user" aria-hidden="true"></i>
             <span>Zaloguj się</span>
         </a>
     </div>
@@ -404,7 +383,7 @@
 
 
 			<div class="mobile-menu__user">
-			<a href="https://localhost/moje-konto" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="https://localhost/login" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Zaloguj się
 								
