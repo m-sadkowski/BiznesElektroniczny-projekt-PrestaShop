@@ -127,7 +127,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-qqkkq45 elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2616&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/motocykle-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2616&amp;controller=category">MOTOCYKLE HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/8-motocykle-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/motocykle-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/8-motocykle-honda">MOTOCYKLE HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -139,7 +139,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-0t2hl4k elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2617&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/skutery-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2617&amp;controller=category">SKUTERY HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/362-skutery-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/skutery-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/362-skutery-honda">SKUTERY HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -151,7 +151,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-spwaa6r elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2618&amp;controller=category&amp;id_lang=1"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/quady-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2618&amp;controller=category&amp;id_lang=1">QUADY HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/311-quady-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/quady-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/311-quady-honda">QUADY HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -173,7 +173,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-z0ev4k2 elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3203&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/pngtree-chemistry-line-icon-vector-png-image_1859307.png" alt="Oleje i chemia do motocyki" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3203&amp;controller=category">OLEJE I CHEMIA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/445-oleje-i-chemia"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/pngtree-chemistry-line-icon-vector-png-image_1859307.png" alt="Oleje i chemia do motocyki" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3203&amp;controller=category">OLEJE I CHEMIA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -185,7 +185,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-o2xaw9a elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3204&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Kufry centralne i boczne do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3204&amp;controller=category">KUFRY CENTRALNE I BOCZNE</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/6-kufry-centralne-i-boczne"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Kufry centralne i boczne do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3204&amp;controller=category">KUFRY CENTRALNE I BOCZNE</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -197,7 +197,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-xmbbwbl elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Sakwy i torby do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1">SAKWY I TORBY</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/452-sakwy-i-torby"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Sakwy i torby do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1">SAKWY I TORBY</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -236,9 +236,10 @@
                         
     
     <div class="thumbnail-container">
-        <a href="https://bikepart.pl/pl/glowna/407564-honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.html" class="thumbnail product-thumbnail">
+        <a href="https://localhost/home/783-honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.html" class="thumbnail product-thumbnail">
 
-                            <img data-src="https://bikepart.pl/549-home_default/honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.jpg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%20305'%3E%3C/svg%3E" alt="HONDA CB500X CMX500 DEKIEL SPRZĘGŁA KAPA POKRYWA 11330-MJW-J80" data-full-size-image-url="https://bikepart.pl/549-thickbox_default/honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.jpg" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
+                            <img 
+                          src="/img/p/1/5/6/4/1564-home_default.jpg" alt="HONDA CB500X CMX500 DEKIEL SPRZĘGŁA KAPA POKRYWA 11330-MJW-J80"  width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
                                                                                                                                                                 
         </a>
 
@@ -286,7 +287,7 @@
 
             
                 <h2 class="h3 product-title">
-                    <a href="https://bikepart.pl/pl/glowna/407564-honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.html">HONDA CB500X CMX500 DEKIEL SPRZĘGŁA KAPA POKRYWA 11330-MJW-J80</a>
+                    <a href="https://localhost/home/783-honda-cb500x-cmx500-dekiel-sprzegla-kapa-pokrywa-11330-mjw-j80.html">HONDA CB500X CMX500 DEKIEL SPRZĘGŁA KAPA POKRYWA 11330-MJW-J80</a>
                 </h2>
             
 
@@ -339,7 +340,7 @@ CMX500 REBEL 2017-2020
         <div class="product-add-cart js-product-add-cart-407564-0">
 
                 
-            <form action="https://bikepart.pl/pl/koszyk" method="post">
+            <form action="https://localhost/cart" method="post">
 
             <input type="hidden" name="id_product" value="407564">
 
@@ -384,9 +385,9 @@ CMX500 REBEL 2017-2020
                         
     
     <div class="thumbnail-container">
-        <a href="https://bikepart.pl/pl/motocykle-honda/769395-honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.html" class="thumbnail product-thumbnail">
+        <a href="https://localhost/home/62-honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.html" class="thumbnail product-thumbnail">
 
-                            <img data-src="https://bikepart.pl/4631-home_default/honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.jpg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%20305'%3E%3C/svg%3E" alt="HONDA CB600 CB1000R ŁOŻYSKO KOSZA SPRZĘGŁOWEGO" data-full-size-image-url="https://bikepart.pl/4631-thickbox_default/honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.jpg" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
+                            <img src="/img/p/1/2/4/124-home_default.jpg" alt="HONDA CB600 CB1000R ŁOŻYSKO KOSZA SPRZĘGŁOWEGO" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
                                                                                                                                                                 
         </a>
 
@@ -434,7 +435,7 @@ CMX500 REBEL 2017-2020
 
             
                 <h2 class="h3 product-title">
-                    <a href="https://bikepart.pl/pl/motocykle-honda/769395-honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.html">HONDA CB600 CB1000R ŁOŻYSKO KOSZA SPRZĘGŁOWEGO</a>
+                    <a href="https://localhost/home/62-honda-cb600-cb1000r-lozysko-kosza-sprzeglowego.html">HONDA CB600 CB1000R ŁOŻYSKO KOSZA SPRZĘGŁOWEGO</a>
                 </h2>
             
 
@@ -484,7 +485,7 @@ Fabrycznie nowe, oryginalne łożysko DO kosza sprzęgła
         <div class="product-add-cart js-product-add-cart-769395-0">
 
                 
-            <form action="https://bikepart.pl/pl/koszyk" method="post">
+            <form action="https://localhost/cart" method="post">
 
             <input type="hidden" name="id_product" value="769395">
 
@@ -529,9 +530,9 @@ Fabrycznie nowe, oryginalne łożysko DO kosza sprzęgła
                         
     
     <div class="thumbnail-container">
-        <a href="https://bikepart.pl/pl/motocykle-honda/408176-honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.html" class="thumbnail product-thumbnail">
+        <a href="https://localhost/home/990-honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.html" class="thumbnail product-thumbnail">
 
-                            <img data-src="https://bikepart.pl/1270-home_default/honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.jpg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%20305'%3E%3C/svg%3E" alt="HONDA CB650F CBR650 POKRYWA DEKIEL ALTERNATORA 11321-MJE-D00" data-full-size-image-url="https://bikepart.pl/1270-thickbox_default/honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.jpg" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
+                            <img src="/img/p/1/9/7/8/1978-home_default.jpg" alt="HONDA CB650F CBR650 POKRYWA DEKIEL ALTERNATORA 11321-MJE-D00" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
                                                                                                                                                                 
         </a>
 
@@ -579,7 +580,7 @@ Fabrycznie nowe, oryginalne łożysko DO kosza sprzęgła
 
             
                 <h2 class="h3 product-title">
-                    <a href="https://bikepart.pl/pl/motocykle-honda/408176-honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.html">HONDA CB650F CBR650 POKRYWA DEKIEL ALTERNATORA 11321-MJE-D00</a>
+                    <a href="https://localhost/home/990-honda-cb650f-cbr650-pokrywa-dekiel-alternatora-11321-mje-d00.html">HONDA CB650F CBR650 POKRYWA DEKIEL ALTERNATORA 11321-MJE-D00</a>
                 </h2>
             
 
@@ -631,7 +632,7 @@ CB 650F 2014-2016
         <div class="product-add-cart js-product-add-cart-408176-0">
 
                 
-            <form action="https://bikepart.pl/pl/koszyk" method="post">
+            <form action="https://localhost/cart" method="post">
 
             <input type="hidden" name="id_product" value="408176">
 
@@ -676,9 +677,9 @@ CB 650F 2014-2016
                         
     
     <div class="thumbnail-container">
-        <a href="https://bikepart.pl/pl/2616-motocykle-honda/409871-filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.html" class="thumbnail product-thumbnail">
+        <a href="https://localhost/home/1350-filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.html" class="thumbnail product-thumbnail">
 
-                            <img data-src="https://bikepart.pl/3125-home_default/filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.jpg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%20305'%3E%3C/svg%3E" alt="FILTR POWIETRZA ORYGINALNY HONDA PCX125 18-2020 17210K97J00" data-full-size-image-url="https://bikepart.pl/3125-thickbox_default/filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.jpg" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
+                            <img src="/img/p/2/6/9/8/2698-home_default.jpg" alt="FILTR POWIETRZA ORYGINALNY HONDA PCX125 18-2020 17210K97J00" width="305" height="305" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  ">
                                                                                                                                                                 
         </a>
 
@@ -726,7 +727,7 @@ CB 650F 2014-2016
 
             
                 <h2 class="h3 product-title">
-                    <a href="https://bikepart.pl/pl/2616-motocykle-honda/409871-filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.html">FILTR POWIETRZA ORYGINALNY HONDA PCX125 18-2020 17210K97J00</a>
+                    <a href="https://localhost/home/1350-filtr-powietrza-oryginalny-honda-pcx125-18-2020-17210k97j00.html">FILTR POWIETRZA ORYGINALNY HONDA PCX125 18-2020 17210K97J00</a>
                 </h2>
             
 

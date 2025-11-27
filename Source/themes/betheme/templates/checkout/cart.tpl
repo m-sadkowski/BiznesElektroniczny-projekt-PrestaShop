@@ -28,60 +28,118 @@
 
   <section id="main">
     <div class="cart-grid row">
+      <!-- Column 1: Account -->
+      <div class="col-xs-12 col-lg-4">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="h3">{l s='Personal Information' d='Shop.Theme.Checkout'}</h3>
+            
+            <!-- Static Mockup for Personal Info -->
+            <form>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="test@example.com">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
 
-      <!-- Left Block: cart product informations & shpping -->
-      <div class="cart-grid-body col-xs-12 col-lg-8">
+          </div>
+        </div>
+      </div>
 
-        <!-- cart products detailed -->
+      <!-- Column 2: Shipping & Payment -->
+      <div class="col-xs-12 col-lg-4">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="h3">{l s='Shipping Method' d='Shop.Theme.Checkout'}</h3>
+            
+            <!-- Static Mockup for Shipping -->
+            <div class="delivery-options">
+              <div class="delivery-option">
+                <label>
+                  <input type="radio" name="delivery_option" checked>
+                  <span>Kurier Inpost Paczkomaty</span>
+                </label>
+              </div>
+              <div class="delivery-option">
+                <label>
+                  <input type="radio" name="delivery_option">
+                  <span>Kurier (po przedpłacie)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="card mt-2">
+          <div class="card-block">
+             <h3 class="h3">{l s='Payment Method' d='Shop.Theme.Checkout'}</h3>
+             
+             <!-- Static Mockup for Payment -->
+             <div class="payment-options">
+               <div class="payment-option">
+                 <label>
+                   <input type="radio" name="payment_option" checked>
+                   <span>BLIK</span>
+                 </label>
+               </div>
+               <div class="payment-option">
+                 <label>
+                   <input type="radio" name="payment_option">
+                   <span>Pay by bank wire</span>
+                 </label>
+               </div>
+             </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Shopping Cart -->
+      <div class="cart-grid-right col-xs-12 col-lg-4">
         <div class="card cart-container">
           <div class="card-block">
             <h1 class="h1">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
           </div>
           <hr class="separator">
+          
           {block name='cart_overview'}
             {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
           {/block}
+
+          {block name='cart_summary'}
+            <div class="cart-summary">
+              {block name='hook_shopping_cart'}
+                {hook h='displayShoppingCart'}
+              {/block}
+
+              {block name='cart_totals'}
+                {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart}
+              {/block}
+
+              {block name='cart_actions'}
+                {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
+              {/block}
+            </div>
+          {/block}
         </div>
-
-        {block name='continue_shopping'}
-          <a class="label" href="{$urls.pages.index}">
-            <i class="material-icons">chevron_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}
-          </a>
-        {/block}
-
-        <!-- shipping informations -->
-        {block name='hook_shopping_cart_footer'}
-          {hook h='displayShoppingCartFooter'}
-        {/block}
-      </div>
-
-      <!-- Right Block: cart subtotal & cart total -->
-      <div class="cart-grid-right col-xs-12 col-lg-4">
-
-        {block name='cart_summary'}
-          <div class="card cart-summary">
-
-            {block name='hook_shopping_cart'}
-              {hook h='displayShoppingCart'}
-            {/block}
-
-            {block name='cart_totals'}
-              {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart}
-            {/block}
-
-            {block name='cart_actions'}
-              {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
-            {/block}
-
-          </div>
-        {/block}
 
         {block name='hook_reassurance'}
           {hook h='displayReassurance'}
         {/block}
-
       </div>
-
     </div>
   </section>
 {/block}

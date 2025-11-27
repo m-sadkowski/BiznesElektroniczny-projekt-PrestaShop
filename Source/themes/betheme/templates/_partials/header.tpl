@@ -37,12 +37,12 @@
                                             <div class="block-iqitlinksmanager block-iqitlinksmanager-2 block-links-inline d-inline-block">
             <ul>
                                                             <li>
-                            <a href="https://bikepart.pl/pl/mapa-strony" title="Zagubiłeś się? Znajdź to, czego szukasz!">
+                            <a href="https://localhost/mapa-strony" title="Zagubiłeś się? Znajdź to, czego szukasz!">
                                 Mapa strony
                             </a>
                         </li>
                                                                                 <li>
-                            <a href="https://bikepart.pl/pl/kontakt" title="Skorzystaj z formularza kontaktowego">
+                            <a href="https://localhost/contact-us" title="Skorzystaj z formularza kontaktowego">
                                 Skontaktuj się z nami
                             </a>
                         </li>
@@ -114,7 +114,7 @@
                             <div class="col col-auto col-header-left">
                     <div id="desktop_logo">
                         
-  <a href="https://bikepart.pl/pl/">
+  <a href="https://localhost/">
     <img class="logo img-fluid" src="https://bikepart.pl/img/logo-1677874955.jpg" alt="bikepart.pl" width="350" height="94">
   </a>
 
@@ -125,8 +125,8 @@
                                         <!-- Block search module TOP -->
 
 <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="https://bikepart.pl/pl/module/iqitsearch/searchiqit">
-    <form method="get" action="https://bikepart.pl/pl/module/iqitsearch/searchiqit">
+<div id="search_widget" class="search-widget" data-search-controller-url="https://localhost/module/iqitsearch/searchiqit">
+    <form method="get" action="https://localhost/module/iqitsearch/searchiqit">
         <div class="input-group">
             <input type="text" name="s" value="" data-all-text="Pokaż wszystkie wyniki" data-blog-text="Post na blogu" data-product-text="Produkt" data-brands-text="Marka" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Szukaj produktów" class="form-control form-search-control">
             <button type="submit" class="search-btn">
@@ -146,7 +146,7 @@
                                     
                                             <div id="ps-shoppingcart-wrapper">
     <div id="ps-shoppingcart" class="header-cart-default ps-shoppingcart dropdown">
-         <div id="blockcart" class="blockcart cart-preview" data-refresh-url="//bikepart.pl/pl/module/ps_shoppingcart/ajax">
+         <div id="blockcart" class="blockcart cart-preview" data-refresh-url="https://localhost/module/ps_shoppingcart/ajax">
         <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
             <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
             <span class="info-wrapper">
@@ -179,7 +179,7 @@
                                         
                 
                 <div id="user_info">
-            <a href="https://bikepart.pl/pl/moje-konto" title="Zaloguj się do swojego konta klienta" rel="nofollow"><i class="fa fa-user" aria-hidden="true"></i>
+            <a href="https://localhost/moje-konto" title="Zaloguj się do swojego konta klienta" rel="nofollow"><i class="fa fa-user" aria-hidden="true"></i>
             <span>Zaloguj się</span>
         </a>
     </div>
@@ -208,7 +208,7 @@
 			<nav id="cbp-hrmenu" class="cbp-hrmenu cbp-horizontal cbp-hrsub-narrow">
 				<ul>
 											<li id="cbp-hrmenu-tab-1" class="cbp-hrmenu-tab cbp-hrmenu-tab-1 cbp-onlyicon ">
-							<a href="https://bikepart.pl/pl/" class="nav-link">
+							<a href="https://localhost/" class="nav-link">
 										
 
 										<span class="cbp-tab-title"> <i class="icon fa fa-home cbp-mainlink-icon"></i>
@@ -216,7 +216,7 @@
 																			</a>
 																</li>
 												<li id="cbp-hrmenu-tab-2" class="cbp-hrmenu-tab cbp-hrmenu-tab-2 ">
-							<a href="https://bikepart.pl/pl/2616-motocykle-honda" class="nav-link">
+							<a href="https://localhost/8-motocykle-honda" class="nav-link">
 										
 
 										<span class="cbp-tab-title">
@@ -224,7 +224,7 @@
 																			</a>
 																</li>
 												<li id="cbp-hrmenu-tab-3" class="cbp-hrmenu-tab cbp-hrmenu-tab-3 ">
-							<a href="https://bikepart.pl/pl/2617-2616-motocykle-honda" class="nav-link">
+							<a href="https://localhost/362-skutery-honda" class="nav-link">
 										
 
 										<span class="cbp-tab-title">
@@ -232,7 +232,7 @@
 																			</a>
 																</li>
 												<li id="cbp-hrmenu-tab-4" class="cbp-hrmenu-tab cbp-hrmenu-tab-4 ">
-							<a href="https://bikepart.pl/pl/2618-quady-honda" class="nav-link">
+							<a href="https://localhost/311-quady-honda" class="nav-link">
 										
 
 										<span class="cbp-tab-title">
@@ -240,7 +240,7 @@
 																			</a>
 																</li>
 												<li id="cbp-hrmenu-tab-5" class="cbp-hrmenu-tab cbp-hrmenu-tab-5 pull-right cbp-pulled-right">
-							<a href="https://bikepart.pl/index.php?controller=contact" class="nav-link">
+							<a href="https://localhost/contact-us" class="nav-link">
 										
 
 										<span class="cbp-tab-title"> <i class="icon fa fa-phone cbp-mainlink-icon"></i>
@@ -280,7 +280,7 @@
 										<a class="flex-fill mobile-menu__link 
 												
 											 
-																				" href="https://bikepart.pl/pl/">
+																				" href="https://localhost/">
 											 
 												<i class="icon fa fa-home mobile-menu__tab-icon"></i>
 																						
@@ -295,7 +295,7 @@
 										<a class="flex-fill mobile-menu__link 
 												
 											 
-																				" href="https://bikepart.pl/pl/2616-motocykle-honda">
+																				" href="https://localhost/8-motocykle-honda">
 																						
 											
 											<span class="js-mobile-menu__tab-title">CZĘŚCI DO MOTOCYKLI HONDA</span>
@@ -308,7 +308,7 @@
 										<a class="flex-fill mobile-menu__link 
 												
 											 
-																				" href="https://bikepart.pl/pl/2617-2616-motocykle-honda">
+																				" href="https://localhost/362-skutery-honda">
 																						
 											
 											<span class="js-mobile-menu__tab-title">CZĘSCI DO SKUTERÓW HONDA</span>
@@ -321,7 +321,7 @@
 										<a class="flex-fill mobile-menu__link 
 												
 											 
-																				" href="https://bikepart.pl/pl/2618-quady-honda">
+																				" href="https://localhost/311-quady-honda">
 																						
 											
 											<span class="js-mobile-menu__tab-title">CZĘSCI DO QUADÓW HONDA</span>
@@ -334,7 +334,7 @@
 										<a class="flex-fill mobile-menu__link 
 												
 											 
-																				" href="https://bikepart.pl/index.php?controller=contact">
+																				" href="https://localhost/contact-us">
 											 
 												<i class="icon fa fa-phone mobile-menu__tab-icon"></i>
 																						
@@ -404,7 +404,7 @@
 
 
 			<div class="mobile-menu__user">
-			<a href="https://bikepart.pl/pl/moje-konto" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="https://localhost/moje-konto" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Zaloguj się
 								
