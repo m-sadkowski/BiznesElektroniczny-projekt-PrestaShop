@@ -127,7 +127,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-qqkkq45 elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2616&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/motocykle-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2616&amp;controller=category">MOTOCYKLE HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/8-motocykle-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/motocykle-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/8-motocykle-honda">MOTOCYKLE HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -139,7 +139,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-0t2hl4k elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2617&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/skutery-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2617&amp;controller=category">SKUTERY HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/362-skutery-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/skutery-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/362-skutery-honda">SKUTERY HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -151,7 +151,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-spwaa6r elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=2618&amp;controller=category&amp;id_lang=1"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/quady-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=2618&amp;controller=category&amp;id_lang=1">QUADY HONDA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/311-quady-honda"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/quady-honda.jpg" alt="" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://localhost/311-quady-honda">QUADY HONDA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -173,7 +173,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-z0ev4k2 elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3203&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/pngtree-chemistry-line-icon-vector-png-image_1859307.png" alt="Oleje i chemia do motocyki" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3203&amp;controller=category">OLEJE I CHEMIA</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/445-oleje-i-chemia"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/pngtree-chemistry-line-icon-vector-png-image_1859307.png" alt="Oleje i chemia do motocyki" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3203&amp;controller=category">OLEJE I CHEMIA</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -185,7 +185,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-o2xaw9a elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3204&amp;controller=category"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Kufry centralne i boczne do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3204&amp;controller=category">KUFRY CENTRALNE I BOCZNE</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/6-kufry-centralne-i-boczne"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Kufry centralne i boczne do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3204&amp;controller=category">KUFRY CENTRALNE I BOCZNE</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -197,7 +197,7 @@
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-xmbbwbl elementor-widget-image-box elementor-position-top elementor-vertical-align-top" data-element_type="image-box">
                 <div class="elementor-widget-container">
-            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Sakwy i torby do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1">SAKWY I TORBY</a></h3></div></div>        </div>
+            <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://localhost/452-sakwy-i-torby"><img loading="lazy" width="873" height="240" src="https://bikepart.pl/img/cms/depositphotos_9528454-stock-illustration-bags-and-suitcases-icons-set.png" alt="Sakwy i torby do motocykli" class="elementor-animation-shrink"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="index.php?id_category=3205&amp;controller=category&amp;id_lang=1">SAKWY I TORBY</a></h3></div></div>        </div>
                 </div>
         				</div>
 			</div>
