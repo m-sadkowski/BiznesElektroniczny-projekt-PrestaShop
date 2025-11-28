@@ -38,10 +38,898 @@
  */
  /* --- 1. KONTENER GŁÓWNY (CZARNY PASEK) --- */
 /* --- CZARNY KONTENER KOSZYKA --- */
+/* --- OGÓLNY LAYOUT CHECKOUTU --- */
+body#checkout section.checkout-step {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 #_desktop_cart_styled .blockcart {
     position: relative;
     display: inline-block;
     cursor: pointer;
+}
+
+/* Styl czarnego przycisku */
+#_desktop_cart_styled .blockcart .header a {
+    background: #000000;       /* CZARNE TŁO */
+    color: #ffffff !important; /* BIAŁY TEKST */
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 180px;
+    text-align: center;
+}
+
+#_desktop_cart_styled .blockcart .header i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+#_desktop_cart_styled .value {
+    color: #ee152a; /* Czerwona cena na pasku */
+    margin-left: 5px;
+}
+
+/* --- ROZWIJANE OKNO (DROPDOWN) --- */
+#_desktop_cart_styled .blockcart .body {
+    display: none; /* Domyślnie ukryte */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 5000;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* --- MECHANIZM OTWIERANIA (HOVER) --- */
+/* To otwiera koszyk po najechaniu */
+#_desktop_cart_styled .blockcart:hover .body {
+    display: block;
+}
+
+/* --- STYLIZACJA WNĘTRZA --- */
+#_desktop_cart_styled .cart-product-line {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+#_desktop_cart_styled .cart-total {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#_desktop_cart_styled .cart-total .value {
+    float: right;
+    color: #ee152a; /* Czerwona cena sumy */
+}
+
+/* Przycisk DO KASY */
+#_desktop_cart_styled .btn-primary {
+    background-color: #ff9900 !important;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+}
+
+/* --- 3. STYLIZACJA ŚRODKA (Żeby nie było rozwalone) --- */
+.cart-dropdown .cart-title {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-dropdown .cart-products {
+    padding: 0;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-dropdown .cart-products li {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Układ produktu w koszyku (obrazek + info) */
+.cart-dropdown .product-line-grid-left { width: 25%; float:left;}
+.cart-dropdown .product-line-grid-body { width: 65%; float:left; padding-left: 10px; font-size: 13px;}
+.cart-dropdown .product-line-grid-right { width: 10%; float:right;}
+
+.cart-dropdown .cart-subtotals, 
+.cart-dropdown .cart-totals {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.cart-dropdown .value {
+    float: right;
+    color: #ee152a; /* Czerwona cena */
+}
+
+.cart-dropdown .cart-buttons .btn-primary {
+    background-color: #ff9900 !important;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ff9a52;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* Ukrycie zbędnych elementów */
+body#checkout #header .header-nav { display: none; } /* Opcjonalnie: ukryj górny pasek w checkoucie */
+
+/* --- TYTUŁY KROKÓW --- */
+body#checkout .step-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- LEWA KOLUMNA (FORMULARZE) --- */
+body#checkout .checkout-process {
+    width: 100%;
+}
+
+/* --- PRAWA KOLUMNA (PODSUMOWANIE) --- */
+body#checkout .cart-summary {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+}
+
+body#checkout .cart-summary-line .label {
+    font-weight: normal;
+    color: #666;
+}
+
+body#checkout .cart-summary-line .value {
+    color: #ee152a; /* Twój kolor akcentu */
+    font-weight: bold;
+}
+
+/* --- METODY DOSTAWY (RADIO BUTTONS) --- */
+body#checkout .delivery-option {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+body#checkout .delivery-option label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- METODY PŁATNOŚCI --- */
+body#checkout .payment-option {
+    margin-bottom: 10px;
+}
+
+body#checkout .payment-option label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- PRZYCISKI "DALEJ" / "POTWIERDZAM" --- */
+body#checkout .continue, body#checkout .btn-primary {
+    background-color: #ff9900 !important;
+    border-color: #ff9900 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 4px;
+    float: right;
+}
+body#checkout .continue:hover {
+    background-color: #e68a00 !important;
+}
+#_desktop_cart_styled .blockcart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* --- CHECKOUT PAGE LAYOUT --- */
+body#checkout {
+    background-color: #f6f6f6; /* Light grey background */
+    color: #333;
+}
+
+body#checkout #content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- LEFT COLUMN (STEPS) --- */
+
+/* Step Box Styling - white card with shadow */
+body#checkout .checkout-step {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* --- 4. MENU (Normalne czcionki, Czerwony Hover) --- */
+/* Resetujemy pogrubienie, bo chciałeś "tak jak było" */
+#iqitmegamenu-horizontal .cbp-hrmenu-tab > a {
+    font-weight: 500 !important; /* Normalna waga, nie bold */
+    font-size: 13px !important;   /* Mniejszy rozmiar */
+    padding: 12px 18px !important;
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+/* Kontener wyszukiwarki - tu ustalamy długość */
+#search_widget_custom_wrapper {
+    width: 100%;
+    max-width: 400px; /* <--- ZMIEŃ TO, żeby wydłużyć/skrócić pasek (np. 300px, 500px) */
+    display: inline-block; /* Żeby nie rozpychał się na siłę */
+}
+
+/* Stylizacja pola tekstowego wewnątrz widgetu */
+#search_widget_custom_wrapper .search-widget form input[type=text] {
+    background-color: #f1f1f1 !important; /* Szare tło */
+    border: 1px solid #ddd !important;     /* Delikatna ramka */
+    color: #666;
+    height: 40px !important;               /* Wysokość paska */
+    padding: 0 40px 0 15px;                /* Odstępy (miejsce na lupę z prawej) */
+    width: 100%;
+    font-size: 13px;
+    border-radius: 3px;                    /* Lekkie zaokrąglenie */
+    outline: none;
+}
+
+/* Przycisk lupy (żeby był w środku paska) */
+#search_widget_custom_wrapper .search-widget form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Całe tło paska menu na czarno */
+#iqitmegamenu-wrapper, .iqitmegamenu-wrapper {
+    background-color: #000000 !important;
+    border-bottom: 3px solid #000; /* Żeby nie skakało przy hover */
+}
+
+/* Po najechaniu na element menu - czerwone tło */
+#iqitmegamenu-horizontal .cbp-hrmenu-tab:hover > a,
+#iqitmegamenu-horizontal .cbp-hrmenu-tab.active > a {
+    background-color: #ee152a !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+
+/* Step Title Styling */
+body#checkout .step-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Completed Step Title */
+body#checkout .checkout-step.-complete .step-title {
+    color: #2fb5d2; /* Blue checkmark color */
+}
+
+/* Current Step Title */
+body#checkout .checkout-step.-current .step-title {
+    color: #333;
+}
+
+/* --- FORMS & INPUTS --- */
+body#checkout .form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    height: 42px;
+    padding: 8px 12px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+body#checkout .form-control:focus {
+    border-color: #ff9900; /* Orange focus */
+    outline: 0;
+}
+
+/* --- SHIPPING & PAYMENT OPTIONS --- */
+
+/* Delivery Option Row */
+body#checkout .delivery-option {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+body#checkout .delivery-option label {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Payment Option Row */
+body#checkout .payment-option {
+    margin-bottom: 10px;
+}
+
+body#checkout .payment-option label {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* --- RIGHT COLUMN (CART SUMMARY) --- */
+
+/* Summary Box Styling */
+body#checkout .cart-summary-wrapper .card {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+body#checkout .cart-summary-wrapper .card-block {
+    padding: 20px;
+}
+
+/* Product list in summary */
+body#checkout .cart-summary-products .media-list {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+body#checkout .cart-summary-line {
+    clear: both;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+body#checkout .cart-summary-line .label {
+    color: #777;
+    font-weight: normal;
+}
+
+body#checkout .cart-summary-line .value {
+    color: #333;
+    font-weight: bold;
+    float: right;
+}
+
+/* Grand Total */
+body#checkout .cart-summary-totals .cart-summary-line.cart-total {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+body#checkout .cart-summary-totals .cart-summary-line.cart-total .value {
+    font-size: 20px;
+    color: #ee152a; /* Red price like reference */
+    font-weight: 700;
+}
+/* --- UKŁAD ONE PAGE (SYMULACJA) --- */
+/* Stylizacja prawej kolumny (Podsumowanie) */
+.cart-summary-wrapper .cart-summary {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 3px;
+}
+
+/* Ukrycie niepotrzebnych elementów w podsumowaniu */
+.cart-summary-products .show-details {
+    display: none !important; /* Na wypadek gdyby stary kod gdzieś został */
+}
+
+/* Czerwona cena całkowita */
+.cart-summary-totals .cart-total .value {
+    color: #ee152a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* --- 1. WYSZUKIWARKA (Szeroki szary pasek) --- */
+#search_widget {
+    width: 100%;
+    margin: 0;
+}
+#search_widget form {
+    position: relative;
+}
+#search_widget form input[type=text] {
+    background-color: #f1f1f1 !important; /* Jasnoszare tło */
+    border: none !important;
+    color: #666;
+    border-radius: 3px;
+    height: 45px;
+    padding: 0 50px 0 15px;
+    width: 100%;
+    font-size: 14px;
+}
+#search_widget form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 0 15px;
+    font-size: 18px;
+}
+/* Lupa robi się czerwona po najechaniu */
+#search_widget form button[type=submit]:hover {
+    color: #ee152a;
+    cursor: pointer;
+}
+
+
+/* --- 2. KOSZYK (Czarny -> Czerwony Hover) --- */
+#_desktop_cart_styled .blockcart {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    min-width: 190px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s; /* Płynna zmiana koloru */
+    position: relative;
+}
+
+/* EFEKT: Po najechaniu na koszyk robi się czerwony */
+#_desktop_cart_styled .blockcart:hover {
+    background: #ee152a;
+}
+
+#_desktop_cart_styled .blockcart a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_desktop_cart_styled .cart-products-count {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#_desktop_cart_styled .value {
+    color: #ee152a; /* Cena normalnie czerwona */
+    margin-left: 5px;
+    font-weight: bold;
+}
+/* Jak najedziesz na koszyk, cena robi się biała (żeby była widoczna na czerwonym tle) */
+#_desktop_cart_styled .blockcart:hover .value {
+    color: #ffffff;
+}
+
+
+/* --- 3. DROPDOWN KOSZYKA (Funkcjonalność) --- */
+#_desktop_cart_styled .cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9999;
+    width: 320px;
+    padding: 15px;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* Otwiera koszyk po najechaniu */
+#_desktop_cart_styled .blockcart:hover .cart-dropdown {
+    display: block;
+}
+
+
+/* --- 4. MENU (Czarne -> Czerwone Hover) --- */
+/* Dostosuj te selektory zależnie od tego jaki masz moduł menu */
+.top-menu, #iqitmegamenu-horizontal {
+    background: #000000;
+    width: 100%;
+}
+.top-menu .category, #iqitmegamenu-horizontal .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* EFEKT: Po najechaniu element menu robi się czerwony */
+.top-menu .category:hover, #iqitmegamenu-horizontal li:hover > .nav-link {
+    background-color: #ee152a !important;
+    text-decoration: none;
+}
+
+/* --- 1. WYSZUKIWARKA (Mała, szara, działająca) --- */
+#search_widget {
+    width: 100%;
+    margin: 0;
+}
+#search_widget form {
+    position: relative;
+}
+#search_widget form input[type=text] {
+    background-color: #f1f1f1 !important; /* Szare tło jak w oryginale */
+    border: 1px solid #eaeaea !important;
+    color: #666;
+    height: 40px !important; /* Mniejsza wysokość */
+    padding: 0 40px 0 15px;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 3px;
+    outline: none;
+}
+#search_widget form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Lupa robi się czerwona po najechaniu */
+#search_widget form button[type=submit]:hover {
+    color: #ee152a;
+}
+
+/* --- 2. KOSZYK (Biały tekst, Czerwony Hover) --- */
+#_desktop_cart_styled .blockcart {
+    background: #000000;
+    color: #ffffff !important; /* Wymuszenie białego koloru */
+    padding: 8px 15px;
+    min-width: 180px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+/* Po najechaniu koszyk robi się czerwony */
+#_desktop_cart_styled .blockcart:hover {
+    background: #ee152a;
+}
+
+/* Linki w koszyku */
+#_desktop_cart_styled .blockcart a,
+#_desktop_cart_styled .blockcart .value {
+    color: #ffffff !important; /* Cena też biała! */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Ikona torby */
+#_desktop_cart_styled .blockcart i {
+    color: #ffffff !important;
+    margin-right: 6px;
+}
+
+/* --- 3. LOGOWANIE (Bezpośrednio pod koszykiem) --- */
+.user-info-custom {
+    text-align: right;
+    line-height: 1.2;
+    padding-right: 2px; /* Mikro korekta wyrównania */
+}
+.user-info-custom a:hover {
+    color: #ee152a !important;
+}
+
+/* --- 1. WYSZUKIWARKA (Styl Bikepart - biała z ramką) --- */
+#search_widget_custom_wrapper {
+    width: 100%;
+    max-width: 100%; /* Rozciągnij na całą szerokość kolumny */
+}
+
+#search_widget_custom_wrapper .search-widget form {
+    position: relative;
+}
+
+/* Pole tekstowe */
+#search_widget_custom_wrapper .search-widget form input[type=text] {
+    background-color: #ffffff !important; /* Białe tło */
+    border: 1px solid #e1e1e1 !important; /* Delikatna ramka */
+    color: #333;
+    height: 45px !important; /* Wysokość paska */
+    padding: 0 50px 0 15px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0; /* Kanciaste rogi jak w oryginale */
+    outline: none;
+}
+
+/* Focus - niebieska ramka jak na screenie (opcjonalnie) */
+#search_widget_custom_wrapper .search-widget form input[type=text]:focus {
+    border-color: #66afe9 !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+/* Przycisk lupy */
+#search_widget_custom_wrapper .search-widget form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #000;
+    padding: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#search_widget_custom_wrapper .search-widget form button[type=submit]:hover {
+    color: #ee152a !important; /* Czerwona lupa po najechaniu */
+}
+
+/* --- 4. MENU (Normalne czcionki, Czerwony Hover) --- */
+/* Resetujemy pogrubienie, bo chciałeś "tak jak było" */
+#iqitmegamenu-horizontal .cbp-hrmenu-tab > a {
+    font-weight: 500 !important; /* Normalna waga, nie bold */
+    font-size: 13px !important;   /* Mniejszy rozmiar */
+    padding: 12px 18px !important;
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+/* Kontener wyszukiwarki - tu ustalamy długość */
+#search_widget_custom_wrapper {
+    width: 100%;
+    max-width: 400px; /* <--- ZMIEŃ TO, żeby wydłużyć/skrócić pasek (np. 300px, 500px) */
+    display: inline-block; /* Żeby nie rozpychał się na siłę */
+}
+
+/* Stylizacja pola tekstowego wewnątrz widgetu */
+#search_widget_custom_wrapper .search-widget form input[type=text] {
+    background-color: #f1f1f1 !important; /* Szare tło */
+    border: 1px solid #ddd !important;     /* Delikatna ramka */
+    color: #666;
+    height: 40px !important;               /* Wysokość paska */
+    padding: 0 40px 0 15px;                /* Odstępy (miejsce na lupę z prawej) */
+    width: 100%;
+    font-size: 13px;
+    border-radius: 3px;                    /* Lekkie zaokrąglenie */
+    outline: none;
+}
+
+/* Przycisk lupy (żeby był w środku paska) */
+#search_widget_custom_wrapper .search-widget form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Całe tło paska menu na czarno */
+#iqitmegamenu-wrapper, .iqitmegamenu-wrapper {
+    background-color: #000000 !important;
+    border-bottom: 3px solid #000; /* Żeby nie skakało przy hover */
+}
+
+/* Po najechaniu na element menu - czerwone tło */
+#iqitmegamenu-horizontal .cbp-hrmenu-tab:hover > a,
+#iqitmegamenu-horizontal .cbp-hrmenu-tab.active > a {
+    background-color: #ee152a !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+
+/* --- 5. LOGOWANIE --- */
+.user-info-custom a:hover {
+    color: #ee152a !important;
+}
+/* Kontener główny */
+.opc-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* 1. OBSZAR KROKÓW (DANE + DOSTAWA + PŁATNOŚĆ) */
+.opc-steps {
+    flex: 1 1 60%; /* Zajmuje ok 60% szerokości */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* --- POSZCZEGÓLNE KROKI (Dzielimy na pół) --- */
+/* Krok 1 (Dane) i 2 (Adresy) - Lewa strona */
+#checkout-personal-information-step,
+#checkout-addresses-step {
+    flex: 1 1 45%; /* Połowa szerokości bloku kroków */
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Krok 3 (Dostawa) i 4 (Płatność) - Prawa strona (Środek layoutu) */
+#checkout-delivery-step,
+#checkout-payment-step {
+    flex: 1 1 45%; /* Połowa szerokości bloku kroków */
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* 2. OBSZAR KOSZYKA (PRAWA STRONA) */
+.opc-cart-summary {
+    flex: 0 0 300px; /* Sztywna szerokość koszyka */
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: sticky;
+    top: 20px;
+}
+
+/* --- STYLIZACJA DETALI (Jak Bikepart) --- */
+.step-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ukrycie zbędnych elementów standardowych */
+.nav-tabs, .nav-item { display: none; } /* Jeśli są */
+
+/* Pola formularza */
+.form-control {
+    border-radius: 0;
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+}
+
+/* Guziki */
+.btn-primary {
+    background-color: #ff9900 !important;
+    border-color: #ff9900 !important;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- BUTTONS (ORANGE) --- */
+body#checkout .continue, 
+body#checkout .btn-primary, 
+body#checkout #payment-confirmation button {
+    background-color: #ff9900 !important; /* Bright Orange */
+    border-color: #ff9900 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 30px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    float: right;
+}
+
+body#checkout .continue:hover, 
+body#checkout .btn-primary:hover,
+body#checkout #payment-confirmation button:hover {
+    background-color: #e68a00 !important;
+    border-color: #e68a00 !important;
+}
+
+/* Hide standard prestashop checkout header if needed to match clean look */
+body#checkout .checkout-header h1 {
+   /* display: none;  uncomment if you want to hide the big "Checkout" title */
 }
 
 /* Styl czarnego przycisku */
@@ -14947,6 +15835,7 @@ li.product-flag:after {
   }
   ._footer-copyrights-1 .copyright-txt {
     text-align: center !important;
+    color: black;
   }
 }
 .contact-rich {
@@ -22570,6 +23459,23 @@ body {
   padding-top: 1.0714285714rem;
   padding-bottom: 1.0714285714rem;
 }
+/* Naprawa widoczności tekstu w stopce copyright */
+#footer-copyrights,
+#footer-copyrights p,
+#footer-copyrights span,
+#footer-copyrights b {
+    color: #000000 !important; /* Wymusza czarny tekst */
+}
+
+/* Osobny styl dla linków, żeby też były widoczne */
+#footer-copyrights a {
+    color: #333333 !important; /* Ciemny szary dla linków */
+    text-decoration: underline;
+}
+
+#footer-copyrights a:hover {
+    color: #ee152a !important; /* Twój czerwony kolor po najechaniu */
+}
 @media (max-width: 767px) {
   #footer .block-toggle {
     width: 100%;
@@ -26034,6 +26940,932 @@ body.page-module-iqitsearch-searchiqit
   visibility: visible !important; /* Override user's hidden rule if needed */
 }
 
+.delete-container .remove-from-cart:hover i {
+  color: #d32f2f;
+}
+
+/* Wyrównanie i style nagłówka strony kontaktu */
+.page-header h1.page-title span {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* KONTENER DANYCH KONTAKTOWYCH */
+.contact-rich {
+    padding: 15px;
+}
+.contact-rich strong {
+    font-size: 1.2em; /* Bikepart ma duza nazwe sklepu */
+    display: block;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.contact-rich .part {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+.contact-rich .part .icon {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    color: #ee152a; /* Czerwony/Pomarańczowy akcent dla ikon */
+}
+.contact-rich hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #eeeeee;
+}
+.contact-rich a, .contact-rich span {
+    color: #555;
+}
+.contact-rich a:hover {
+    color: #ee152a;
+}
+
+/* Wymuszenie koloru przycisku Wyślij */
+.contact-form .btn-primary, .contact-form .btn-primary:hover {
+    background-color: #ee152a !important;
+    border-color: #ee152a !important;
+}
+
+/* Styl mapy (Wymuszenie na ten element - usuwa marginesy) */
+#iqitcontactpage-map {
+    margin-bottom: 20px;
+}
+
+/* --- KOSZYK - CZARNY PASEK --- */
+#_desktop_cart_styled .blockcart {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    min-width: 180px;
+    text-align: right; /* Tekst do prawej */
+}
+
+#_desktop_cart_styled .blockcart a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#_desktop_cart_styled .blockcart i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Ukrycie przycisku "Koszyk" z tytułu, zostawiamy liczby */
+#_desktop_cart_styled .blockcart .title {
+    display: none; 
+}
+
+/* --- DROPDOWN (Rozwijane okno) --- */
+/* Domyślnie ukryte */
+#_desktop_cart_styled .cart-dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    width: 320px;
+    padding: 15px;
+    z-index: 9999;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    color: #333; /* Czarny tekst w środku */
+    text-align: left;
+}
+
+/* Pokaż po najechaniu myszką (Hover) - najprostszy sposób */
+#_desktop_cart_styled .blockcart:hover .cart-dropdown {
+    display: block;
+}
+
+/* Pokaż, jeśli ma klasę 'show' (dodawaną przez JS po kliknięciu) */
+#_desktop_cart_styled .blockcart.show .cart-dropdown {
+    display: block;
+}
+
+/* --- STYLIZACJA WNĘTRZA DROPDOWNA --- */
+.cart-dropdown .cart-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-dropdown .cart-buttons .btn-primary {
+    background-color: #ff9900 !important; /* Pomarańczowy */
+    border-color: #ff9900 !important;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-dropdown .cart-buttons .btn-secondary {
+    background-color: #f6f6f6 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    width: 100%;
+}
+
+.cart-dropdown .cart-totals .value {
+    color: #ee152a; /* Czerwona cena */
+    font-weight: bold;
+    float: right;
+}
+
+/* --- WYSZUKIWARKA (Styl jak na screenie) --- */
+
+/* Kontener */
+#search_widget_custom_wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+/* Pozycjonowanie formularza */
+#search_widget_custom_wrapper form {
+    position: relative;
+    width: 100%;
+}
+
+/* Pole tekstowe (Input) */
+#search_widget_custom_wrapper form input[type=text] {
+    background-color: #ffffff !important;  /* Białe tło */
+    border: 2px solid #aeccea !important;  /* Jasnoniebieska ramka jak na screenie */
+    color: #333333 !important;             /* Ciemny tekst */
+    height: 45px !important;               /* Wysokość paska */
+    padding: 0 50px 0 15px;                /* Odstęp na tekst (prawo miejsce na lupę) */
+    width: 100% !important;
+    border-radius: 0 !important;           /* Kanciaste rogi */
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+/* Efekt po kliknięciu (Focus) */
+#search_widget_custom_wrapper form input[type=text]:focus {
+    border-color: #66afe9 !important;      /* Mocniejszy niebieski po kliknięciu */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6) !important;
+}
+
+/* Przycisk lupy */
+#search_widget_custom_wrapper form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;                          /* Wysokość na cały pasek */
+    width: 50px;
+    background: transparent;               /* Przezroczyste tło */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ikona lupy */
+#search_widget_custom_wrapper form button[type=submit] i {
+    color: #000000 !important;             /* Czarna lupa */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover na lupę (opcjonalnie, żeby wiedzieć że działa) */
+#search_widget_custom_wrapper form button[type=submit]:hover i {
+    color: #ee152a !important;             /* Czerwony po najechaniu */
+}
+/* --- WYSZUKIWARKA (Biała, niebieska ramka, lupa z prawej) --- */
+#search_widget_custom_wrapper {
+    width: 100%;
+    margin: 0 auto; /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center;
+    height: 100%; /* Żeby łapało środek pionu */
+}
+
+#search_widget_custom_wrapper form {
+    position: relative;
+    width: 100%;
+}
+
+/* Pole tekstowe */
+#search_widget_custom_wrapper form input[type=text] {
+    background-color: #ffffff !important;
+    border: 2px solid #aeccea !important; /* Niebieska ramka */
+    color: #333 !important;
+    height: 42px !important;              /* Wysokość */
+    padding: 0 50px 0 15px !important;    /* Prawy padding 50px robi miejsce na lupę */
+    width: 100% !important;
+    border-radius: 0 !important;
+    outline: none;
+    font-size: 14px;
+    line-height: 42px; /* Wyśrodkowanie tekstu w pionie */
+}
+
+/* Lupa z prawej strony */
+#search_widget_custom_wrapper form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0; /* Przyklejenie do prawej */
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Ikona lupy */
+#search_widget_custom_wrapper form button[type=submit] i {
+    color: #000 !important;
+    font-size: 18px;
+}
+#search_widget_custom_wrapper form button[type=submit]:hover i {
+    color: #ee152a !important;
+}
+
+
+/* --- MENU (Odchudzone czarne przyciski) --- */
+/* Zmniejszamy padding (odstępy) góra/dół */
+#cbp-hrmenu > ul > li > a {
+    padding: 8px 20px !important; /* Było 12px, jest 8px - będą cieńsze */
+    font-size: 13px !important;
+    line-height: 1.2;
+    display: block;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Kolor tła paska menu */
+#iqitmegamenu-wrapper {
+    background-color: #000 !important;
+    border-bottom: 3px solid #000;
+}
+
+/* Hover - Czerwony */
+#cbp-hrmenu > ul > li:hover > a {
+    background-color: #ee152a !important;
+}
+
+/* --- 1. POPRAWKA UKŁADU NAGŁÓWKA (Idealny środek w pionie) --- */
+.header-top .row {
+    display: flex !important;
+    align-items: center !important; /* To centruje Logo, Szukajkę i Koszyk w pionie */
+    flex-wrap: nowrap !important;
+}
+
+/* --- 2. WYSZUKIWARKA (Środek i Wygląd) --- */
+#search_widget_custom_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centruje pasek poziomo w swojej kolumnie */
+    align-items: center;
+}
+
+#search_widget_custom_wrapper #search_widget {
+    width: 100%; 
+    max-width: 100%; /* Rozciągnięcie */
+    margin: 0;
+}
+
+#search_widget_custom_wrapper form {
+    position: relative;
+    margin: 0; /* Usunięcie marginesów, które mogły spychać w dół */
+}
+
+/* Input wyszukiwarki */
+#search_widget_custom_wrapper form input[type=text] {
+    background-color: #ffffff !important;
+    border: 2px solid #aeccea !important; /* Niebieska ramka */
+    color: #333 !important;
+    height: 42px !important;
+    padding: 0 50px 0 15px !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    outline: none;
+    line-height: 42px; /* Ważne dla pionu tekstu */
+    margin: 0 !important;
+}
+
+/* Lupa */
+#search_widget_custom_wrapper form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search_widget_custom_wrapper form button[type=submit] i {
+    color: #000;
+    font-size: 18px;
+}
+
+
+/* --- 3. MENU (Przyklejone, Wycentrowane, Cieńsze) --- */
+
+/* Kontener paska menu - PRZYKLEJANIE */
+.header-bottom-menu {
+    background: #000000 !important;
+    width: 100%;
+    position: sticky !important; /* Magia przyklejania */
+    top: 0 !important;           /* Przyklej do samej góry */
+    z-index: 9999 !important;    /* Żeby było nad wszystkim */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Cień pod spodem */
+}
+
+/* Wewnętrzny wrapper */
+#iqitmegamenu-wrapper {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+/* Styl linków (Wyśrodkowanie tekstu) */
+#cbp-hrmenu > ul > li > a {
+    padding: 10px 15px !important; /* Cieńsze góra/dół */
+    font-size: 13px !important;
+    line-height: 1.2;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex !important;      /* Flex do centrowania */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: 100%;
+}
+
+/* Hover - Czerwony */
+#cbp-hrmenu > ul > li:hover > a {
+    background-color: #ee152a !important;
+}
+
+/* Poprawka dla koszyka żeby też był w osi */
+.col-header-right {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Centrowanie pionowe */
+    align-items: flex-end !important;
+}
+
+/* --- NAPRAWA SZEROKOŚCI --- */
+#header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    z-index: 1000; /* Żeby dropdowny koszyka były nad sliderem */
+}
+
+/* --- PRZYKLEJONE MENU (Sticky on scroll) --- */
+/* Wrapper jest potrzebny, żeby sticky miało kontekst */
+.header-bottom-menu-wrapper {
+    width: 100%;
+    background-color: #000000;
+    height: 50px; 
+    position: sticky; /* Magia: zachowuje sie normalnie, dopoki nie dotknie gory */
+    position: -webkit-sticky;
+    top: 0; /* Przyklej do krawędzi 0px od góry */
+    z-index: 99999; /* Musi być NAJWYŻEJ, żeby przykrywać treść przy scrollowaniu */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Wnętrze paska */
+.header-bottom-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Naprawa kontenera wewnątrz, żeby się nie rozjeżdżał */
+.header-bottom-menu .container {
+    height: 100%;
+}
+
+/* --- POPRAWKA DLA Z-INDEX KOSZYKA I WYSZUKIWARKI --- */
+/* Żeby dropdown koszyka nie chował się pod przyklejonym menu */
+#_desktop_cart_styled .cart-dropdown {
+    z-index: 100000 !important; /* Wyżej niż sticky menu */
+}
+
+/* --- 1. KONTENER GŁÓWNY (STICKY + CZARNE TŁO) --- */
+/* To musi dotyczyć wrappera, w którym siedzi Twój nav */
+.header-bottom-menu-wrapper {
+    background-color: #000000 !important;
+    width: 100%;
+    height: 50px; /* Sztywna wysokość paska */
+    position: sticky !important; /* Kluczowe: przyklejanie */
+    position: -webkit-sticky !important;
+    top: 0;
+    z-index: 99999; /* Zawsze na wierzchu */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* --- 2. UKŁAD POZIOMY --- */
+#cbp-hrmenu {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+#cbp-hrmenu > ul {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* --- 3. ELEMENTY MENU (WYMIARY) --- */
+#cbp-hrmenu .cbp-hrmenu-tab {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Wypchnięcie KONTAKTU na prawą stronę */
+#cbp-hrmenu .pull-right {
+    margin-left: auto !important;
+}
+
+/* --- 4. LINKI (WYGLĄD TEKSTU) --- */
+#cbp-hrmenu .nav-link {
+    color: #ffffff !important;       /* Biały tekst */
+    font-weight: 500 !important;     /* Niepogrubione (Medium) */
+    font-size: 13px !important;      /* Mniejszy rozmiar */
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 0 25px !important;      /* Odstępy boczne */
+    height: 100%;                    /* Rozciągnięcie na całą wysokość */
+    display: flex !important;
+    align-items: center;             /* Idealny środek w pionie */
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+/* --- 5. HOVER (EFEKT CZERWONY) --- */
+#cbp-hrmenu .cbp-hrmenu-tab:hover .nav-link,
+#cbp-hrmenu .cbp-hrmenu-tab.active .nav-link {
+    background-color: #ee152a !important; /* Czerwony Bikepart */
+    color: #ffffff !important;
+}
+
+/* Ikony w menu */
+#cbp-hrmenu .icon {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* --- STYLIZACJA STOPKI (FOOTER) --- */
+
+/* 1. Ustawienie tła i koloru tekstu dla całego kontenera stopki */
+.footer-container {
+    /* Wklej tutaj link do swojego zdjęcia silnika */
+    background-image: url('motor1.jpg'); 
+    background-size: cover;       /* Rozciągnij zdjęcie na całą szerokość */
+    background-position: center;  /* Wyśrodkuj zdjęcie */
+    background-repeat: no-repeat;
+    background-color: #111;       /* Kolor zapasowy (ciemny) */
+    color: #ffffff;               /* Domyślny kolor tekstu: biały */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+/* Opcjonalnie: Przyciemnienie zdjęcia (overlay), żeby tekst był czytelny */
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Czarne tło z przezroczystością 70% */
+    z-index: 0;
+    pointer-events: none; /* Kliknięcia przechodzą przez warstwę */
+}
+
+/* Upewnij się, że treść jest nad przyciemnieniem */
+.footer-container .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* 2. Nagłówki w stopce (Informacje, Moje konto, itp.) */
+.footer-container h3, 
+.footer-container .h3, 
+.footer-container .block-contact-title,
+.footer-container .wrapper h4 {
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* 3. Linki w stopce */
+.footer-container ul li a, 
+.footer-container a {
+    color: #cccccc !important; /* Jasnoszary dla linków */
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-container ul li a:hover {
+    color: #ffffff !important; /* Biały po najechaniu */
+    padding-left: 5px; /* Efekt przesunięcia */
+}
+
+/* 4. Sekcja "Skontaktuj się z nami" - ikony i tekst */
+.block-contact .contact-rich {
+    color: #cccccc;
+}
+.block-contact .icon {
+    color: #ffffff; /* Ikony na biało */
+}
+
+/* 5. Newsletter (Prawo dół) */
+.block_newsletter form input[type="text"] {
+    background: #ffffff;
+    border: none;
+    color: #333;
+    padding: 10px;
+}
+
+/* Przycisk newslettera (koperta na pomarańczowym tle) */
+.block_newsletter form .btn {
+    background-color: #f59f4f; /* Pomarańczowy kolor ze zdjęcia */
+    color: white;
+    border: none;
+}
+
+.block_newsletter form .btn:hover {
+    background-color: #d88535; /* Ciemniejszy pomarańczowy po najechaniu */
+}
+
+/* Checkbox RODO pod newsletterem */
+.gdpr_consent {
+    color: #aaaaaa;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+/* 6. Ikony społecznościowe (Facebook) */
+.block-social ul li {
+    background: transparent;
+}
+.block-social ul li a {
+    color: #ffffff !important;
+    font-size: 24px; /* Większa ikona */
+}
+
+/* Styl dla dolnego paska praw autorskich */
+#footer-copyrights {
+    background-color:white; /* Głęboka czerń */
+    width: 100%;               /* Rozciągnięcie na całą szerokość ekranu */
+    padding: 20px 0;           /* Odstęp wewnątrz paska */
+    color: black;               /* Szary kolor tekstu */
+    border-top: 1px solid #222; /* Opcjonalna linia oddzielająca */
+    position: relative;
+    z-index: 10;
+}
+
+/* Kolor linków w pasku */
+#footer-copyrights a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-copyrights a:hover {
+    color: #ee152a; /* Czerwony po najechaniu */
+}
+
+/* Centrowanie kontentu */
+#footer-copyrights .container {
+    background: transparent; /* Upewniamy się, że środek nie ma tła */
+}
+
+/* Styl dla dolnego paska praw autorskich */
+#footer-copyrights {
+    background-color: #ffffff; /* Białe tło */
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #eee; /* Jaśniejsza linia oddzielająca */
+    position: relative;
+    z-index: 10;
+    color: #000000; /* Domyślny kolor */
+}
+
+/* Wymuszenie czarnego koloru na akapicie (nadpisanie domyślnych stylów motywu) */
+#footer-copyrights p {
+    color: #000000; 
+    margin: 0;
+}
+
+/* WAŻNE: Nadpisanie klasy .text-muted, która robiła tekst szarym */
+#footer-copyrights .text-muted {
+    color: #000000 !important;
+}
+
+/* Kolor linków (zmieniony na czarny, bo na białym tle biały byłby niewidoczny) */
+#footer-copyrights a {
+    color: #000000; /* Czarny zamiast #fff */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer-copyrights a:hover {
+    color: #ee152a; /* Czerwony po najechaniu */
+}
+
+/* Centrowanie kontentu */
+#footer-copyrights .container {
+    background: transparent;
+}
+
+/* --- 1. Wyłączenie otwierania na hover (ważne!) --- */
+.blockcart:hover .dropdown-menu,
+.blockcart:hover .dropdown-menu-custom {
+    display: none; /* Domyślnie ukryte, JS doda klasę, żeby pokazać */
+}
+
+/* Klasa dodawana przez nasz JS do otwarcia koszyka */
+.show-cart {
+    display: block !important;
+    animation: fadeIn 0.3s;
+}
+
+/* --- 2. Stylizacja okna koszyka --- */
+#_desktop_blockcart-content {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 350px; /* Szerokość okienka */
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    padding: 15px;
+    z-index: 1000;
+    border-radius: 4px;
+    text-align: left;
+    color: #333;
+}
+
+/* Nagłówek okienka */
+.cart-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cart-title .modal-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+.cart-title hr {
+    width: 100%;
+    margin: 10px 0;
+    border-color: #eee;
+}
+.cart-title .close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+/* Lista produktów */
+.cart-products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto; /* Scroll jak jest dużo produktów */
+}
+.cart-products li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* Zdjęcie */
+.cart-products .col-3 img {
+    border: 1px solid #eee;
+}
+
+/* Nazwa produktu */
+.col-info a {
+    color: #333;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Input ilości i przyciski +/- */
+.input-group.bootstrap-touchspin {
+    position: relative;
+    width: 70px; /* Wąski input */
+}
+.input-group.bootstrap-touchspin input {
+    text-align: center;
+    height: 35px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    padding-right: 20px; /* Miejsce na strzałki */
+}
+.input-group-btn-vertical {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ddd;
+}
+.input-group-btn-vertical .btn {
+    padding: 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+.input-group-btn-vertical .btn:hover {
+    background: #eee;
+}
+.input-group-btn-vertical i {
+    font-size: 10px;
+}
+
+/* Podsumowanie */
+.cart-subtotals, .cart-totals {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.cart-totals {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* Przyciski na dole */
+.cart-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+.btn-primary {
+    background-color: #ee152a; /* Twój czerwony */
+    border-color: #ee152a;
+    color: #fff;
+}
+.btn-secondary {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+/* --- NAPRAWA KOLORÓW W KOSZYKU --- */
+
+/* 1. Cena pojedynczego produktu na liście */
+.cart-dropdown .product-price {
+    color: #333333 !important; /* Ciemny szary */
+    font-weight: 600;
+}
+
+/* 2. Wartości w podsumowaniu (Suma produktów, Wysyłka) */
+.cart-dropdown .cart-subtotals .value {
+    color: #333333 !important;
+    font-weight: 600;
+}
+
+/* 3. Łączna kwota do zapłaty */
+.cart-dropdown .cart-total .value {
+    color: #000000 !important; /* Czarny */
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* 4. Etykiety (np. "Wysyłka:", "Suma:") - żeby też nie były blade */
+.cart-dropdown .label {
+    color: #555555 !important;
+}
+
+/* 5. Nazwa produktu (dla pewności) */
+.cart-dropdown .product-name a {
+    color: #000000 !important;
+}
+
+/* --- NAPRAWA KOLORÓW PODSUMOWANIA KOSZYKA --- */
+
+/* 1. Kolor dla etykiet (Suma produktów:, Wysyłka:, Łącznie:) */
+.cart-dropdown .cart-subtotals .label,
+.cart-dropdown .cart-total .label {
+    color: #555555 !important; /* Ciemny szary */
+}
+
+/* 2. Kolor dla kwot w podsumowaniu (Suma i Wysyłka) */
+.cart-dropdown .cart-subtotals .value {
+    color: #000000 !important; /* Czarny */
+    font-weight: 600;
+}
+
+/* 3. Kolor i styl dla GŁÓWNEJ SUMY na samym dole */
+.cart-dropdown .cart-total .value {
+    color: #ee152a !important; /* Twój czerwony (lub daj #000000 dla czarnego) */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Opcjonalnie: Linia oddzielająca sumę */
+.cart-total {
+    border-top: 1px solid #eaeaea;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* 1. Wymuszamy, żeby sama IKONA (ptaszek) była czarna jak smoła */
+.register-form .custom-checkbox input[type="checkbox"]:checked + span i,
+.register-form .custom-checkbox input[type="checkbox"]:checked + span .material-icons {
+    color: #000000 !important; /* To zmienia kolor ptaszka */
+    opacity: 1 !important;      /* To upewnia się, że jest widoczny */
+    display: block !important;  /* To upewnia się, że nie jest ukryty */
+}
+
+/* 2. (Dla pewności) Upewniamy się, że tło pod ptaszkiem jest przezroczyste */
+.register-form .custom-checkbox input[type="checkbox"]:checked + span {
+    background-color: transparent !important;
+}
+
+/* Wymuszenie usunięcia niepotrzebnych marginesów z produktów w katalogu */
+.page-category .products.row,
+.page-search .products.row {
+    margin: -0.3571428571rem; /* Zgodne z karuzelą */
+}
+
+.page-category .products.row > .col,
+.page-search .products.row > [class*="col-"] {
+    padding: 0.3571428571rem; /* Zgodne z karuzelą */
+}
+
+/* Wymuszenie wyświetlania w Layout 2, jeśli brakuje tego w pliku product.tpl */
+.page-category article.product-miniature-default {
+    /* To zapewnia, że kontener produktu jest w układzie flex, wymaganym przez Layout 2 */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+/* Wymuszenie stałej wysokości i wyrównania dla kontenerów produktów */
+.products-grid .product-miniature-default {
+    height: 100%; /* Wymuś pełną wysokość kolumny */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wymuszenie stałej, minimalnej wysokości dla bloku z opisem */
+.product-miniature-default .product-description {
+    /* Ustaw minimalną wysokość bloku opisu (dopasuj wartość np. do 180px) */
+    min-height: 10rem; /* np. 10rem = ~140px, aby zmieścić 2-3 linijki tekstu */
+    flex-grow: 1; /* Pozwól, by opis zajął całą dostępną przestrzeń */
+}
+
+/* Wyrównanie przycisku 'Do koszyka' na dole kontenera opisu */
+.product-miniature-default .product-add-cart {
+    margin-top: auto; /* To pchnie go na dół */
+    margin-bottom: 0;
 .delete-container .remove-from-cart:hover i {
   color: #d32f2f;
 }

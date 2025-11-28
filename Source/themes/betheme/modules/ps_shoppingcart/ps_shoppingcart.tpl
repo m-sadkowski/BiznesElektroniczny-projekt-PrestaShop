@@ -19,6 +19,19 @@
         <ul>
           {foreach from=$cart.products item=product}
             <li class="cart-product-line">
+              <div class="product-image-container">
+                            <span class="product-image">
+                                {if $product.cover}
+                                    <a href="{$product.url}">
+                                        <img src="{$product.cover.bySize.cart_default.url}" alt="{$product.name|escape:'quotes'}" class="img-fluid">
+                                    </a>
+                                {else}
+                                    <a href="{$product.url}">
+                                        <img src="{$urls.no_picture_image.bySize.cart_default.url}" class="img-fluid" />
+                                    </a>
+                                {/if}
+                            </span>
+                        </div>
               <span class="product-quantity">{$product.quantity}x</span>
               <span class="product-name">{$product.name}</span>
               <span class="product-price">{$product.price}</span>
@@ -37,7 +50,7 @@
         <div class="cart-subtotals">
             <div class="products">
                 <span class="label">Suma produktów:</span>
-                <span class="value">{$cart.subtotals.products.value}</span>
+                <span class="value" style="color: black">{$cart.subtotals.products.value}</span>
             </div>
             <div class="shipping">
                 <span class="label">Wysyłka:</span>
