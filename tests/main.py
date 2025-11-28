@@ -9,11 +9,11 @@ import time
 import random
 from faker import Faker
 
-# --- KONFIGURACJA ---
-fake = Faker(locale="pl_PL")
-BASE_URL = "https://bikepart.pl/pl/" # Podmień na URL swojej kopii lokalnej!
 
-# Inicjalizacja drivera
+fake = Faker(locale="pl_PL")
+BASE_URL = "https://bikepart.pl/pl/" 
+
+
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
@@ -206,24 +206,23 @@ def test_step_4_to_6_checkout_process():
 
     
     print(" -> Wybór przewoźnika...")
-    # Czekamy na sekcję dostawy
+    
     wait.until(EC.presence_of_element_located((By.ID, "checkout-delivery-step")))
     
-    # Pobieramy opcje (szukamy inputów typu radio lub klikalnych etykiet)
-    delivery_options = driver.find_elements(By.CSS_SELECTOR, ".delivery-option input") # radio buttons
+    
+    delivery_options = driver.find_elements(By.CSS_SELECTOR, ".delivery-option input") 
     
     if len(delivery_options) >= 2:
-        # Wybierz losowo 0 lub 1 (czyli pierwszy lub drugi)
+        
         choice = random.choice([0, 1])
-        # W PrestaShop często klika się w Label (rodzica inputa) lub w div obok, 
-        # ale kliknięcie w input (przez JS jeśli ukryty) też działa.
+        
         driver.execute_script("arguments[0].click();", delivery_options[choice])
         print(f" -> Wybrano przewoźnika nr {choice+1}")
     else:
         driver.execute_script("arguments[0].click();", delivery_options[0])
         print(" -> Wybrano jedynego dostępnego przewoźnika.")
 
-    # Zatwierdź dostawę
+   
     wait.until(EC.element_to_be_clickable((By.NAME, "confirmDeliveryOption"))).click()
     print("KROK 4-6 ZAKOŃCZONY.")
 
@@ -242,7 +241,7 @@ def test_step_4_to_6_checkout_process():
     if not found_cod and len(payment_options) > 0:
         payment_options[0].find_element(By.CSS_SELECTOR, "input").click()
 
-    # Akceptacja regulaminu (checkbox)
+    
     driver.find_element(By.ID, "conditions_to_approve[terms-and-conditions]").click()
     
     # Przycisk "Złóż zamówienie"
