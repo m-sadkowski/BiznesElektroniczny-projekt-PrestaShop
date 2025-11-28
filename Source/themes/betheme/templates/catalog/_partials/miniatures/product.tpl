@@ -24,96 +24,105 @@
  *}
 {block name='product_miniature_item'}
 <div class="js-product product{if !empty($productClasses)} {$productClasses}{/if}">
-  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+  <article class="product-miniature product-miniature-default product-miniature-grid product-miniature-layout-2 js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+    
+    {* 1. CONTAINER OBRAZKA I FLAGEK *}
     <div class="thumbnail-container">
-      <div class="thumbnail-top">
-        {block name='product_thumbnail'}
-          {if $product.cover}
-            <a href="{$product.url}" class="thumbnail product-thumbnail">
-              <img
-                src="{$product.cover.bySize.home_default.url}"
-                alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-                loading="lazy"
-                data-full-size-image-url="{$product.cover.large.url}"
-                width="{$product.cover.bySize.home_default.width}"
-                height="{$product.cover.bySize.home_default.height}"
-              />
-            </a>
-          {else}
-            <a href="{$product.url}" class="thumbnail product-thumbnail">
-              <img
-                src="{$urls.no_picture_image.bySize.home_default.url}"
-                loading="lazy"
-                width="{$urls.no_picture_image.bySize.home_default.width}"
-                height="{$urls.no_picture_image.bySize.home_default.height}"
-              />
-            </a>
-          {/if}
-        {/block}
-
-        <div class="highlighted-informations{if !$product.main_variants} no-variants{/if}">
-          {block name='quick_view'}
-            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
-              <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
-            </a>
-          {/block}
-
-          {block name='product_variants'}
-            {if $product.main_variants}
-              {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+        <a href="{$product.url}" class="thumbnail product-thumbnail">
+            <img src="{$product.cover.bySize.home_default.url}" alt="{$product.cover.legend}" width="{$product.cover.bySize.home_default.width}" height="{$product.cover.bySize.home_default.height}" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first">
+            {* Dodaj warunek na obrazek 2, jeśli istnieje *}
+            {if isset($product.images.1.bySize.home_default.url)}
+                <img src="{$product.images.1.bySize.home_default.url}" alt="{$product.images.1.legend}" width="{$product.images.1.bySize.home_default.width}" height="{$product.images.1.bySize.home_default.height}" class="img-fluid swiper-lazy lazy-product-image product-thumbnail-second">
             {/if}
-          {/block}
-        </div>
-      </div>
-
-      <div class="product-description">
-        {block name='product_name'}
-          {if $page.page_name == 'index'}
-            <h3 class="h3 product-title"><a href="{$product.url}" content="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
-          {else}
-            <h2 class="h3 product-title"><a href="{$product.url}" content="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
-          {/if}
+        </a>
+        
+        {block name='product_flags'}
+            <ul class="product-flags js-product-flags">
+                {foreach from=$product.flags item=flag}
+                    <li class="product-flag {$flag.type}">{$flag.label}</li>
+                {/foreach}
+            </ul>
         {/block}
-
-        {block name='product_price_and_shipping'}
-          {if $product.show_price}
-            <div class="product-price-and-shipping">
-              {if $product.has_discount}
-                {hook h='displayProductPriceBlock' product=$product type="old_price"}
-
-                <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
-                {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
-                {elseif $product.discount_type === 'amount'}
-                  <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
-                {/if}
-              {/if}
-
-              {hook h='displayProductPriceBlock' product=$product type="before_price"}
-
-              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">
-                {capture name='custom_price'}{hook h='displayProductPriceBlock' product=$product type='custom_price' hook_origin='products_list'}{/capture}
-                {if '' !== $smarty.capture.custom_price}
-                  {$smarty.capture.custom_price nofilter}
-                {else}
-                  {$product.price}
-                {/if}
-              </span>
-
-              {hook h='displayProductPriceBlock' product=$product type='unit_price'}
-
-              {hook h='displayProductPriceBlock' product=$product type='weight'}
+        
+        {* Wymagane do działania quickview / funkcjonalnych przycisków *}
+        <div class="product-functional-buttons product-functional-buttons-bottom">
+            <div class="product-functional-buttons-links">
+                {hook h='displayProductListFunctionalButtons' product=$product}
+                <a class="js-quick-view-iqit" href="#" data-link-action="quickview" data-toggle="tooltip" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
             </div>
-          {/if}
-        {/block}
-
-        {block name='product_reviews'}
-          {hook h='displayProductListReviews' product=$product}
-        {/block}
-      </div>
-
-      {include file='catalog/_partials/product-flags.tpl'}
+        </div>
+        
+        {* Wymagana informacja o dostępności (Czas realizacji zamówienia) *}
+        <div class="product-availability d-block mt-2 pfix-fallback">
+            {hook h='displayProductAvailability'}
+        </div>
     </div>
-  </article>
+    
+    {* 2. CONTAINER OPISU, CENY I KOSZYKA *}
+    <div class="product-description">
+        <div class="row extra-small-gutters justify-content-end">
+            <div class="col">
+                <div class="product-category-name text-muted">{$product.category_name}</div>
+                
+                <h2 class="h3 product-title">
+                    <a href="{$product.url}">{$product.name|truncate:50:'...'}</a>
+                </h2>
+                
+                <div class="product-reference text-muted">{$product.reference}</div>
+            </div>
+            
+            <div class="col col-auto product-miniature-right">
+                <div class="product-price-and-shipping">
+                    {if $product.has_discount}
+                        {hook h='displayProductPriceBlock' product=$product type="old_price"}
+                        <span class="regular-price">{$product.regular_price}</span>
+                    {/if}
+                    <span class="product-price" content="{$product.price_amount}" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">
+                        {$product.price}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        {* Krótki opis (opcjonalny, ale był w Twoim kodzie) *}
+        <div class="product-description-short text-muted">
+             {$product.description_short|strip_tags:'UTF-8'|truncate:100:'...'}
+        </div>
+        
+        {* PRZYCISK DO KOSZYKA (Najważniejszy element) *}
+        <div class="product-add-cart js-product-add-cart-{$product.id_product}-{$product.id_product_attribute}">
+    <form action="{$smarty.const._PS_BASE_URL_}{$smarty.const.__PS_BASE_URI__}koszyk" method="post">
+        <input type="hidden" name="id_product" value="{$product.id_product}">
+        <input type="hidden" name="token" value="{$static_token}">
+        <input type="hidden" name="id_product_attribute" value="{$product.id_product_attribute}">
+        
+        <div class="input-group-add-cart">
+            <div class="input-group bootstrap-touchspin">
+                <input type="number" name="qty" value="1" class="form-control input-qty" min="1" style="display: block;">
+                <span class="input-group-btn-vertical">
+                    <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" type="button"><i class="fa fa-angle-up touchspin-up"></i></button>
+                    <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" type="button"><i class="fa fa-angle-down touchspin-down"></i></button>
+                </span>
+            </div>
+            
+            <button class="btn btn-product-list add-to-cart" data-button-action="add-to-cart" type="submit">
+                <i class="fa fa-shopping-bag fa-fw bag-icon" aria-hidden="true"></i> 
+                <i class="fa fa-circle-o-notch fa-spin fa-fw spinner-icon" aria-hidden="true"></i> 
+                {l s='Do koszyka' d='Shop.Theme.Actions'}
+            </button>
+        </div>
+    </form>
+</div>
+        
+    </div>
+    
+    {* DODATKOWA INFORMACJA O DOSTĘPNOŚCI POD PRODUKTEM (dla pewności) *}
+    <div class="product-availability d-block mt-2 pfix-fallback">
+        {hook h='displayProductAvailability'}
+    </div>
+
+</article>
 </div>
 {/block}

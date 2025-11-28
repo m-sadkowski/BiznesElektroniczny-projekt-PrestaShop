@@ -27659,3 +27659,43 @@ body.page-module-iqitsearch-searchiqit
 .register-form .custom-checkbox input[type="checkbox"]:checked + span {
     background-color: transparent !important;
 }
+
+/* Wymuszenie usunięcia niepotrzebnych marginesów z produktów w katalogu */
+.page-category .products.row,
+.page-search .products.row {
+    margin: -0.3571428571rem; /* Zgodne z karuzelą */
+}
+
+.page-category .products.row > .col,
+.page-search .products.row > [class*="col-"] {
+    padding: 0.3571428571rem; /* Zgodne z karuzelą */
+}
+
+/* Wymuszenie wyświetlania w Layout 2, jeśli brakuje tego w pliku product.tpl */
+.page-category article.product-miniature-default {
+    /* To zapewnia, że kontener produktu jest w układzie flex, wymaganym przez Layout 2 */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+/* Wymuszenie stałej wysokości i wyrównania dla kontenerów produktów */
+.products-grid .product-miniature-default {
+    height: 100%; /* Wymuś pełną wysokość kolumny */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wymuszenie stałej, minimalnej wysokości dla bloku z opisem */
+.product-miniature-default .product-description {
+    /* Ustaw minimalną wysokość bloku opisu (dopasuj wartość np. do 180px) */
+    min-height: 10rem; /* np. 10rem = ~140px, aby zmieścić 2-3 linijki tekstu */
+    flex-grow: 1; /* Pozwól, by opis zajął całą dostępną przestrzeń */
+}
+
+/* Wyrównanie przycisku 'Do koszyka' na dole kontenera opisu */
+.product-miniature-default .product-add-cart {
+    margin-top: auto; /* To pchnie go na dół */
+    margin-bottom: 0;
+}
