@@ -321,3 +321,16 @@ Pcim 876</div>
         </div>
     </div>
 </div>
+
+<div id="footer-copyrights" class="_footer-copyrights-1 dropup" style="color:black">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 pull-sm-6 copyright-txt">
+                <p>© 2012 - 2025 <b>BIKEPART</b> - wszystkie prawa zastrzeżone.</p>
+                <span>
+                    PROJEKT I WYKONANIE <a href="https://prestadev.pl" rel="nofollow" title="MODUŁY I INTEGRACJE DLA PRESTASHOP - PRESTADEV.PL"><b>PRESTADEV.PL</b></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

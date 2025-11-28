@@ -23,12 +23,22 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div id="js-product-list">
-  {include file="catalog/_partials/productlist.tpl" products=$listing.products cssClass="row"}
+  <div class="products row products-grid justify-content-center">
+    {foreach from=$listing.products item="product"}
+      {block name='product_miniature'}
+        {* Wymuszenie 4 kolumn (col-xl-3) *}
+        <div class="js-product-miniature-wrapper col-6 col-md-4 col-lg-3 col-xl-3">
+          {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+        </div>
+      {/block}
+    {/foreach}
+  </div>
 
   {block name='pagination'}
-    {include file='_partials/pagination.tpl' pagination=$listing.pagination}
+    {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
   {/block}
-
+  
+  {* Ten div jest kluczowy dla działania Infinite Scroll *}
   <div class="hidden-md-up text-xs-right up">
     <a href="#header" class="btn btn-secondary">
       {l s='Back to top' d='Shop.Theme.Actions'}
