@@ -46,6 +46,174 @@ body#checkout section.checkout-step {
     margin-bottom: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+#_desktop_cart_styled .blockcart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Styl czarnego przycisku */
+#_desktop_cart_styled .blockcart .header a {
+    background: #000000;       /* CZARNE TŁO */
+    color: #ffffff !important; /* BIAŁY TEKST */
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 180px;
+    text-align: center;
+}
+
+#_desktop_cart_styled .blockcart .header i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+#_desktop_cart_styled .value {
+    color: #ee152a; /* Czerwona cena na pasku */
+    margin-left: 5px;
+}
+
+/* --- ROZWIJANE OKNO (DROPDOWN) --- */
+#_desktop_cart_styled .blockcart .body {
+    display: none; /* Domyślnie ukryte */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 5000;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* --- MECHANIZM OTWIERANIA (HOVER) --- */
+/* To otwiera koszyk po najechaniu */
+#_desktop_cart_styled .blockcart:hover .body {
+    display: block;
+}
+
+/* --- STYLIZACJA WNĘTRZA --- */
+#_desktop_cart_styled .cart-product-line {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+#_desktop_cart_styled .cart-total {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#_desktop_cart_styled .cart-total .value {
+    float: right;
+    color: #ee152a; /* Czerwona cena sumy */
+}
+
+/* Przycisk DO KASY */
+#_desktop_cart_styled .btn-primary {
+    background-color: #ff9900 !important;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+}
+
+/* --- 3. STYLIZACJA ŚRODKA (Żeby nie było rozwalone) --- */
+.cart-dropdown .cart-title {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-dropdown .cart-products {
+    padding: 0;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-dropdown .cart-products li {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Układ produktu w koszyku (obrazek + info) */
+.cart-dropdown .product-line-grid-left { width: 25%; float:left;}
+.cart-dropdown .product-line-grid-body { width: 65%; float:left; padding-left: 10px; font-size: 13px;}
+.cart-dropdown .product-line-grid-right { width: 10%; float:right;}
+
+.cart-dropdown .cart-subtotals, 
+.cart-dropdown .cart-totals {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.cart-dropdown .value {
+    float: right;
+    color: #ee152a; /* Czerwona cena */
+}
+
+.cart-dropdown .cart-buttons .btn-primary {
+    background-color: #ff9900 !important;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ff9a52;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 /* Ukrycie zbędnych elementów */
@@ -27698,4 +27866,146 @@ body.page-module-iqitsearch-searchiqit
 .product-miniature-default .product-add-cart {
     margin-top: auto; /* To pchnie go na dół */
     margin-bottom: 0;
+.delete-container .remove-from-cart:hover i {
+  color: #d32f2f;
+}
+
+/* Wyrównanie i style nagłówka strony kontaktu */
+.page-header h1.page-title span {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* KONTENER DANYCH KONTAKTOWYCH */
+.contact-rich {
+    padding: 15px;
+}
+.contact-rich strong {
+    font-size: 1.2em; /* Bikepart ma duza nazwe sklepu */
+    display: block;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.contact-rich .part {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+.contact-rich .part .icon {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    color: #ee152a; /* Czerwony/Pomarańczowy akcent dla ikon */
+}
+.contact-rich hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #eeeeee;
+}
+.contact-rich a, .contact-rich span {
+    color: #555;
+}
+.contact-rich a:hover {
+    color: #ee152a;
+}
+
+/* Wymuszenie koloru przycisku Wyślij */
+.contact-form .btn-primary, .contact-form .btn-primary:hover {
+    background-color: #ee152a !important;
+    border-color: #ee152a !important;
+}
+
+/* Styl mapy (Wymuszenie na ten element - usuwa marginesy) */
+#iqitcontactpage-map {
+    margin-bottom: 20px;
+}
+
+/* --- KOSZYK - CZARNY PASEK --- */
+#_desktop_cart_styled .blockcart {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    min-width: 180px;
+    text-align: right; /* Tekst do prawej */
+}
+
+#_desktop_cart_styled .blockcart a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#_desktop_cart_styled .blockcart i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Ukrycie przycisku "Koszyk" z tytułu, zostawiamy liczby */
+#_desktop_cart_styled .blockcart .title {
+    display: none; 
+}
+
+/* --- DROPDOWN (Rozwijane okno) --- */
+/* Domyślnie ukryte */
+#_desktop_cart_styled .cart-dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    width: 320px;
+    padding: 15px;
+    z-index: 9999;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    color: #333; /* Czarny tekst w środku */
+    text-align: left;
+}
+
+/* Pokaż po najechaniu myszką (Hover) - najprostszy sposób */
+#_desktop_cart_styled .blockcart:hover .cart-dropdown {
+    display: block;
+}
+
+/* Pokaż, jeśli ma klasę 'show' (dodawaną przez JS po kliknięciu) */
+#_desktop_cart_styled .blockcart.show .cart-dropdown {
+    display: block;
+}
+
+/* --- STYLIZACJA WNĘTRZA DROPDOWNA --- */
+.cart-dropdown .cart-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-dropdown .cart-buttons .btn-primary {
+    background-color: #ff9900 !important; /* Pomarańczowy */
+    border-color: #ff9900 !important;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-dropdown .cart-buttons .btn-secondary {
+    background-color: #f6f6f6 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    width: 100%;
+}
+
+.cart-dropdown .cart-totals .value {
+    color: #ee152a; /* Czerwona cena */
+    font-weight: bold;
+    float: right;
 }
