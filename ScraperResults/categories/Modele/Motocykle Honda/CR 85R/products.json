@@ -1,0 +1,92 @@
+[
+    {
+        "name": "CYLINDER CR85 2003-05 12110-GBF-B00",
+        "category": "CR 85R",
+        "reference": "12110-GBF-B00 PP",
+        "price": 1783.5,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, oryginalny cylinder marki honda\noryginalny produkt marki honda\nHONDA cr85\npasuje do rocznika\n2003-2005",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 5 dni",
+        "images": [
+            "12110-GBF-B00 PP_1.jpg",
+            "12110-GBF-B00 PP_2.jpg"
+        ],
+        "quantity": 3
+    },
+    {
+        "name": "HONDA CR85 CR80 USZCZELKA KARTERÓW 11191GBF830",
+        "category": "CR 85R",
+        "reference": "11191-GBF-830 PP",
+        "price": 66.3,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa oryginalna uszczelka między kartery\ncena za jedną sztukę.\npasuje do:\nHONDA\nCR 85R 2003-2007\nCR 80 1996-2001",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "11191-GBF-830 PP_1.jpg",
+            "11191-GBF-830 PP_2.jpg"
+        ],
+        "quantity": 3
+    },
+    {
+        "name": "USZCZELKA POD CYLINDER CR85 12191GBFB40",
+        "category": "CR 85R",
+        "reference": "12191-GBF-B40 PP",
+        "price": 28.93,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod cylinder Honda OEM.\npasuje do:\nCR 85R 2005-2007",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "12191-GBF-B40 PP_1.jpg",
+            "12191-GBF-B40 PP_2.jpg"
+        ],
+        "quantity": 6
+    },
+    {
+        "name": "USZCZELKA POD DEKIEL ALTERNATORA HONDA CR85 CR80 11342GC4710",
+        "category": "CR 85R",
+        "reference": "11342-GC4-710 PP",
+        "price": 21.7,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod lewy dekiel Honda OEM.\npasuje do:\nCR 85R 2003-2007\nCR 80R 1985-2001",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "11342-GC4-710 PP_1.jpg",
+            "11342-GC4-710 PP_2.jpg"
+        ],
+        "quantity": 5
+    },
+    {
+        "name": "USZCZELKA POD DEKIEL PRAWY HONDA CR85 CR80 11393GBF830",
+        "category": "CR 85R",
+        "reference": "11393-GBF-830 PP",
+        "price": 57.86,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod prawy dekiel Honda OEM.\npasuje do:\nCR 85R 2003-2007\nCR 80R 1985-2001",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 7 do 12 dni",
+        "images": [
+            "11393-GBF-830 PP_1.jpg",
+            "11393-GBF-830 PP_2.jpg"
+        ],
+        "quantity": 6
+    },
+    {
+        "name": "USZCZELKA POD GŁOWICE CR85 12251GBFB01",
+        "category": "CR 85R",
+        "reference": "12251-GBF-B01 PP",
+        "price": 138.62,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowa, oryginalna uszczelka pod głowice Honda OEM.\npasuje do:\nCR 85R 2003-2007",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "12251-GBF-B01 PP_1.jpg",
+            "12251-GBF-B01 PP_2.jpg"
+        ],
+        "quantity": 7
+    }
+]

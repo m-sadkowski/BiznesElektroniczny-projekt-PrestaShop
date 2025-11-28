@@ -1,0 +1,77 @@
+[
+    {
+        "name": "MANNOL CHAIN CLEANER SPRAY DO CZYSZCZENIA ŁAŃCUCHA MN7904",
+        "category": "SPRAY",
+        "reference": "MN7904",
+        "price": 18.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMANNOL CHAIN CLEANER 400ML - SPRAY DO\nCZYSZCZENIA ŁAŃCUCHA (7904) (24)\nOpakowanie 400 ml",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN7904_1.jpg",
+            "MN7904_2.jpg"
+        ],
+        "quantity": 10
+    },
+    {
+        "name": "MANNOL SPRAY DO FILTRA OLEJ W SPRAYU 200 ML MN9964",
+        "category": "SPRAY",
+        "reference": "MN9964",
+        "price": 18.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMANNOL AIR FILTER OIL PŁYN\n(OLEJ) DO NASĄCZANIA FILTRÓW POWIETRZA W SPRAY'U 200ML (9964) (24)\nOpakowanie 200 ML",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN9964_1.jpg",
+            "MN9964_2.jpg"
+        ],
+        "quantity": 8
+    },
+    {
+        "name": "MANNOL ŚRODEK SMARUJĄCY UNIWERSLANY SPRAY WD40",
+        "category": "SPRAY",
+        "reference": "MN9898",
+        "price": 14.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMANNOL M-40 Lubricant\nsmaruje, czyści, rozpuszcza i chroni przed rdzą. Mieszanka wysoce skutecznych substancji i olejów, nie tylko poluzowuje wszelkiego rodzaju zardzewiałe elementy w ich najwęższych szczelinach, ale także gwarantuje płynność ruchu części ruchomych. Zdolność odprowadzania oraz rozpraszania wody i właściwości antykorozyjne zapewniają ochronę przed korozją i utlenianiem. Czyści zapieczony brud, pozostałości oleju i smaru. Nieszkodliwy dla lakieru, gumy i plastiku. Odpowiada WD40.\nOpakowanie 200 ML",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN9898_1.jpg",
+            "MN9898_2.jpg"
+        ],
+        "quantity": 7
+    },
+    {
+        "name": "MOTUL SMAR DO ŁAŃCUCHA SPRAY DO SMAROWANIA 400 ML",
+        "category": "SPRAY",
+        "reference": "MU103008",
+        "price": 42.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy,\nMOTUL C2+ CHAIN LUBE ROAD PLUS 400ML\nSMAR DO ŁAŃCUCHA (BIAŁY)",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MU103008_1.jpg",
+            "MU103008_2.jpg"
+        ],
+        "quantity": 2
+    },
+    {
+        "name": "SMAR DO ŁAŃCUCHA HONDA 08CMC-CLU-400HE",
+        "category": "SPRAY",
+        "reference": "08CMC-CLU-400HE HH",
+        "price": 63.36,
+        "description_short": "Przedmiotem sprzedaży są:\nFabrycznie nowy, oryginalny smar do łańcuchów\n400 ml",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia do 2 do 3 dni",
+        "images": [
+            "08CMC-CLU-400HE HH_1.jpg",
+            "08CMC-CLU-400HE HH_2.jpg"
+        ],
+        "quantity": 8
+    }
+]

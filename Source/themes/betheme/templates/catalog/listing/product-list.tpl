@@ -1,31 +1,23 @@
-{**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
- * @author    PrestaShop SA and Contributors <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- *}
 {extends file=$layout}
 
 {block name='head_microdata_special'}
   {include file='_partials/microdata/product-list-jsonld.tpl' listing=$listing}
+{/block}
+
+{block name='product_list'}
+  
+  {* Używamy klas, które motyw rozpoznaje jako siatkę produktów i włączamy CSS Layout 2 *}
+  <div class="products-grid products">
+    <div class="products row">
+      
+      {* Włączamy główną miniaturę i dodajemy KLASĘ LAYOUTU 2,
+         która ostyluje produkt tak jak na stronie głównej. *}
+      {include file='catalog/_partials/products.tpl' 
+        listing=$listing 
+        productClass="product-miniature-layout-2 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"}
+        
+    </div>
+  </div>
 {/block}
 
 {block name='content'}
@@ -40,7 +32,7 @@
         {include file='catalog/_partials/subcategories.tpl' subcategories=$subcategories}
       {/if}
     {/block}
-    
+
     {hook h="displayHeaderCategory"}
 
     <section id="products">
@@ -56,13 +48,19 @@
           </div>
         {/block}
 
+        {* ---------------- START: ZMIENIONY BLOK product_list ---------------- *}
         {block name='product_list'}
-          {include file='catalog/_partials/products.tpl' listing=$listing productClass="col-xs-12 col-sm-6 col-xl-4"}
-        {/block}
+        <div class="products-grid products">
+          <div class="products row">
+            {include file='catalog/_partials/products.tpl' 
+              listing=$listing 
+              productClass="product-miniature-layout-2 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"}
+          </div>
+        </div>
+      {/block}
+        {* ---------------- END: ZMIENIONY BLOK product_list ---------------- *}
 
-        {block name='product_list_bottom'}
-          {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
-        {/block}
+       
 
       {else}
         <div id="js-product-list-top"></div>

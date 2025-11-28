@@ -15,8 +15,10 @@ Główne założenia projektu obejmowały:
 
 ##  Wykorzystane technologie
 
-* **Platforma e-commerce:** PrestaShop
+* **Platforma e-commerce:** PrestaShop 1.7.8
 * **System do zarządzania kompozycją kontenerów:** Docker
+* **Narzędzie do testów UI**: Sellenium
+* **Język użyty do scrapingu produktów:** Python 3.8+
 
 ---
 
@@ -46,10 +48,10 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     docker-compose up -d # -d powoduje działanie w tle
     ```
   
-  * Po uruchomieniu kontenerów wejdź na **localhost:8080** i przejdź przez proces instalacyjny Prestashop w następujący sposób:
+  * Po uruchomieniu kontenerów wejdź na **localhost** i przejdź przez proces instalacyjny Prestashop w następujący sposób:
     - Wybierz język instalacji: **Polski**
     - Zaakceptuj licencję oraz wprowadź dane sklepu i administratora
-    - **UWAGA!** Nie należy tworzyć domyślnych produktów ani nie włączać SSL
+    - **UWAGA!** Należy włączyć SSL, natomiast wyłączyć tworzenie przykładowych produktów!
     - W ustawieniach bazy danych wpisz:
       * adres: db
       * uzytkownik: prestashop_user
@@ -69,15 +71,24 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     docker-compose exec prestashop ls /var/www/html
     ```
 
-  * Przejdź do panelu administracyjnego: **localhost:8080/admin**
+  * Przejdź do panelu administracyjnego: **localhost/{your_admin}**
 
-  * Wejdź w Design -> Theme & Logo
+  * Aby wczytać konfigurację dostępną w `Config/export` należy uruchomić skrypt `restore.sh`. Upewnij się, że znajdujesz się w folderze `Config`.
 
-  * Wybierz motyw **BE**
+- **Linux / MacOS:** 
+```bash 
+  ./restore.sh
+```
+- **Windows:** 
+```bash 
+  bash restore.sh
+```
+
+---
 
   Docker - przydatne komendy
 
-    ```bash
+```bash
     # Zatrzymanie kontenerów
     docker-compose stop
     # Ponowne uruchomienie zatrzymanych kontenerów
@@ -86,7 +97,7 @@ Aby uruchomić projekt lokalnie, wykonaj poniższe kroki.
     docker-compose down
     # Zatrzymanie, usunięcie kontenerów ORAZ wolumenów (usuwa dane sklepu - foldery w kontenerze)
     docker-compose down -v
-    ```
+```
 
 ---
 

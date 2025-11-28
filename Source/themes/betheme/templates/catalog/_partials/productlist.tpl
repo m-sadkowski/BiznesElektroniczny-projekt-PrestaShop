@@ -23,9 +23,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-{capture assign="productClasses"}{if !empty($productClass)}{$productClass}{else}col-xs-12 col-sm-6 col-xl-4{/if}{/capture}
+{* TU JEST ZMIANA: Wymuszamy 4 kolumny na dużym ekranie (xl-3) i 2 na telefonie (col-6) *}
+{capture assign="productClasses"}col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3{/capture}
 
-<div class="products{if !empty($cssClass)} {$cssClass}{/if}">
+<div class="products row{if !empty($cssClass)} {$cssClass}{/if}">
     {foreach from=$products item="product" key="position"}
         {include file="catalog/_partials/miniatures/product.tpl" product=$product position=$position productClasses=$productClasses}
     {/foreach}

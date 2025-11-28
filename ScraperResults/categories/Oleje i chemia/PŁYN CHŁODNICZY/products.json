@@ -1,0 +1,62 @@
+[
+    {
+        "name": "HONDA OEM PŁYN DO CHŁODNIC CHŁODNICZY 1L 08CLAG016S1",
+        "category": "PŁYN CHŁODNICZY",
+        "reference": "08CLA-G01-6S1 PP",
+        "price": 45.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, płyn chłodniczy oem Honda\nPrzeznaczona do wszystkich modeli Hondy.\nTemperatura -36 st. C do 108 st. C\nOpakowanie 1L\ndostępny także w 5L opakowaniach",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia do 2 do 3 dni",
+        "images": [
+            "08CLA-G01-6S1 PP_1.jpg",
+            "08CLA-G01-6S1 PP_2.jpg"
+        ],
+        "quantity": 8
+    },
+    {
+        "name": "HONDA OEM PŁYN DO CHŁODNIC CHŁODNICZY 5L 08CLAG026L1",
+        "category": "PŁYN CHŁODNICZY",
+        "reference": "08CLA-G02-6L1 PP",
+        "price": 185.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, płyn chłodniczy oem Honda\nPrzeznaczona do wszystkich modeli Hondy.\nTemperatura -36 st. C do 108 st. C\nOpakowanie 5L\ndostępny także w 1L opakowaniach",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia do 2 do 3 dni",
+        "images": [
+            "08CLA-G02-6L1 PP_1.jpg",
+            "08CLA-G02-6L1 PP_2.jpg"
+        ],
+        "quantity": 5
+    },
+    {
+        "name": "MANNOL PŁYN DO CHŁODNIC CHŁODNICZY PRO COOL 1L",
+        "category": "PŁYN CHŁODNICZY",
+        "reference": "MN4414-1",
+        "price": 16.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, płyn chłodniczy\nMANNOL PŁYN DO CHŁODNIC PRO COOL 1L MOTOCYKLOWY (-40ST.C/+135ST.C) GOTOWY DO UŻYCIA\nOpakowanie 1L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN4414-1_1.jpg",
+            "MN4414-1_2.jpg"
+        ],
+        "quantity": 8
+    },
+    {
+        "name": "MANNOL PŁYN DO CHŁODNIC CHŁODNICZY PRO COOL 5L MN4414-5",
+        "category": "PŁYN CHŁODNICZY",
+        "reference": "MN4414-5",
+        "price": 59.0,
+        "description_short": "Przedmiotem sprzedaży jest:\nFabrycznie nowy, płyn chłodniczy\nMANNOL PŁYN DO CHŁODNIC PRO COOL 1L MOTOCYKLOWY (-40ST.C/+135ST.C) GOTOWY DO UŻYCIA\nOpakowanie 5L",
+        "description_full": "",
+        "attributes": {},
+        "order_processing_time": "Czas realizacji zamówienia od 2 do 3 dni",
+        "images": [
+            "MN4414-5_1.jpg",
+            "MN4414-5_2.jpg"
+        ],
+        "quantity": 1
+    }
+]

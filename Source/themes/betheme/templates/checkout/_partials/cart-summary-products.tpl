@@ -1,45 +1,41 @@
-{**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
- * @author    PrestaShop SA and Contributors <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- *}
+{block name='cart_summary_product_list'}
+  <div class="cart-summary-products js-cart-summary-products">
+    
+    <h4 class="h4" style="margin-bottom: 15px; font-weight: bold; text-transform: uppercase;">
+        {l s='Shopping Cart' d='Shop.Theme.Checkout'} 
+        <span style="color:#777; font-size: 0.8em;">({$cart.products_count})</span>
+    </h4>
 
- <div class="cart-summary-products js-cart-summary-products">
-  <p>{$cart.summary_string}</p>
+    {* PĘTLA PRODUKTÓW - ZAWSZE WIDOCZNA *}
+    <div class="media-list">
+      {foreach from=$cart.products item=product}
+        <li class="media" style="border-bottom: 1px solid #eee; padding: 10px 0; display: flex; align-items: center;">
+            
+            {* MINIATURKA *}
+            <div class="media-left" style="width: 60px; margin-right: 10px;">
+                <a href="{$product.url}" title="{$product.name}">
+                    <img class="media-object" src="{$product.cover.small.url}" alt="{$product.name}" style="max-width: 100%; height: auto;">
+                </a>
+            </div>
 
-  <p>
-    <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" class="js-show-details">
-      {l s='show details' d='Shop.Theme.Actions'}
-      <i class="material-icons">expand_more</i>
-    </a>
-  </p>
+            {* NAZWA I ILOŚĆ *}
+            <div class="media-body" style="flex: 1;">
+                <span class="product-name" style="font-weight: bold; display: block; line-height: 1.2; font-size: 13px;">
+                    {$product.name}
+                </span>
+                <span class="product-quantity" style="color: #777; font-size: 12px;">
+                    Ilość: x{$product.quantity}
+                </span>
+            </div>
 
-  {block name='cart_summary_product_list'}
-    <div class="collapse" id="cart-summary-product-list">
-      <ul class="media-list">
-        {foreach from=$cart.products item=product}
-          <li class="media">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
-        {/foreach}
-      </ul>
+            {* CENA *}
+            <div class="media-right" style="font-weight: bold; color: #333;">
+                {$product.price}
+            </div>
+
+        </li>
+        {include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}
+      {/foreach}
     </div>
-  {/block}
-</div>
+  </div>
+{/block}
