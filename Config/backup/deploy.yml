@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  prestashop:
+    image: agoneiro22/be_197747:latest
+    deploy:
+      placement:
+        constraints:
+         - node.hostname == student-swarm01
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1024M
+    ports:
+      - target: 443
+        published: 19777
+        protocol: tcp
+        mode: host
+    volumes:
+      - ps_data:/var/www/html
+      - ./themes/betheme:/var/www/html/themes/betheme
+      - ./modules/bemodule:/var/www/html/modules/bemodule
+    environment:
+      - DB_SERVER=admin-mysql_db
+      - DB_USER=root
+      - DB_PASSWD=student
+      - DB_NAME=BE_197747
+      - PS_INSTALL_AUTO=0
+      - PS_DEV_MODE=1
+      - PS_CACHE_ENABLE=1
+      - PS_CACHE_TYPE=memcached
+      - PS_CACHE_SERVER_ADDR=memcached
+      - PS_CACHE_SERVER_PORT=11211
+    networks:
+      - admin-mysql_default
+
+  memcached:
+    image: memcached:alpine
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.20'
+          memory: 128M
+    networks:
+      - admin-mysql_default
+
+networks:
+  admin-mysql_default:
+    external: true
