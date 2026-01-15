@@ -22,7 +22,6 @@ jobs:
     - name: Zbudowanie i wypchnięcie obrazu
       uses: docker/build-push-action@v4
       with:
-        context: .
-        file: ./Config/Dockerfile
+        context: ./Config
         tags: agoneiro22/be_197747:latest
         push: true
