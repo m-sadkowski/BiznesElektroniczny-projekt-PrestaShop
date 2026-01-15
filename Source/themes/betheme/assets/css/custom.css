@@ -46,6 +46,8 @@ body#checkout section.checkout-step {
     margin-bottom: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+<<<<<<< HEAD
+=======
 #_desktop_cart_styled .blockcart {
     position: relative;
     display: inline-block;
@@ -214,6 +216,7 @@ body#checkout section.checkout-step {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+>>>>>>> main
 }
 
 /* Ukrycie zbędnych elementów */
@@ -27866,6 +27869,8 @@ body.page-module-iqitsearch-searchiqit
 .product-miniature-default .product-add-cart {
     margin-top: auto; /* To pchnie go na dół */
     margin-bottom: 0;
+<<<<<<< HEAD
+=======
 .delete-container .remove-from-cart:hover i {
   color: #d32f2f;
 }
@@ -28008,4 +28013,5 @@ body.page-module-iqitsearch-searchiqit
     color: #ee152a; /* Czerwona cena */
     font-weight: bold;
     float: right;
+>>>>>>> main
 }
